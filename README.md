@@ -22,7 +22,7 @@ This is *not* for:
 |Feb |Microsoft |[Cyber Signals Issue 6](https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/](https://www.microsoft.com/en-us/security/business/security-insider/wp-content/uploads/2024/02/cyber-signals-issue-6.pdf))|
 |Feb |OpenAI | [Disrupting malicious uses of AI by state-affiliated threat actors](https://openai.com/blog/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors)|
 |March |Tripwire | [Cybersecurity in the Age of AI: Exploring AI-Generated Cyber Attacks](https://www.tripwire.com/state-of-security/cybersecurity-age-ai-exploring-ai-generated-cyber-attacks) |
-|March | SecureList | [Spam and phishing in 2023](https://securelist.com/spam-phishing-report-2023/112015/) |
+|March | Kaspersky | [Spam and phishing in 2023](https://securelist.com/spam-phishing-report-2023/112015/) |
 
 
 ## 2023 Reports
