@@ -33,12 +33,13 @@ These these are taken from reports listed on the [Sources page](https://github.c
 
 ## Appendix A: LLM-themed TTPs
 
-**LLM-informed reconnaissance:** Employing LLMs to gather actionable intelligence on technologies and potential vulnerabilities.<br><br>
-**LLM-enhanced scripting techniques:** Utilizing LLMs to generate or refine scripts that could be used in cyberattacks, or for basic scripting tasks such as programmatically identifying certain user events on a system and assistance with troubleshooting and understanding various web technologies.<br><br>
-**LLM-aided development:** Utilizing LLMs in the development lifecycle of tools and programs, including those with malicious intent, such as malware.<br><br>
-**LLM-supported social engineering:** Leveraging LLMs for assistance with translations and communication, likely to establish connections or manipulate targets.<br><br>
-**LLM-assisted vulnerability research:** Using LLMs to understand and identify potential vulnerabilities in software and systems, which could be targeted for exploitation.<br><br>
-**LLM-optimized payload crafting:** Using LLMs to assist in creating and refining payloads for deployment in cyberattacks.<br><br>
-**LLM-enhanced anomaly detection evasion:** Leveraging LLMs to develop methods that help malicious activities blend in with normal behavior or traffic to evade detection systems.<br><br>
-**LLM-directed security feature bypass:** Using LLMs to find ways to circumvent security features, such as two-factor authentication, CAPTCHA, or other access controls.<br><br>
-**LLM-advised resource development:** Using LLMs in tool development, tool modifications, and strategic operational planning.<br><br>
+**LLM-informed reconnaissance:** Employing LLMs to gather actionable intelligence on technologies and potential vulnerabilities. (CREDIT: Microsoft) <br><br>
+**LLM-enhanced scripting techniques:** Utilizing LLMs to generate or refine scripts that could be used in cyberattacks, or for basic scripting tasks such as programmatically identifying certain user events on a system and assistance with troubleshooting and understanding various web technologies.(CREDIT: Microsoft)<br><br>
+**LLM-aided development:** Utilizing LLMs in the development lifecycle of tools and programs, including those with malicious intent, such as malware.(CREDIT: Microsoft)<br><br>
+**LLM-supported social engineering:** Leveraging LLMs for assistance with translations and communication, likely to establish connections or manipulate targets.(CREDIT: Microsoft)<br><br>
+**LLM-assisted vulnerability research:** Using LLMs to understand and identify potential vulnerabilities in software and systems, which could be targeted for exploitation.(CREDIT: Microsoft)<br><br>
+**LLM-optimized payload crafting:** Using LLMs to assist in creating and refining payloads for deployment in cyberattacks.(CREDIT: Microsoft)<br><br>
+**LLM-enhanced anomaly detection evasion:** Leveraging LLMs to develop methods that help malicious activities blend in with normal behavior or traffic to evade detection systems.(CREDIT: Microsoft)<br><br>
+**LLM-directed security feature bypass:** Using LLMs to find ways to circumvent security features, such as two-factor authentication, CAPTCHA, or other access controls.(CREDIT: Microsoft)<br><br>
+**LLM-advised resource development:** Using LLMs in tool development, tool modifications, and strategic operational planning.(CREDIT: Microsoft)<br><br>
+**Lookalike LLM**: Using LLMs to appear to be another legitimate LLM tool such as a chatbot. Similar to look-alike domain activity. (CREDIT: Rachel James)<br><br>
