@@ -1,10 +1,22 @@
 # Threat Actors List
 
-Note that these are taken from reports listed on the [main page](https://github.com/cybershujin/Threat-Actors-Use-of-Artifical-Intelligence/tree/main) but the TTP mapping is an effort by me to map to the closest possible MITRE ATT&CK technique used. If you find an entry and believe a better TTP mapping is available, please contact me and/or comment.
+This github is an attempt to organize known use of artificial intelligence by cyber threat actors and to map and track those techniques. In this scenario we are focusing on cyber threat attacks that are being faciliated in some way by threat actors using artifical intelligence. This does not include political influence campaigns or mis/dis/mal information campaigns. It does include some fraud related cases, but I attempt to keep the focus on fraud activities that we would see in traditional campaigns but enhanced with AI.
+
+This is not for:
+
+• Threat actors attacking AI / ML / LLMs
+
+• Researchers attacking or finding exploits or possible uses AI by threat actors
+
+• Mis/dis/mal information campaigns using Deepfake technology
+
+• Threats to AI users, or AI researchers
 
 Notes:
 <br>
 **UnSub or Multiple UnSub - (sourcename)** used to refer to unnamed subjects, or multiple unnamed subjects mentioned in reports
+
+These these are taken from reports listed on the [Sources page](https://github.com/cybershujin/Threat-Actors-Use-of-Artifical-Intelligence/blob/main/Sources.md) but the TTP mapping is an effort by me to map to the closest possible MITRE ATT&CK technique used. If you find an entry and believe a better TTP mapping is available, please contact me and/or comment.
 
 
 | Name               | AKAs           | Brief          | TTPs | Link to Folder with reports                                                                      |
