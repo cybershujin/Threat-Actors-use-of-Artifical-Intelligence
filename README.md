@@ -10,3 +10,5 @@ This is *not* for:
 
 
 
+##2024 Reports
+https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/
