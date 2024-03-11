@@ -14,6 +14,10 @@ This is *not* for:
 •	Threats to AI users, or AI researchers
 
 
+# [Threat Actors use of AI/LLM and TTPs involved](https://github.com/cybershujin/Threat-Actors-Use-of-Artifical-Intelligence/blob/main/Threat%20Actors%20List.MD)
+
+## Sources for the above list
+
 ## 2024 Reports
 
 |Month               | Org               | Link           |
