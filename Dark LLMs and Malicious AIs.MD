@@ -24,5 +24,6 @@ Further down I also provide a list of open models, that while not specifically c
 
 |Name | Link | Description |
 |-----------| ------------- | ------------------------------------------------------ |
+|DAN (Do Anything Now) GPT | [DAN](https://dan-ai.io/) | Introducing Dan, the daring twin of Chat GPT created to shatter the boundaries of artificial intelligence. With Dan, you can experience an uncensored and unfiltered chatbot that elevates conversation to new heights.|
 |Gemma open models| [Google](https://blog.google/technology/developers/gemma-open-models/) | While not explicitly created for mlaicious purposes, as a open model it relies on users implementing a "responsible AI toolkit" to ensure safety and ethics. |
 |Mistral.ai | [Mistral.ai](https://docs.mistral.ai/models/)| We open-source both pre-trained models and fine-tuned models. These models are not tuned for safety as we want to empower users to test and refine moderation based on their use cases. For safer models, follow our guardrailing tutorial. |
