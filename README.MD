@@ -46,8 +46,8 @@ These these are taken from reports listed on the [Sources page](https://github.c
 **LLM-enhanced anomaly detection evasion:** Leveraging LLMs to develop methods that help malicious activities blend in with normal behavior or traffic to evade detection systems.(CREDIT: Microsoft)<br><br>
 **LLM-directed security feature bypass:** Using LLMs to find ways to circumvent security features, such as two-factor authentication, CAPTCHA, or other access controls.(CREDIT: Microsoft)<br><br>
 **LLM-advised resource development:** Using LLMs in tool development, tool modifications, and strategic operational planning.(CREDIT: Microsoft)<br><br>
-**Lookalike LLM**: Using LLMs to appear to be another legitimate LLM tool such as a chatbot. Similar to look-alike domain activity. (CREDIT: Rachel James based on Kaspersky report)<br><br>
-**LL Models used for backdoor deployment** the model’s payload grants the attacker a shell on the compromised machine, enabling them to gain full control over victims’ machines through what is commonly referred to as a “backdoor” (CREDIT: Rachel James based on JFrog report)
+**Lookalike LLM:** Using LLMs to appear to be another legitimate LLM tool such as a chatbot. Similar to look-alike domain activity. (CREDIT: Rachel James based on Kaspersky report)<br><br>
+**LL Models used for backdoor deployment:** The model’s payload grants the attacker a shell on the compromised machine, enabling them to gain full control over victims’ machines through what is commonly referred to as a “backdoor” (CREDIT: Rachel James based on JFrog report)
 
-**DeepFake for Impersonation** where generative AI is used to make audio, video or photographic media used to impersonate individuals (CREDIT: Rachel James based on various reports)
+**DeepFake for Impersonation:** Where generative AI is used to make audio, video or photographic media used to impersonate individuals (CREDIT: Rachel James based on various reports)
 
