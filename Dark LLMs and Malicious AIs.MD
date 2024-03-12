@@ -1,11 +1,14 @@
-#Dark LLMs aka BlackHat GPTs and Malicious AIs
+# Dark LLMs aka BlackHat GPTs and Malicious AIs
 
 While most LLMs/AIs have ethical guardrails that would require a [jailbreak](https://zvelo.com/how-ai-jailbreaks-pave-the-way-for-unskilled-attackers/) to bypass those built-in limitations, there are some AIs and LLMs that are not designed with those limitations.
 These Dark LLMs and Malicious AIs are intended to be weaponized for cyberattacks.
 
 [Zvelo](https://zvelo.com/malicious-ai-the-rise-of-dark-llms/) had a article on the topic recently, noting, "Dark LLMs are AI-powered tools that leverage OpenAI’s API to engineer malicious variations of ChatGPT that operate without any sort of ethical guidelines or built-in limitations. Tailor made for the vast cybercriminal networks, the main goal of the dark LLMs is to facilitate nefarious activities. At this point, they have primarily been observed being utilized to generate malicious code, exploit vulnerabilities, and create targeted spear-phishing emails."
 
-##The following is provided for research purposes ONLY.
+Further down I also provide a list of open models, that while not specifically created for malicious purposes lack the typical safety and ethics guardrails for LLMs.
+
+# Dark LLMs / Blackhat GPTs
+## The following is provided for research purposes ONLY.
 
 
 |Name | Link | Description |
@@ -15,4 +18,11 @@ These Dark LLMs and Malicious AIs are intended to be weaponized for cyberattacks
 |WormGPT |[Link](link)| WormGPT, built on the GPT-J language model developed in 2021, is a tool designed for cybercriminal activities, especially focused on malware creation and exploitation. It stands out with features like unlimited character support, chat memory retention, and code formatting capabilities. WormGPT is known for its rapid response times, expansive character count handling, and a strong emphasis on privacy, avoiding the logging or retention of user data. Its versatility is enhanced by various AI models, allowing dynamic usage and prompt alteration. Notably, it includes ongoing development in context memorization and offers formatted code and scripts in responses, tailored to cater to code-related queries. |
 |DarkBARD | [Link](link)| DarkBARD AI, the evil twin of Google’s BARD AI, is an advanced tool equipped for a range of cybercrimes. It’s defined by its real-time processing of information from the clear web, enhancing its adaptability. DarkBARD AI’s capabilities extend to creating misinformation, deepfakes, and managing multilingual communications. It can generate diverse content like code and articles and integrates with Google Lens for image-related tasks. This tool’s versatility is further underscored by its potential in executing ransomware and DDoS attacks.|
 |FraudGTP| [Link](link)|FraudGPT is described as a great tool for creating undetectable malware, writing malicious code, finding leaks and vulnerabilities, creating phishing pages, and for learning hacking. The author illustrated its product with a video demo showing FraudGPT’s capabilities. The demo shows FraudGPT’s ability to create phishing pages and phishing SMSs. |
+
+# Open Models
+## The following is provided for research purposes ONLY.
+
+|Name | Link | Description |
+|-----------| ------------- | ------------------------------------------------------ |
 |Gemma open models| [Google](https://blog.google/technology/developers/gemma-open-models/) | While not explicitly created for mlaicious purposes, as a open model it relies on users implementing a "responsible AI toolkit" to ensure safety and ethics. |
+|Mistral.ai | [Mistral.ai](https://docs.mistral.ai/models/)| We open-source both pre-trained models and fine-tuned models. These models are not tuned for safety as we want to empower users to test and refine moderation based on their use cases. For safer models, follow our guardrailing tutorial. |
