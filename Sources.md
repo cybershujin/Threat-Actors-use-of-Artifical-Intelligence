@@ -22,9 +22,10 @@ This is *not* for:
 
 |Month               | Org               | Link           |
 | ------------------ | -------------- | ------------------------------------------|
-|Feb |Microsoft |[Staying ahead of threat actors in the age of AI](https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/)|
-|Feb |Microsoft |[Cyber Signals Issue 6](https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/](https://www.microsoft.com/en-us/security/business/security-insider/wp-content/uploads/2024/02/cyber-signals-issue-6.pdf))|
-|Feb |OpenAI | [Disrupting malicious uses of AI by state-affiliated threat actors](https://openai.com/blog/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors)|
+|Janurary | National Cyber Security Centre | [The near-term impact of AI on the cyber threat](https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat#section_5) - *Analyst note: one of the most sensible and non-sensationalist works out there on the topic* |
+|Feburary |Microsoft |[Staying ahead of threat actors in the age of AI](https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/)|
+|Feburary |Microsoft |[Cyber Signals Issue 6](https://www.microsoft.com/en-us/security/blog/2024/02/14/staying-ahead-of-threat-actors-in-the-age-of-ai/](https://www.microsoft.com/en-us/security/business/security-insider/wp-content/uploads/2024/02/cyber-signals-issue-6.pdf))|
+|Feburary |OpenAI | [Disrupting malicious uses of AI by state-affiliated threat actors](https://openai.com/blog/disrupting-malicious-uses-of-ai-by-state-affiliated-threat-actors)|
 |March |Tripwire | [Cybersecurity in the Age of AI: Exploring AI-Generated Cyber Attacks](https://www.tripwire.com/state-of-security/cybersecurity-age-ai-exploring-ai-generated-cyber-attacks) |
 |March | Kaspersky | [Spam and phishing in 2023](https://securelist.com/spam-phishing-report-2023/112015/) |
 
