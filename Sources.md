@@ -39,3 +39,4 @@ This is *not* for:
 |June | FBI / IC3 | [Malicious Actors Manipulating Photos and Videos to Create Explicit Content and Sextortion Schemes](https://www.ic3.gov/Media/Y2023/PSA230605) |
 |July | SlashNext | [WormGPT – The Generative AI Tool Cybercriminals Are Using to Launch Business Email Compromise Attacks](https://slashnext.com/blog/wormgpt-the-generative-ai-tool-cybercriminals-are-using-to-launch-business-email-compromise-attacks/) |
 |November | SlashNext | [AI tools such as ChatGPT are generating a mammoth increase in malicious phishing emails](https://www.cnbc.com/2023/11/28/ai-like-chatgpt-is-creating-huge-increase-in-malicious-phishing-email.html) |
+|August | Mandiant | [Threat Actors are Interested in Generative AI, but Use Remains Limited](https://www.mandiant.com/resources/blog/threat-actors-generative-ai-limited)|
