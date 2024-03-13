@@ -4,6 +4,14 @@ This github is an attempt to organize known use of artificial intelligence by cy
 
 It is worth specifically stating that in many cases defenders cannot confirm whether a threat actor used AI unless: (a) the reporting organization is looking at the use of their own AI tools such as Microsoft and OpenAI's reporting or (b) the actor decides to use AI tools available on the already-compromised endpoint. For this reason many reports on attacks or campaigns that are fascilated by AI are, when you read carefully, actually done by researchers. For this reason I am remaining focused in this project *only* on what confirmed reports we have on threat actor's actual use.
 
+There have been relatively few individuals on criminal forums and telegrams actively discussing generative AI use. Some users have marketed alleged generative AI tools used for malicious purposes. See [Dark LLMs and Blackhat GPTs](https://github.com/cybershujin/Threat-Actors-Use-of-Artifical-Intelligence/blob/main/Dark%20LLMs%20and%20Malicious%20AIs.MD). 
+
+There has been secondary effect studies such as the significant increase observed in phishing since ChatGPT became widely available, reported as 1,265% increase between November 2022 to Jan 2023 by [SlashNext](https://www.prnewswire.com/news-releases/slashnexts-2023-state-of-phishing-report-reveals-a-1-265-increase-in-phishing-emails-since-the-launch-of-chatgpt-in-november-2022--signaling-a-new-era-of-cybercrime-fueled-by-generative-ai-301971557.html). However, Slashnext and many other reports authored in this area are from vendors offering solutions in these security spaces and thus should be examined accordingly for bias.
+
+Generally speaking most popular and widely accessible AIs and LLMs have significant safeguards so they are designed not to add or enable malicious or criminal activities. However, this requires "jailbreaking" or otherwise "attacking" the AI/LLM itself which is not covered here, but is on my [other repo](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity).
+
+## Scope
+
 This is not for:
 
 • Threat actors attacking AI / ML / LLMs
