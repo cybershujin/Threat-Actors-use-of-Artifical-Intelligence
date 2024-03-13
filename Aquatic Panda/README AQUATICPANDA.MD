@@ -10,6 +10,7 @@ Aquatic Panda seeks to broaden its Command and Control (C2) Infrastructure throu
 
 Aquatic Panda is often associated with the exploitation of its victims via the following vulnerabilities: CVE-2019-18935, CVE-2021-34473, CVE-2021-21978, CVE-2019-9621, CVE-2021-34523, CVE-2021-22205, including others.
 
-[Cybernews](https://cybernews.com/security/top-5-cyber-threat-actors-2023/)
-[Malpedia](https://malpedia.caad.fkie.fraunhofer.de/actor/earth_lusca)
-[MITRE ATT&CK](https://attack.mitre.org/groups/G0143/)
+- [Cybernews](https://cybernews.com/security/top-5-cyber-threat-actors-2023/)
+- [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/actor/earth_lusca)
+- [MITRE ATT&CK](https://attack.mitre.org/groups/G0143/)
+- [Banyan Security](https://www.banyansecurity.io/glossary/aquatic-panda/)
