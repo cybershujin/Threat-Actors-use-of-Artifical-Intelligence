@@ -2,6 +2,8 @@
 
 This github is an attempt to organize known use of artificial intelligence by cyber threat actors and to map and track those techniques. In this scenario we are focusing on cyber threat attacks that are being faciliated in some way by threat actors using artifical intelligence. This does not include political influence campaigns or mis/dis/mal information campaigns. It does include some fraud related cases, but I attempt to keep the focus on fraud activities that we would see in traditional campaigns but enhanced with AI.
 
+It is worth specifically stating that in many cases defenders cannot confirm whether a threat actor used AI unless: (a) the reporting organization is looking at the use of their own AI tools such as Microsoft and OpenAI's reporting or (b) the actor decides to use AI tools available on the already-compromised endpoint. For this reason many reports on attacks or campaigns that are fascilated by AI are, when you read carefully, actually done by researchers. For this reason I am remaining focused in this project *only* on what confirmed reports we have on threat actor's actual use.
+
 This is not for:
 
 • Threat actors attacking AI / ML / LLMs
