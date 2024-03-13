@@ -11,6 +11,7 @@ This is not for:
 • Mis/dis/mal information campaigns using Deepfake technology
 
 • Threats to AI users, or AI researchers
+For those items, some of it is in my other repo here [AI and ML for Cybersecurity](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity) along with some tools for cybersecurity professionals.
 
 Notes:
 <br>
