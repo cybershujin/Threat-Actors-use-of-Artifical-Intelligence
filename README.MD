@@ -1,4 +1,4 @@
-**Threat Actors List**
+**Adversary use of Articial Intelligence and LLMs and Classification of TTPs**
 
 This github is an attempt to organize known use of artificial intelligence by cyber threat actors and to map and track those techniques. In this scenario we are focusing on cyber threat attacks that are being facilitated in some way by threat actors using artificial intelligence. This does not include political influence campaigns or mis/dis/mal information campaigns. It does include some fraud related cases, but I attempt to keep the focus on fraud activities that we would see in traditional campaigns but enhanced with AI.
 
@@ -83,6 +83,7 @@ These these are taken from reports listed on the [Sources page](https://github.c
 **LLM-enhanced data manipulation**: Adversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data. By using LLMs to manipulate data, adversaries may attempt to affect a business process, organizational understanding, or decision making at large scales. (CREDIT: Rachel James based on GXC Team activity)
 
 
+*!!! still under construction !!!*
 
 ## Deepfake categories
 
