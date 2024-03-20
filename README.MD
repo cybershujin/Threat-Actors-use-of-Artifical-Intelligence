@@ -52,7 +52,7 @@ These these are taken from reports listed on the [Sources page](https://github.c
 
 
 
-**Appendix A: LLM-themed TTPs**
+## Appendix A: LLM-themed TTPs
 
 **LLM-informed reconnaissance:** Employing LLMs to gather actionable intelligence on technologies and potential vulnerabilities. (CREDIT: Microsoft)
 
