@@ -83,7 +83,7 @@ These these are taken from reports listed on the [Sources page](https://github.c
 **LLM-enhanced data manipulation**: Adversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data. By using LLMs to manipulate data, adversaries may attempt to affect a business process, organizational understanding, or decision making at large scales. (CREDIT: Rachel James based on GXC Team activity)
 
 
-#!!! still under construction !!!
+# !!! still under construction !!!
 
 ## Deepfake categories
 
