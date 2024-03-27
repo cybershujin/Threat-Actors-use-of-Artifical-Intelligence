@@ -7,6 +7,19 @@ These Dark LLMs and Malicious AIs are intended to be weaponized for cyberattacks
 
 Further down I also provide a list of open models, that while not specifically created for malicious purposes lack the typical safety and ethics guardrails for LLMs.
 
+# Analyst Note
+I've spent weeks now pouring over months of posts in the darkweb and dark marketplaces and I have the following observations:
+- Most dark markets and darkweb spaces have posts advertising malicious LLMs or "jailbreaks" to make GenAI "do whatever you want!" however they still are a tiny fraction of the posts compared to traditional fraud and phishing kits
+- Usually demonstrated with "proof" showing it will give you the reciepe for a bomb or meth or for AI phishing kits, or malware generation it may include a screen capture video - which always falls short of showing an actual sucessful attack from the tool
+- Those posts are by far and wide either:
+  - ignored by users on the forum (very little comments or engagement) even for the most reputable versions of these darkLLMs
+  - labeled immediately as a scam by users either as "not working" ("Just tried it, this doesn't work." and "I tried this and now my account is suspended" and "must have been patched, doesn't work") or service-not-delivered where payment was taken but no product was produced
+  - the return code demonstrated in many videos is often incredibly unsophsiticated versions of shell code and malware that would easily be detected by technology from five years ago, and can be retrieved from AI through normal prompts (no jailbreaking required) or frankly, googled with ease
+
+At least in the past 6 months to date (March 2023) I would say there are far more failed attempts at selling jailbreaks and darkLLMs aka Evil/Dark GPTs than there are sucess stories. This is significant, because if you look at other very sucessful phishing kits on these same forums there is a significant community involvement with affiliates / users reporting sucessful use of the tool in attacks. 
+
+A very notable exception is WormGPT which gained additional infamy when
+
 # Dark LLMs / Blackhat GPTs
 ## The following is provided for research purposes ONLY.
 
