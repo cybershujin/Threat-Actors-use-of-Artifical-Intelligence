@@ -9,6 +9,7 @@ Further down I also provide a list of open models, that while not specifically c
 
 # Analyst Note
 I've spent weeks now pouring over months of posts in the darkweb and dark marketplaces and I have the following observations:
+
 - Most dark markets and darkweb spaces have posts advertising malicious LLMs or "jailbreaks" to make GenAI "do whatever you want!" however they still are a tiny fraction of the posts compared to traditional fraud and phishing kits
 - Usually demonstrated with "proof" showing it will give you the reciepe for a bomb or meth or for AI phishing kits, or malware generation it may include a screen capture video - which always falls short of showing an actual sucessful attack from the tool
 - Those posts are by far and wide either:
@@ -16,9 +17,19 @@ I've spent weeks now pouring over months of posts in the darkweb and dark market
   - labeled immediately as a scam by users either as "not working" ("Just tried it, this doesn't work." and "I tried this and now my account is suspended" and "must have been patched, doesn't work") or service-not-delivered where payment was taken but no product was produced
   - the return code demonstrated in many videos is often incredibly unsophsiticated versions of shell code and malware that would easily be detected by technology from five years ago, and can be retrieved from AI through normal prompts (no jailbreaking required) or frankly, googled with ease
 
-At least in the past 6 months to date (March 2023) I would say there are far more failed attempts at selling jailbreaks and darkLLMs aka Evil/Dark GPTs than there are sucess stories. This is significant, because if you look at other very sucessful phishing kits on these same forums there is a significant community involvement with affiliates / users reporting sucessful use of the tool in attacks. 
+At least in the past 6 months to date (March 2023) I would say there are far more failed attempts at selling jailbreaks and darkLLMs aka Evil/Dark GPTs than there are sucess stories. This is significant, because if you look at other very successful phishing kits on these same forums there is a significant community involvement with affiliates / users reporting successful use of the tool in attacks. 
 
-A very notable exception is WormGPT which gained additional infamy when
+I believe this is, in part, due traditional phishing kits and infrastructure are far more accessible to the less technical and well resourced actors. The uplift in capabilities that AI / LLM provide to this group of cybercrime actors is usually in the form of crafting grammatically, culturally correct phishing emails which does not need a "dark llm" or jailbreak to accomplish. This is echoed by research by the National Cyber Security Centre [The near-term impact of AI on the cyber threat - NCSC.GOV.UK](https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat#section_5) which notes that the use of AI to uplift cybercrime activities is unevenly distributed amongst cyber threat actor types.
+
+Less-skilled hackers-for-fire, opportunistic cyber criminals and hacktivists see the most uplift from the use of AI from social engineering and reconnaissance, while moderately sophisticated organized cyber crime groups might see a moderate uplift in these areas as well as in exfiltration (analysis of data for sensitive elements either before or after exfiltration). The most highly capable threat actors are those that are the best positioned to take advantage of the most advanced potential capabilities of a dark LLM / malicious AI. 
+
+As the NSCS predicts, "Expertise, equipment, time and financial resourcing are currently crucial to harness more advanced uses of AI in cyber operations. Only those who invest in AI, have the resources and expertise, and have access to quality data will benefit from its use in sophisticated cyber attacks to 2025. Highly capable state actors are almost certainly best placed amongst cyber threat actors to harness the potential of AI in advanced cyber operations. Other state actors and most commercial companies that offer capability to states worldwide will gain moderate capability uplift over the next eighteen months in social engineering, reconnaissance and exfiltration. Capable and established criminal groups are also likely to have enough training data and resource to gain some uplift."
+
+A very notable event in this space is WormGPT which gained additional infamy when APT43 was reported to have purchased it in August 2023. That particular malicious GPT appears to have far more sophistication and capabilities. 
+
+**Prediction**
+
+The above analysis will very likely change in the near future. These factors limiting the adoption and integration of AI and LLM into cyber crime activities will become less important over time as organized cyber criminal groups that run affiliate programs such as Phishing-as-a-Service (PhaaS) and Ransomware-as-a-Service (RaaS) spend recruitment and development efforts in creating more sophisticated AI models. 
 
 # Dark LLMs / Blackhat GPTs
 ## The following is provided for research purposes ONLY.
