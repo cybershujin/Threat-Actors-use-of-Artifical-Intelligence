@@ -21,6 +21,7 @@ Further down I also provide a list of open models, that while not specifically c
 |FraudGTP| [Link](link)|FraudGPT is described as a great tool for creating undetectable malware, writing malicious code, finding leaks and vulnerabilities, creating phishing pages, and for learning hacking. The author illustrated its product with a video demo showing FraudGPT’s capabilities. The demo shows FraudGPT’s ability to create phishing pages and phishing SMSs. |
 |LoopGPT| link | August 2023 Arabic-speaking developer marked a tool similar to FraudGPT which was reported to be able to generate malware in response to prommpts. However, limited sample outputs from this tool in response to prompts were not really good enough to be used in an attack secnario |
 |Abrax666 | link | October 2023 user on a forum marketed a generative AI tool that "works on GPT-4" that can create scripts or emails and send bulk emails, SMS messages, or make calls and solve CAPTCHAs - but this was identified as likley a scam. | 
+|darkgemini | [Reported by Knostic](https://www.linkedin.com/feed/update/urn:li:activity:7178239990609453058?utm_source=share&utm_medium=member_desktop)| DarkGemini is a powerful new GenAI chatbot, now being sold on the dark web for a $45 monthly subscription. It can generate a reverse shell, build malware, or even locate people based on an image. A “next generation” bot, built specifically to make GenAI more accessible to the attacker next door.|
 
 # Open Models
 ## The following is provided for research purposes ONLY.
