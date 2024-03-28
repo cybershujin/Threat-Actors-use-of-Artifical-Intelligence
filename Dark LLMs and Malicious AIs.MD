@@ -8,7 +8,7 @@ These Dark LLMs and Malicious AIs are intended to be weaponized for cyberattacks
 Further down I also provide a list of open models, that while not specifically created for malicious purposes lack the typical safety and ethics guardrails for LLMs.
 
 # Analyst Note
-**Dated March 28, 2024 **
+**Dated March 28, 2024**
 
 I've spent weeks now pouring over months of posts in the darkweb and dark marketplaces and I have the following observations:
 
