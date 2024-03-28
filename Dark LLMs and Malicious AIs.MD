@@ -37,7 +37,7 @@ The above analysis will very likely change in the near future. These factors lim
 
 # Dark LLMs / Blackhat GPTs
 ## The following is provided for research purposes ONLY.
-
+You can see screenshots and other collected data in the [folder here](https://github.com/cybershujin/Threat-Actors-use-of-Artifical-Intelligence/tree/main/Dark%20LLMs%20and%20Malicious%20AIs%20in%20dark%20markets)
 
 |Name | Link | Description |
 |-----------| ------------- | ------------------------------------------------------ |
