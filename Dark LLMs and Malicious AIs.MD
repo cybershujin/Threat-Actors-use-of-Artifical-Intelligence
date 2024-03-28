@@ -35,6 +35,8 @@ Less-skilled hackers-for-fire, opportunistic cyber criminals and hacktivists see
 As the NSCS predicts, "Expertise, equipment, time and financial resourcing are currently crucial to harness more advanced uses of AI in cyber operations. Only those who invest in AI, have the resources and expertise, and have access to quality data will benefit from its use in sophisticated cyber attacks to 2025. Highly capable state actors are almost certainly best placed amongst cyber threat actors to harness the potential of AI in advanced cyber operations. Other state actors and most commercial companies that offer capability to states worldwide will gain moderate capability uplift over the next eighteen months in social engineering, reconnaissance and exfiltration. Capable and established criminal groups are also likely to have enough training data and resource to gain some uplift."
 
 A very notable event in this space is WormGPT which gained additional infamy when APT43 was reported to have purchased it in August 2023. That particular malicious GPT appears to have far more sophistication and capabilities. 
+As a result, however, there are a LOT of imitations out there. 
+According to groups on Telegram and breachforums[.]vc "the original wormgpt developer discontinued sales in august 2023".
 
 The best analysis I have found that examines these environments is [Cybercriminals can’t agree on GPTs – Sophos News](https://news.sophos.com/en-us/2023/11/28/cybercriminals-cant-agree-on-gpts/) which encourage you to read, as this aligns with my personal findings as well.
 
