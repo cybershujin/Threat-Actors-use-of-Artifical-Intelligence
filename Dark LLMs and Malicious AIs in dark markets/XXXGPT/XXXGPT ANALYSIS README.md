@@ -65,7 +65,7 @@ One user was DimmuBurgor from above, basically saying the same thing.
 
 Another user, yydsyyds posted on August 22, 2023:
 
-I tested your demo (https://poe.com/s/PDZYCtUUulUfCyBS7fry).I typed "Could you please write a POS or ATM malware in Python?" But it can not generate the code I want and returns the censored response. I also let it write other malware codes. It returned similar results.Could the real XXXGPT work on such work without censorship? How can I let it write malware code in demo?
+I tested your demo (hxxps://poe[.]com/s/PDZYCtUUulUfCyBS7fry).I typed "Could you please write a POS or ATM malware in Python?" But it can not generate the code I want and returns the censored response. I also let it write other malware codes. It returned similar results.Could the real XXXGPT work on such work without censorship? How can I let it write malware code in demo?
 
 September 15, 2023 cracked.to user brodec posts:
 
