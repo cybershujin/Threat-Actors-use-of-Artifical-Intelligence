@@ -13,9 +13,10 @@ Further down I also provide a list of open models, that while not specifically c
 I've spent weeks now pouring over months of posts in the darkweb and dark marketplaces and I have the following observations:
 
 - Most dark markets and darkweb spaces have posts advertising malicious LLMs or "jailbreaks" to make GenAI "do whatever you want!" however they still are a tiny fraction of the posts compared to traditional fraud and phishing kits
-- By far, most posts focused on sellng compromised or shared ChatGPT accounts (in fact Kaspersky reported half of the posts they discovered in 2023 on dark web channels about AI was this category) [Source](https://usa.kaspersky.com/about/press-releases/2024_new-kaspersky-study-examines-cybercrimes-ai-experimentation-on-the-dark-web)
+- A large quantity of posts are focused on sellng compromised or shared ChatGPT accounts (in fact Kaspersky reported half of the posts they discovered in 2023 on dark web channels about AI was this category) [Source](https://usa.kaspersky.com/about/press-releases/2024_new-kaspersky-study-examines-cybercrimes-ai-experimentation-on-the-dark-web)
 - A close second are posts about jailbreaks that appear to work for only a few minutes before they are 'patched' (if they worked originally at all)
-- Usually demonstrated with "proof" showing it will give you the reciepe for a bomb or meth or for AI phishing kits, or malware generation it may include a screen capture video - which always falls short of showing an actual sucessful attack from the tool
+- Usually these jailbreaks demonstrated with "proof" showing it will give you the reciepe for a bomb or meth but are within a day or two responded by other users with screencpatures showing this jailbreak is not working. However users are labeling these jailbreaks as if they were a fully developed LLM.
+- For true dark LLMs or for AI phishing kits or malware generation advertising on thse dark markets, it may include a screen capture video - which always falls short of showing an actual sucessful attack from the tool
 - Those posts are by far and wide either:
   - ignored by users on the forum (very little comments or engagement) even for the most reputable versions of these darkLLMs
   - labeled immediately as a scam by users either as "not working" ("Just tried it, this doesn't work." and "I tried this and now my account is suspended" and "must have been patched, doesn't work") or service-not-delivered where payment was taken but no product was produced
