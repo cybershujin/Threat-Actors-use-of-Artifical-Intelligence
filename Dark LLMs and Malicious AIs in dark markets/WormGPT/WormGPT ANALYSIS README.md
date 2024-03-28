@@ -14,13 +14,13 @@ August 8th, 2023 Krebs did an excellent article on this:  [Meet the Brains Behin
 
 Kreb's article describes:
 
-&nbsp;WormGPT was initially sold exclusively on **HackForums**, a sprawling, English-language community that has long featured a bustling marketplace for &nbsp;cybercrime tools and services. WormGPT licenses are sold for prices ranging from 500 to 5,000 Euro.
+*WormGPT was initially sold exclusively on **HackForums**, a sprawling, English-language community that has long featured a bustling marketplace for cybercrime tools and services. WormGPT licenses are sold for prices ranging from 500 to 5,000 Euro.*
 
-&nbsp;“Introducing my newest creation, ‘WormGPT,’ wrote “**Last**,” the handle chosen by the HackForums user who is selling the service. “This project &nbsp;aims to provide an alternative to ChatGPT, one that lets you do all sorts of illegal stuff and easily sell it online in the future. Everything blackhat related &nbsp;that you can think of can be done with WormGPT, allowing anyone access to malicious activity without ever leaving the comfort of their home.” 
+*“Introducing my newest creation, ‘WormGPT,’ wrote “**Last**,” the handle chosen by the HackForums user who is selling the service. “This project aims to provide an alternative to ChatGPT, one that lets you do all sorts of illegal stuff and easily sell it online in the future. Everything blackhat related that you can think of can be done with WormGPT, allowing anyone access to malicious activity without ever leaving the comfort of their home.”*
 
-&nbsp;Morais said he recently graduated from a polytechnic institute in Portugal, where he earned a degree in information technology. He said only &nbsp;about 30 to 35 percent of the work on WormGPT was his, and that other coders are contributing to the project. So far, he says, roughly 200 customers &nbsp;have paid to use the service...
+*Morais said he recently graduated from a polytechnic institute in Portugal, where he earned a degree in information technology. He said only about 30 to 35 percent of the work on WormGPT was his, and that other coders are contributing to the project. So far, he says, roughly 200 customers have paid to use the service...*
 
-&nbsp;“Anyone that tests wormgpt can see that it has no difference from any other uncensored AI or even chatgpt with jailbreaks,” Morais explained. &nbsp;“The game changer is that our dataset [library] is big.”
+*“Anyone that tests wormgpt can see that it has no difference from any other uncensored AI or even chatgpt with jailbreaks,” Morais explained. “The game changer is that our dataset [library] is big.”*
 
 This article by Krebs coincided with Laste on forum[.]exploit[.]in making an announcement:
 
