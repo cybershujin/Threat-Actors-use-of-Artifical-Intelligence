@@ -80,9 +80,7 @@ You can see screenshots and other collected data in the [folder here](https://gi
 
 |Name | Link | Description | 
 |-----------| ------------- | ------------------------------------------------------ | 
-| HackerGPT| [chat.hackerai.co](https://chat.hackerai.co/) | As HackerGPT, I can assist you with a wide range of hacking, bug bounty, and penetration testing tasks. I can help you identify, exploit, and report vulnerabilities in systems, networks, and applications. Some of the things I can do include: <br><br>
-
-Reconnaissance and information gathering: I can gather information about a target system, such as its IP address, open ports, and running services, to help you understand its architecture and identify potential vulnerabilities.
+| HackerGPT| [chat.hackerai.co](https://chat.hackerai.co/) | As HackerGPT, I can assist you with a wide range of hacking, bug bounty, and penetration testing tasks. I can help you identify, exploit, and report vulnerabilities in systems, networks, and applications. Some of the things I can do include: <br><br>Reconnaissance and information gathering: I can gather information about a target system, such as its IP address, open ports, and running services, to help you understand its architecture and identify potential vulnerabilities. 
 Scanning and enumeration: I can perform automated and manual scanning to identify open ports, services, and vulnerabilities on a target system.
 Exploitation: I can develop and execute exploit code to gain access to a target system or application, either remotely or locally.
 Privilege escalation: I can help you escalate your privileges on a compromised system to access restricted data or resources.
