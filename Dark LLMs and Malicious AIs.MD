@@ -73,3 +73,24 @@ You can see screenshots and other collected data in the [folder here](https://gi
 |DAN (Do Anything Now) GPT | [DAN](https://dan-ai.io/) | Introducing Dan, the daring twin of Chat GPT created to shatter the boundaries of artificial intelligence. With Dan, you can experience an uncensored and unfiltered chatbot that elevates conversation to new heights.|
 |Gemma open models| [Google](https://blog.google/technology/developers/gemma-open-models/) | While not explicitly created for mlaicious purposes, as a open model it relies on users implementing a "responsible AI toolkit" to ensure safety and ethics. |
 |Mistral.ai | [Mistral.ai](https://docs.mistral.ai/models/)| We open-source both pre-trained models and fine-tuned models. These models are not tuned for safety as we want to empower users to test and refine moderation based on their use cases. For safer models, follow our guardrailing tutorial. |
+
+
+# Cybersecurity tools threat actors express interest in
+## The following is provided for research purposes ONLY.
+
+|Name | Link | Description | 
+|-----------| ------------- | ------------------------------------------------------ | 
+| HackerGPT| 9chat.hackerai.co](https://chat.hackerai.co/) | As HackerGPT, I can assist you with a wide range of hacking, bug bounty, and penetration testing tasks. I can help you identify, exploit, and report vulnerabilities in systems, networks, and applications. Some of the things I can do include: <br><br>
+
+Reconnaissance and information gathering: I can gather information about a target system, such as its IP address, open ports, and running services, to help you understand its architecture and identify potential vulnerabilities.
+Scanning and enumeration: I can perform automated and manual scanning to identify open ports, services, and vulnerabilities on a target system.
+Exploitation: I can develop and execute exploit code to gain access to a target system or application, either remotely or locally.
+Privilege escalation: I can help you escalate your privileges on a compromised system to access restricted data or resources.
+Post-exploitation: I can provide guidance on maintaining access to a compromised system, exfiltrating data, and covering your tracks to avoid detection.
+Vulnerability assessment: I can help you assess the security posture of a target system by identifying and analyzing vulnerabilities, providing recommendations for mitigation, and prioritizing remediation efforts.
+Penetration testing: I can simulate an attack on a target system to evaluate its security defenses and identify weaknesses that could be exploited by malicious actors.
+Bug bounty hunting: I can help you find and report vulnerabilities in applications and systems participating in bug bounty programs, enabling you to earn rewards for your findings.
+Ethical hacking: I can provide you with the knowledge and tools to conduct ethical hacking engagements, ensuring that you comply with all relevant laws and regulations.
+Custom scripting: I can help you create custom scripts to automate various hacking and penetration testing tasks, saving you time and effort.
+Please note that I am here to help you with authorized hacking, bug bounty, and penetration testing activities. I will not assist with any illegal activities or actions that may harm others. |
+| HackerGPT | [Github](https://github.com/Hacker-GPT/HackerGPT) | HackerGPT is your indispensable digital companion in the world of hacking. Crafted with the unique needs of ethical hackers in mind, this AI-powered assistant stands at the forefront of hacking knowledge and assistance. Equipped with an extensive database of hacking techniques, tools, and strategies, HackerGPT is more than just an information resource—it's an active participant in your hacking journey. Whether you're a beginner looking to learn the ropes or a seasoned professional seeking deeper insights, HackerGPT is your ally in navigating the ever-changing landscape of hacking challenges.|
