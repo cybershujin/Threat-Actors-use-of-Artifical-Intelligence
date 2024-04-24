@@ -8,7 +8,11 @@ Notably prior to this post Last had been selling "Artic Stealer" which is a data
 
 July 7th WormGPT is advertised - SlashNext [WormGPT - The Generative AI Tool Cybercriminals Are Using to Launch BEC Attacks | SlashNext](https://slashnext.com/blog/wormgpt-the-generative-ai-tool-cybercriminals-are-using-to-launch-business-email-compromise-attacks/)
 
+July 28th [Is ChatGPT’s ‘evil twin’ FraudGPT itself a scam?](https://www.fastcompany.com/90929870/is-chatgpts-evil-twin-fraudgpt-itself-a-scam) analysis describes capabilities to generate malware as "“This is pretty basic—like, this is something that your average high schooler could write. You don’t need a WormGPT to write this.”
+
 August 2023 Mandiant reports (24-00002657) that APT43 "was observed purchasing a WormGPT subscription with Bitcoin."
+
+August 1st https://techcrunch.com/2023/08/01/theres-no-reason-to-panic-over-wormgpt/?guccounter=1&guce_referrer=aHR0cHM6Ly9tYWx3YXJlLm5ld3Mv&guce_referrer_sig=AQAAAFizToIaEvu3abscT3Wc7P3dKnZSxkUtAVG2sBG-ZuRfxXTTPCHQ1XWJYz6fuK7-LDppET-GOH8RmC3g2o64BeaXWu1vWpq8MpXXUytXT-sbfL_jy6c09Qj7OiVTFEqsTKc7DIDrp3Qr3iK2CuPScnbO9OzC8_z1jbewedUF8P4h "It’s more or less correct, but fairly basic in its construction, and similar to the cobbled-together malware scripts that already exist on the web...Not to mention, as one WormGPT user writes on a dark web forum, that the LLM is “broken most of the time” and unable to generate “simple stuff.”
 
 August 8th, 2023 Krebs did an excellent article on this:  [Meet the Brains Behind the Malware-Friendly AI Chat Service ‘WormGPT’ – Krebs on Security](https://krebsonsecurity.com/2023/08/meet-the-brains-behind-the-malware-friendly-ai-chat-service-wormgpt/) which basically revealed that this user appears to be Rafael Morais from Porto, a coastal city in Portugal.
 
