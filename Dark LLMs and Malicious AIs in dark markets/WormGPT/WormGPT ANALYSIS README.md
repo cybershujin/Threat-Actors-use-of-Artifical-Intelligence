@@ -6,7 +6,7 @@ July 1st, 2023 user "Last" asks questions about LLMs that imply they were traini
 
 Notably prior to this post Last had been selling "Artic Stealer" which is a data stealing trojan and keystroke logger, as well as DCRat (another information stealer). This makes this actor to be the most reputable and clearly demonstrated expertise that seems to add additional credibility to the claimed capabilities of WormGPT.
 
-July SlashNext [WormGPT - The Generative AI Tool Cybercriminals Are Using to Launch BEC Attacks | SlashNext](https://slashnext.com/blog/wormgpt-the-generative-ai-tool-cybercriminals-are-using-to-launch-business-email-compromise-attacks/)
+July 7th WormGPT is advertised - SlashNext [WormGPT - The Generative AI Tool Cybercriminals Are Using to Launch BEC Attacks | SlashNext](https://slashnext.com/blog/wormgpt-the-generative-ai-tool-cybercriminals-are-using-to-launch-business-email-compromise-attacks/)
 
 August 2023 Mandiant reports (24-00002657) that APT43 "was observed purchasing a WormGPT subscription with Bitcoin."
 
