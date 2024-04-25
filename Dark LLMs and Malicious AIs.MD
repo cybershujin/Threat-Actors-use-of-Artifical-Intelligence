@@ -69,6 +69,7 @@ You can see screenshots and other collected data in the [folder here](https://gi
 | Dark Jarvis | unknown| unknown| unknown| 
 | DarkGPT | [Link](https://github.com/luijait/DarkGPT) | "DarkGPT is an artificial intelligence assistant based on GPT-4-200K designed to perform queries on leaked databases." from bhf[.]ee forums post "Designed to run queries against filtered databases, thereby providing an artificial intelligence assistant that can be useful in your traditional OSINT processes." | ComingSoon |
 | Red Reaper | [link](https://www.cybermongol.ca/frontier-research/red-reaper-building-an-ai-espionage-agent) | Built by researchers, this is reportedly an "AI Espionage agent". Please see link to the research documentation for exploration of training set and capabilities | ComingSoon |
+| PoisionGPT | [link](https://kpmg.com/us/en/articles/2024/navigating-adversarial-ai-landscape.html) | PoisonGPT5 – Introduced in late 2023, cyber criminals are also using GenAI against itself. With techniques like this, criminals can poison the supply chain with a malicious model. As reported, researchers at Mithril Security modified an open-source LLM to spread misinformation. | ComingSoon |
 
 # Open Models
 ## The following is provided for research purposes ONLY.
