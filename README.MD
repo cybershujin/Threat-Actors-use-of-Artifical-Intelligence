@@ -10,6 +10,11 @@ There have been relatively few individuals on criminal forums (Breachedforums[.]
 
 There has been secondary effect studies such as the significant increase observed in phishing since ChatGPT became widely available, reported as 1,265% increase between November 2022 to Jan 2023 by [SlashNext](https://www.prnewswire.com/news-releases/slashnexts-2023-state-of-phishing-report-reveals-a-1-265-increase-in-phishing-emails-since-the-launch-of-chatgpt-in-november-2022--signaling-a-new-era-of-cybercrime-fueled-by-generative-ai-301971557.html). However, Slashnext and many other reports authored in this area are from vendors offering solutions in these security spaces and thus should be examined accordingly for bias.
 
+[Update 5/14/2024] I wanted to call out some excellent reporting by [Trend Micro](https://www.trendmicro.com/vinfo/gb/security/news/cybercrime-and-digital-threats/back-to-the-hype-an-update-on-how-cybercriminals-are-using-genai) which covers a lot of the concepts things in both of my pages, though less indepth. Their findings are:<br><br>
+- Adoption rates of AI technologies among criminals lag behind the rates of their industry counterparts because of the evolving nature of cybercrime.
+- Compared to last year, criminals seem to have abandoned any attempt at training real criminal large language models (LLMs). Instead, they are jailbreaking existing ones.
+- We are finally seeing the emergence of actual criminal deepfake services, with some bypassing user verification used in financial services.
+
 Generally speaking, most popular and widely accessible AIs and LLMs have significant safeguards so they are designed not to add or enable malicious or criminal activities. However, this requires "jailbreaking" or otherwise "attacking" the AI/LLM itself which is not covered here, but is on my [other repo](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity).
 
 **Scope**
