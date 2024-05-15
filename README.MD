@@ -14,6 +14,10 @@ There has been secondary effect studies such as the significant increase observe
 - Adoption rates of AI technologies among criminals lag behind the rates of their industry counterparts because of the evolving nature of cybercrime.
 - Compared to last year, criminals seem to have abandoned any attempt at training real criminal large language models (LLMs). Instead, they are jailbreaking existing ones.
 - We are finally seeing the emergence of actual criminal deepfake services, with some bypassing user verification used in financial services.
+[Update 5/15/2024] [Verizon DBIR report for 2024](https://github.com/cybershujin/Threat-Actors-use-of-Artifical-Intelligence/blob/main/2024-dbir-data-breach-investigations-report.pdf) has a small, but well analyzed section about threat actor interest in AI:<br><br>
+- Text analysis of criminal forums regarding AI alongside terms such as malware, phishing and vulnerability shows very little interest, and in fact most posts are about selling account access
+- Phishing, malware and ransomware effectiveness analysis indicates there is not a pressing need for AI to be sucessful as a malicious actor
+- The one large advancement that appears to be leveraged by threat actors is the use of deep fake technology
 
 Generally speaking, most popular and widely accessible AIs and LLMs have significant safeguards so they are designed not to add or enable malicious or criminal activities. However, this requires "jailbreaking" or otherwise "attacking" the AI/LLM itself which is not covered here, but is on my [other repo](https://github.com/cybershujin/AI-and-ML-for-Cybersecurity).
 
