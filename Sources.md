@@ -33,6 +33,7 @@ This is *not* for:
 |June | Anthropic | [What we learned mapping a year's worth of AI-enabled cyber threats (MITRE ATT&CK mapping)](https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack) |
 
 |July | Kaspersky | [Armored Likho's new weapon: BusySnake Stealer](https://securelist.com/armored-likho-apt-with-busysnake-stealer/120292/) |
+|July | Sysdig | [JADEPUFFER: Agentic ransomware for automated database extortion](https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion) |
 
 
 ## 2025 Reports
