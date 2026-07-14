@@ -19,6 +19,32 @@ This is *not* for:
 
 ## Sources for the above list
 
+## 2026 Reports
+
+|Month               | Org               | Link           |
+| ------------------ | -------------- | ------------------------------------------|
+|Feburary | Google GTIG | [GTIG AI Threat Tracker: Distillation, Experimentation, and (Continued) Integration of AI for Adversarial Use](https://cloud.google.com/blog/topics/threat-intelligence/distillation-experimentation-integration-ai-adversarial-use) |
+|Feburary | Google GTIG | [UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering](https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering) |
+|Feburary | OpenAI | [Disrupting malicious uses of AI (two-year retrospective)](https://openai.com/index/disrupting-malicious-ai-uses/) |
+|Feburary | CrowdStrike | [2026 Global Threat Report](https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-global-threat-report-findings/) |
+|March | Microsoft | [AI as tradecraft: How threat actors operationalize AI](https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/) |
+|July | Kaspersky | [Armored Likho's new weapon: BusySnake Stealer](https://securelist.com/armored-likho-apt-with-busysnake-stealer/120292/) |
+
+
+## 2025 Reports
+
+|Month               | Org               | Link           |
+| ------------------ | -------------- | ------------------------------------------|
+|August | Anthropic | [Detecting and countering misuse of AI: August 2025](https://www.anthropic.com/news/detecting-countering-misuse-aug-2025) (+ [Threat Intelligence Report PDF](https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf)) |
+|August | CrowdStrike | [2025 Threat Hunting Report: AI Becomes a Weapon and a Target](https://www.crowdstrike.com/en-us/blog/crowdstrike-2025-threat-hunting-report-ai-weapon-target/) |
+|August | Proofpoint | [Cybercriminals Abuse AI Website Creation App For Phishing](https://www.proofpoint.com/us/blog/threat-insight/cybercriminals-abuse-ai-website-creation-app-phishing) |
+|September | Kaspersky | [A new RevengeHotels campaign targets Latin America with AI and VenomRAT](https://securelist.com/revengehotels-attacks-with-ai-and-venomrat-across-latin-america/117493/) |
+|October | OpenAI | [Disrupting malicious uses of AI: October 2025](https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025/) |
+|October | Microsoft | [Microsoft Digital Defense Report 2025](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/microsoft-digital-defense-report-2025) |
+|November | Google GTIG | [GTIG AI Threat Tracker: Advances in Threat Actor Usage of AI Tools](https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools) |
+|December | FBI / IC3 | [Senior U.S. Officials Continue to be Impersonated in Malicious Messaging Campaign (PSA251219)](https://www.ic3.gov/PSA/2025/PSA251219) |
+|December | SentinelOne (SentinelLABS) | [LLMs & Ransomware: An Operational Accelerator, Not a Revolution](https://www.sentinelone.com/labs/llms-ransomware-an-operational-accelerator-not-a-revolution/) |
+
 ## 2024 Reports
 
 |Month               | Org               | Link           |
