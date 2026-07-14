@@ -28,6 +28,10 @@ This is *not* for:
 |Feburary | OpenAI | [Disrupting malicious uses of AI (two-year retrospective)](https://openai.com/index/disrupting-malicious-ai-uses/) |
 |Feburary | CrowdStrike | [2026 Global Threat Report](https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-global-threat-report-findings/) |
 |March | Microsoft | [AI as tradecraft: How threat actors operationalize AI](https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/) |
+|April | Microsoft | [Threat actor abuse of AI accelerates from tool to cyberattack surface](https://www.microsoft.com/en-us/security/blog/2026/04/02/threat-actor-abuse-of-ai-accelerates-from-tool-to-cyberattack-surface/) |
+|May | Google GTIG | [GTIG AI Threat Tracker: Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access) |
+|June | Anthropic | [What we learned mapping a year's worth of AI-enabled cyber threats (MITRE ATT&CK mapping)](https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack) |
+
 |July | Kaspersky | [Armored Likho's new weapon: BusySnake Stealer](https://securelist.com/armored-likho-apt-with-busysnake-stealer/120292/) |
 
 
@@ -44,6 +48,7 @@ This is *not* for:
 |November | Google GTIG | [GTIG AI Threat Tracker: Advances in Threat Actor Usage of AI Tools](https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools) |
 |December | FBI / IC3 | [Senior U.S. Officials Continue to be Impersonated in Malicious Messaging Campaign (PSA251219)](https://www.ic3.gov/PSA/2025/PSA251219) |
 |December | SentinelOne (SentinelLABS) | [LLMs & Ransomware: An Operational Accelerator, Not a Revolution](https://www.sentinelone.com/labs/llms-ransomware-an-operational-accelerator-not-a-revolution/) |
+|December | Amazon | [Amazon Threat Intelligence: DPRK IT worker operations use generative AI and deepfakes](https://aws.amazon.com/blogs/security/) |
 
 ## 2024 Reports
 
