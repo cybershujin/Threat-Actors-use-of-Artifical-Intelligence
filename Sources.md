@@ -36,6 +36,12 @@ This is *not* for:
 |July | Sysdig | [JADEPUFFER: Agentic ransomware for automated database extortion](https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion) |
 
 
+|July | Unit 42 (Palo Alto Networks) | [TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Code](https://unit42.paloaltonetworks.com/tuxbot-v3-evolution-iot-botnet/) |
+|July | Trend Micro (TrendAI, via The Register) | ['The bots are alive!' Jailbroken Gemini spun up new C2 server for Russian fraudster in just 6 minutes](https://www.theregister.com/research/2026/07/14/the-bots-are-alive-jailbroken-gemini-spun-up-new-c2-server-for-russian-fraudster-in-just-6-minutes/5270131) |
+|July | Hunt.io | [Chinese Operators, Claude, DeepSeek Government Intrusion](https://hunt.io/blog/chinese-operators-claude-deepseek-government-intrusion) |
+|July | Sygnia | [Inside an AI-Assisted Cloud Attack](https://www.sygnia.co/threat-reports/inside-an-ai-assisted-cloud-attack/) |
+
+
 ## 2025 Reports
 
 |Month               | Org               | Link           |
