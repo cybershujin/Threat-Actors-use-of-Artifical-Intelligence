@@ -315,7 +315,7 @@
    "brief": "Prompted Gemini with an expert-cybersecurity persona to automate vulnerability analysis and generate targeted testing plans — in one case trialing Hexstrike MCP tooling and directing the model to analyze RCE, WAF-bypass, and SQL-injection results against specific US targets. GTIG",
    "ttp_md": "**LLM-assisted vulnerability research** T1595 - Active Scanning<br><br>T1587.004 - Develop Capabilities: Exploits<br><br>Agentic/MCP-assisted offensive testing",
    "reported": "Feb 2026",
-   "activity": "Oct 2025 – Dec 2025 (report – wide observation window)"
+   "activity": "Oct 2025 – Dec 2025 (report-wide observation window)"
   },
   {
    "table": "main",
@@ -342,7 +342,7 @@
    "brief": "Misused Gemini for targeted intelligence gathering — hunting sensitive account credentials and email addresses — after which GTIG observed those same accounts hit in a phishing campaign against Ukraine and the defense sector. GTIG",
    "ttp_md": "**LLM-informed reconnaissance** T1589 - Gather Victim Identity Information<br><br>**LLM-supported social engineering** T1566 - Phishing",
    "reported": "Feb 2026",
-   "activity": "Q4 2025 (Oct – Dec 2025)"
+   "activity": "Q4 2025 (Oct-Dec 2025)"
   },
   {
    "table": "main",
@@ -396,7 +396,7 @@
    "brief": "Summer-2025 campaigns against Brazilian and Spanish-speaking hotels in which a significant portion of the initial-infector and downloader code appears LLM-generated (clean structure, placeholder variables, verbose per-action comments), delivering VenomRAT (HVNC, stealer, reverse proxy, UAC bypass). *Analyst note: LLM authorship inferred from code style, not captured model logs.* Kaspersky",
    "ttp_md": "**LLM-enhanced scripting techniques** T1059 - Command and Scripting Interpreter<br><br>**LLM-aided development** T1587.001 - Develop Capabilities: Malware<br><br>T1566.001 - Spearphishing Attachment",
    "reported": "Sep 2025",
-   "activity": "Summer 2025 (Jun – Aug 2025)"
+   "activity": "Summer 2025 (Jun-Aug 2025)"
   },
   {
    "table": "main",
