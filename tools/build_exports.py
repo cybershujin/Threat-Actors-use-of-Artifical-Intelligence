@@ -119,6 +119,20 @@ def reported_iso(rep):
     m = re.search(r"\b(\d{4})\b", rep)
     return f"{int(m.group(1)):04d}-01-01T00:00:00.000Z" if m else EPOCH
 
+def _min_ym(s):
+    """Earliest YYYYMM integer found in s (Mon YYYY or bare YYYY), or None."""
+    keys = []
+    for m in re.finditer(r"([A-Z][a-z]{2})\s+(\d{4})", s or ""):
+        keys.append(int(m.group(2)) * 100 + MON.get(m.group(1), 1))
+    for m in re.finditer(r"\b(\d{4})\b", s or ""):
+        y = int(m.group(1))
+        if not any(k // 100 == y for k in keys): keys.append(y * 100 + 1)
+    return min(keys) if keys else None
+
+def date_key(v):
+    """Numeric sort key (YYYYMM) for a date/range cell; None for Unknown/empty (sorts last)."""
+    return None if (not v or v.strip().lower() == "unknown") else _min_ym(v)
+
 # ---------- build structured records ----------
 def build_records():
     txt = read("README.MD"); lines = txt.split("\n")
@@ -218,6 +232,7 @@ def build_html(recs):
     data = []
     for r in recs:
         data.append({"name":r["name"],"akas":r["akas"],"reported":r["reported"],"activity":r["activity"],
+                     "rsort":date_key(r["reported"]),"asort":date_key(r["activity"]),
                      "brief":r["brief"],"ttp":clean(r["ttp_md"]),"table":r["table"],
                      "links":[{"t":t or org_for(u),"u":u} for t,u in r["links"] if u.startswith("http")][:4]})
     payload = json.dumps(data, ensure_ascii=False)
@@ -273,7 +288,13 @@ function dcell(v){return v&&v.toLowerCase()!=="unknown"?`<span class=date>${v}</
 function render(){
  const q=document.getElementById("q").value.toLowerCase(),tf=document.getElementById("tbl").value;
  let rows=DATA.filter(d=>(!tf||d.table===tf)&&(!q||JSON.stringify(d).toLowerCase().includes(q)));
- rows.sort((a,b)=>{let x=(a[sortK]||"")+"",y=(b[sortK]||"")+"";return x.localeCompare(y)*sortDir;});
+ rows.sort((a,b)=>{
+   if(sortK==="reported"||sortK==="activity"){
+     const ka=sortK==="reported"?a.rsort:a.asort, kb=sortK==="reported"?b.rsort:b.asort;
+     if(ka==null&&kb==null)return 0; if(ka==null)return 1; if(kb==null)return -1;  // Unknown always last
+     return (ka-kb)*sortDir;
+   }
+   return ((a[sortK]||"")+"").localeCompare((b[sortK]||"")+"")*sortDir;});
  head();tb.innerHTML="";
  for(const d of rows){const tr=document.createElement("tr");let h="";
   for(const [k,l] of COLS){if(!vis[k])continue;
