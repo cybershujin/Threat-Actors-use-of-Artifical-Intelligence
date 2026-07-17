@@ -262,6 +262,7 @@ td.name{font-weight:600;white-space:nowrap}.aka,.ttp{color:var(--mut);font-size:
 .pill{display:inline-block;background:#0f1a1e;border:1px solid #17323a;color:var(--accent);border-radius:20px;padding:1px 8px;font-size:11px;margin-right:4px}
 a.src{color:var(--accent);text-decoration:none;font-size:12px;display:block}
 footer{padding:16px 20px;color:var(--mut);font-size:12px;border-top:1px solid var(--line)}
+footer a{color:var(--accent);text-decoration:none}
 </style></head><body>
 <header><h1>Threat Actors' Use of Artificial Intelligence — Tracker</h1>
 <div class=sub>Confirmed real-world threat-actor use of AI/LLMs, mapped to TTPs. Source of truth: the
@@ -275,7 +276,7 @@ footer{padding:16px 20px;color:var(--mut);font-size:12px;border-top:1px solid va
 <span class=cols id=cols></span>
 </div>
 <div class=wrap><table id=t><thead><tr id=hr></tr></thead><tbody id=tb></tbody></table></div>
-<footer>Generated from README.MD · __N__ entries · updated automatically on each commit.</footer>
+<footer>Maintained by <a href="https://cybershujin.com" target=_blank rel=noopener>cybershujin.com</a> · <a href="https://www.linkedin.com/in/cybershujin" target=_blank rel=noopener>LinkedIn @cybershujin</a><br>Generated from README.MD · __N__ entries · auto-updated on each commit.</footer>
 <script>
 const DATA=__DATA__;
 const COLS=[["name","Name"],["akas","AKAs"],["reported","Reported"],["activity","Activity Span"],["brief","Brief"],["ttp","TTP"],["links","Sources"]];
