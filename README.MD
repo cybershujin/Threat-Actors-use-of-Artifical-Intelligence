@@ -4,6 +4,8 @@
 
 This project was featured in a Starlog Deep Dive.
 
+**📊 [Browse the interactive, searchable table →](https://cybershujin.github.io/Threat-Actors-use-of-Artifical-Intelligence/)** (sortable · filterable · mobile-friendly) · **[⬇ STIX 2.1 bundle](https://cybershujin.github.io/Threat-Actors-use-of-Artifical-Intelligence/stix/threat-actors-ai-stix2.1.json)** for CTI platforms.
+
 This Github is an attempt to organize known use of artificial intelligence by cyber threat actors and to map and track those techniques. In this scenario, we are focusing on cyber threat attacks that are being facilitated in some way by threat actors using artificial intelligence. This does not include political influence campaigns or mis/dis/mal information campaigns. It does include some fraud related cases, but I attempt to keep the focus on fraud activities that we would see in traditional campaigns but enhanced with AI.
 
 It is worth specifically stating that in many cases defenders cannot confirm whether a threat actor used AI unless: (a) the reporting organization is looking at the use of their own AI tools such as Microsoft and OpenAI's reporting, Anthropic, etc or (b) the actor decides to use AI tools available on the already-compromised endpoint. For this reason many reports on attacks or campaigns using AI are, when you read carefully, actually done by researchers. For this reason, I am remaining focused in this project *only* on what confirmed reports we have on threat actor's actual use.
