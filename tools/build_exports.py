@@ -268,7 +268,8 @@ footer a{color:var(--accent);text-decoration:none}
 <div class=sub>Confirmed real-world threat-actor use of AI/LLMs, mapped to TTPs. Source of truth: the
 <a href="README.MD">README table</a> · <a href="Sources.md">Sources</a> ·
 <a href="stix/threat-actors-ai-stix2.1.json">⬇ STIX 2.1 bundle</a> ·
-<a href="tracker.json">JSON</a></div></header>
+<a href="tracker.json">JSON</a> · <a href="https://cybershujin.com" target=_blank rel=noopener>cybershujin.com</a> ·
+<a href="https://www.linkedin.com/in/cybershujin" target=_blank rel=noopener>LinkedIn</a></div></header>
 <div class=bar>
 <input id=q type=search placeholder="Search actors, AKAs, TTPs, briefs…">
 <select id=tbl><option value="">All tables</option><option value=main>Main</option><option value=deepfake>Deepfake</option></select>
