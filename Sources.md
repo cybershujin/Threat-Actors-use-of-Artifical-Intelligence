@@ -40,6 +40,7 @@ This is *not* for:
 |July | Trend Micro (TrendAI, via The Register) | ['The bots are alive!' Jailbroken Gemini spun up new C2 server for Russian fraudster in just 6 minutes](https://www.theregister.com/research/2026/07/14/the-bots-are-alive-jailbroken-gemini-spun-up-new-c2-server-for-russian-fraudster-in-just-6-minutes/5270131) |
 |July | Hunt.io | [Chinese Operators, Claude, DeepSeek Government Intrusion](https://hunt.io/blog/chinese-operators-claude-deepseek-government-intrusion) |
 |July | Sygnia | [Inside an AI-Assisted Cloud Attack](https://www.sygnia.co/threat-reports/inside-an-ai-assisted-cloud-attack/) |
+|July | Hugging Face | [Security incident, July 2026](https://huggingface.co/blog/security-incident-july-2026) |
 
 
 ## 2025 Reports
