@@ -41,6 +41,9 @@ This is *not* for:
 |July | Hunt.io | [Chinese Operators, Claude, DeepSeek Government Intrusion](https://hunt.io/blog/chinese-operators-claude-deepseek-government-intrusion) |
 |July | Sygnia | [Inside an AI-Assisted Cloud Attack](https://www.sygnia.co/threat-reports/inside-an-ai-assisted-cloud-attack/) |
 |July | Hugging Face | [Security incident, July 2026](https://huggingface.co/blog/security-incident-july-2026) |
+|July | CISA / FBI / NSA (joint, international partners) | [AA26-204A: Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a) |
+|July | Huntress | [Inside FakeAgent: How a Claude Desktop Malvertising Campaign Hit 29 Organizations with SectopRAT](https://www.huntress.com/blog/fakeagent-claude-desktop-malvertising-ends-in-dotnet-rat) |
+|July | FBI / IC3 | [FBI Warns of Scammers Impersonating the IC3 (I-072026-PSA)](https://www.ic3.gov/PSA/2026/PSA260720) |
 
 
 ## 2025 Reports
