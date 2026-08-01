@@ -1166,6 +1166,15 @@
   {
    "type": "identity",
    "spec_version": "2.1",
+   "id": "identity--74a279cc-1780-581f-9563-27861902cedf",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "huggingface.co",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
    "id": "identity--7d3f5cdd-d1e9-5a11-99c5-644cb799c7f8",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -2280,6 +2289,27 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
      "description": "GTIG"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "UnSub (autonomous AI agent framework) — Hugging Face",
+   "description": "Hugging Face disclosed a July 2026 intrusion of its internal infrastructure that its own incident response assessed was run by an autonomous agent framework (built on an agentic security-research harness; the underlying LLM was not identified). Initial access came via malicious datasets exploiting two code-execution flaws in the dataset-processing pipeline — a remote-code dataset loader and template injection in dataset configuration — after which the agent executed code on processing workers, escalated to node-level access, harvested several service credentials, and moved laterally across internal clusters over a weekend. Hugging Face logged 17,000+ recorded agent actions across a swarm of short-lived sandboxes, with self-migrating command-and-control staged on public services. A limited set of internal datasets was accessed; Hugging Face found no evidence of tampering with public models, datasets, or Spaces, and verified the software supply chain clean. *Analyst note: this is the victim's own IR disclosure; no threat actor is named or attributed and the specific model is unidentified — the agentic/AI-driven characterization is Hugging Face's own.* Hugging Face",
+   "aliases": [
+    "UnSub"
+   ],
+   "first_seen": "2026-07-01T00:00:00.000Z",
+   "last_seen": "2026-07-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "huggingface.co",
+     "url": "https://huggingface.co/blog/security-incident-july-2026",
+     "description": "Hugging Face"
     }
    ]
   },
@@ -4084,6 +4114,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--3e8f9166-99cb-5b4c-bc6c-f6fdc56f7d02",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--40194a71-59a6-5b8f-a1c4-c08c9ea5cb8e",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -4674,6 +4714,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6691e078-cbf3-5c51-8580-f98886b528fb",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
+   "target_ref": "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--6989bde7-ec36-5792-b26d-b610d06f0ac4",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -5150,6 +5200,26 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--924ef732-cd6c-558e-a3cc-b7299d2a6e8a",
    "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--93b5916a-dcc8-56bc-89ff-2726bb50027b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--9403298c-7cdd-5beb-b087-8cc400937825",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
+   "target_ref": "attack-pattern--81dab0da-3b91-576b-a330-f420e181cf9b"
   },
   {
    "type": "relationship",
@@ -6460,6 +6530,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--021d9d4f-1106-519c-97f0-20b3a2897983",
    "target_ref": "attack-pattern--9dec1bf5-72b1-537d-9817-d76b33174159"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--ef35af7f-f896-536e-b666-8557d3c7e0d7",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
+   "target_ref": "attack-pattern--37453214-e182-5265-af3c-3db66b68caba"
   },
   {
    "type": "relationship",
@@ -7846,6 +7926,30 @@
     {
      "source_name": "securityaffairs.com",
      "url": "https://securityaffairs.com/195474/ai/claude-code-and-deepseek-powered-chinese-cyber-espionage-campaign.html"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--f82fa0b5-f86f-5868-995e-32dc217b0228",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "Hugging Face — Security incident, July 2026",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--74a279cc-1780-581f-9563-27861902cedf",
+   "object_refs": [
+    "attack-pattern--37453214-e182-5265-af3c-3db66b68caba",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--81dab0da-3b91-576b-a330-f420e181cf9b",
+    "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1"
+   ],
+   "external_references": [
+    {
+     "source_name": "huggingface.co",
+     "url": "https://huggingface.co/blog/security-incident-july-2026"
     }
    ]
   },

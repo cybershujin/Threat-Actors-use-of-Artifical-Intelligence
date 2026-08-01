@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 79,
+ "count": 80,
  "entries": [
   {
    "table": "main",
@@ -613,6 +613,15 @@
    "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (parallel, cross-identity)<br><br>T1552 - Unsecured Credentials<br><br>T1136 - Create Account (IAM users)<br><br>T1567 - Exfiltration Over Web Service (RDS data)",
    "reported": "Jun 2026",
    "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (autonomous AI agent framework) — Hugging Face",
+   "akas": "UnSub",
+   "brief": "Hugging Face disclosed a July 2026 intrusion of its internal infrastructure that its own incident response assessed was run by an autonomous agent framework (built on an agentic security-research harness; the underlying LLM was not identified). Initial access came via malicious datasets exploiting two code-execution flaws in the dataset-processing pipeline — a remote-code dataset loader and template injection in dataset configuration — after which the agent executed code on processing workers, escalated to node-level access, harvested several service credentials, and moved laterally across internal clusters over a weekend. Hugging Face logged 17,000+ recorded agent actions across a swarm of short-lived sandboxes, with self-migrating command-and-control staged on public services. A limited set of internal datasets was accessed; Hugging Face found no evidence of tampering with public models, datasets, or Spaces, and verified the software supply chain clean. *Analyst note: this is the victim's own IR disclosure; no threat actor is named or attributed and the specific model is unidentified — the agentic/AI-driven characterization is Hugging Face's own.* Hugging Face",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (autonomous agent, 17,000+ actions across ephemeral sandboxes)<br><br>T1190 - Exploit Public-Facing Application (dataset-loader RCE + template injection)<br><br>T1552 - Unsecured Credentials (service credentials harvested)<br><br>T1102 - Web Service (self-migrating C2 on public services)",
+   "reported": "Jul 2026",
+   "activity": "Jul 2026"
   },
   {
    "table": "deepfake",
