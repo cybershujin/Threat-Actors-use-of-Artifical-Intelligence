@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 80,
+ "count": 83,
  "entries": [
   {
    "table": "main",
@@ -624,6 +624,24 @@
    "activity": "Jul 2026"
   },
   {
+   "table": "main",
+   "name": "LAUNDRY BEAR",
+   "akas": "Void Blizzard (Microsoft); CL-STA-1114 (Unit 42); TA488 (Proofpoint)",
+   "brief": "A joint advisory from CISA, FBI and NSA with international partners (AA26-204A) attributes to the Russian state-supported actor LAUNDRY BEAR a phishing campaign against users of the Zimbra Collaboration Suite, targeting government, defense, energy, technology, education, media, law enforcement and non-governmental organizations since at least July 2025. The actor weaponized CVE-2025-66376, a cross-site scripting flaw caused by insufficient sanitization of CSS `@import` directives in message content, so that simply opening a crafted phishing email caused Zimbra's own webmail interface to execute attacker-supplied JavaScript inside the victim's authenticated session. Harvested material — up to 90 days of email history per victim, the organization's internal directory, live two-factor authentication tokens and any application passcode generated after compromise — was exfiltrated to \"Flowerbed\", a container-based collection framework running on short-lived virtual private servers. The advisory assesses that AI tools were used to help develop the Flowerbed codebase. *Analyst note: government joint advisory (trusted tier); the AI-assistance finding is an assessment stated by the authoring agencies, not a recovered artifact. Microsoft separately assesses the actor as active since at least April 2024 — the span below reflects the campaign window described in this advisory.*",
+   "ttp_md": "**LLM-aided development** T1588.007 - Obtain Capabilities: Artificial Intelligence (AI tooling assessed as used to build the Flowerbed framework)<br><br>T1587.001 - Develop Capabilities: Malware (Flowerbed collection framework)<br><br>T1566 - Phishing (crafted Zimbra phishing mail)<br><br>T1203 - Exploitation for Client Execution (CVE-2025-66376 XSS executing on message open)<br><br>T1114.002 - Email Collection: Remote Email Collection (90 days of mail per victim)",
+   "reported": "Jul 2026",
+   "activity": "Jul 2025 – Jul 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (FakeAgent) — Huntress",
+   "akas": "UnSub",
+   "brief": "Huntress documented \"FakeAgent\", a malvertising campaign that abused a public Claude Artifact hosted on Anthropic's own claude.ai domain as the delivery lure. Users searching Bing for the Claude Desktop app were served a sponsored advertisement pointing at a legitimate claude.ai URL; that URL resolved to an attacker-built Claude Artifact crafted to imitate the official Claude Desktop download page, which redirected victims to attacker-controlled infrastructure serving a fake `ClaudeDesktop.exe`. The payload was SectopRAT, a .NET remote-access trojan that steals credentials, browser data, payment-card details and files, and which retrieved its command-and-control details from data staged in the Ethereum blockchain as an anti-takedown and anti-analysis technique. The malicious artifact was downloaded roughly 7,100 times, and Huntress observed impact across 29 organizations before Anthropic removed it on 22 July 2026 following Huntress's report. *Analyst note: vendor report (Huntress, trusted tier). Included because the actor used a generative-AI app builder to produce the malicious lure page itself — the attack infrastructure was AI-generated — rather than merely abusing AI-branded hosting.*",
+   "ttp_md": "**AI-generated attack infrastructure (app-builder abuse)** T1583.001 - Acquire Infrastructure: Domains (lure served from the legitimate claude.ai domain via a public Artifact)<br><br>T1608 - Stage Capabilities (fake installer page staged as a Claude Artifact)<br><br>T1583.008 - Acquire Infrastructure: Malvertising (sponsored Bing ads)<br><br>T1204.002 - User Execution: Malicious File (trojanized ClaudeDesktop.exe)<br><br>T1102 - Web Service (C2 details staged on the Ethereum blockchain)",
+   "reported": "Jul 2026",
+   "activity": "Jul 2026"
+  },
+  {
    "table": "deepfake",
    "name": "Multiple UnSubs",
    "akas": "",
@@ -721,6 +739,15 @@
    "ttp_md": "**DeepFake for Impersonation**<br><br>(GenAI image + text; romance fraud)",
    "reported": "Aug 2025",
    "activity": "2025"
+  },
+  {
+   "table": "deepfake",
+   "name": "Multiple UnSub — FBI/IC3",
+   "akas": "",
+   "brief": "FBI public service announcement I-072026-PSA warns that criminals are creating deepfake videos depicting senior FBI leaders and standing up counterfeit IC3 websites that mimic the appearance of the real ic3.gov portal, in order to re-target people who have already fallen victim to fraud (\"double-dip\" recovery scams). The spoofed portals present simplified complaint forms that harvest name, phone number, email address, scam type and estimated financial loss, while the deepfaked officials lend credibility to false promises of fund recovery. *Analyst note: distinct from the 2023–Dec 2025 FBI/IC3 row above, which covers AI voice messages impersonating senior US officials; this campaign impersonates the FBI/IC3 themselves to re-victimize prior fraud victims. The PSA describes ongoing activity and gives no explicit start date.*",
+   "ttp_md": "**DeepFake for Impersonation**<br><br>T1656 - Impersonation<br><br>T1583.001 - Acquire Infrastructure: Domains (counterfeit IC3 portals)",
+   "reported": "Jul 2026",
+   "activity": "Jul 2026"
   }
  ]
 }

@@ -465,6 +465,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Obtain Capabilities: Artificial Intelligence (AI tooling assessed as used to build the Flowerbed framework)",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1588.007",
+     "url": "https://attack.mitre.org/techniques/T1588/007/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--7dad88c1-4fef-5203-ab13-dbd89f589cf1",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -659,6 +674,21 @@
      "source_name": "mitre-attack",
      "external_id": "T1585",
      "url": "https://attack.mitre.org/techniques/T1585/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--9ec739c6-1f79-5d3e-a3da-26869ec0c65d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Email Collection: Remote Email Collection (90 days of mail per victim)",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1114.002",
+     "url": "https://attack.mitre.org/techniques/T1114/002/"
     }
    ]
   },
@@ -910,6 +940,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--d2f1ff5a-1600-5c7e-941b-c3076dcc6213",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "User Execution: Malicious File (trojanized ClaudeDesktop.exe)",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1204.002",
+     "url": "https://attack.mitre.org/techniques/T1204/002/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--d7bb0b35-0b18-5c5d-9fa0-40e794aa62c2",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1030,6 +1075,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--e9046859-778e-552b-9d7c-f863fec201e5",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Exploitation for Client Execution (CVE-2025-66376 XSS executing on message open)",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1203",
+     "url": "https://attack.mitre.org/techniques/T1203/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1064,6 +1124,21 @@
      "source_name": "mitre-attack",
      "external_id": "T1557",
      "url": "https://attack.mitre.org/techniques/T1557/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--f2326aca-511d-505a-a5c4-19b88913a583",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Acquire Infrastructure: Malvertising (sponsored Bing ads)",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1583.008",
+     "url": "https://attack.mitre.org/techniques/T1583/008/"
     }
    ]
   },
@@ -1116,6 +1191,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "CrowdStrike",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--36222262-037b-5ca3-913c-3ec913ced07a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Huntress",
    "identity_class": "organization"
   },
   {
@@ -1377,6 +1461,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "JFrog",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--f94c0d52-4d3f-5aba-b8d1-a6851e0054b1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "cisa.gov",
    "identity_class": "organization"
   },
   {
@@ -1764,6 +1857,32 @@
      "source_name": "JFrog",
      "url": "https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/",
      "description": "Source"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "LAUNDRY BEAR",
+   "description": "A joint advisory from CISA, FBI and NSA with international partners (AA26-204A) attributes to the Russian state-supported actor LAUNDRY BEAR a phishing campaign against users of the Zimbra Collaboration Suite, targeting government, defense, energy, technology, education, media, law enforcement and non-governmental organizations since at least July 2025. The actor weaponized CVE-2025-66376, a cross-site scripting flaw caused by insufficient sanitization of CSS `@import` directives in message content, so that simply opening a crafted phishing email caused Zimbra's own webmail interface to execute attacker-supplied JavaScript inside the victim's authenticated session. Harvested material — up to 90 days of email history per victim, the organization's internal directory, live two-factor authentication tokens and any application passcode generated after compromise — was exfiltrated to \"Flowerbed\", a container-based collection framework running on short-lived virtual private servers. The advisory assesses that AI tools were used to help develop the Flowerbed codebase. *Analyst note: government joint advisory (trusted tier); the AI-assistance finding is an assessment stated by the authoring agencies, not a recovered artifact. Microsoft separately assesses the actor as active since at least April 2024 — the span below reflects the campaign window described in this advisory.*",
+   "aliases": [
+    "Void Blizzard (Microsoft); CL-STA-1114 (Unit 42); TA488 (Proofpoint)"
+   ],
+   "first_seen": "2025-07-01T00:00:00.000Z",
+   "last_seen": "2026-07-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "cisa.gov",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a",
+     "description": "AA26-204A"
+    },
+    {
+     "source_name": "Symantec",
+     "url": "https://www.helpnetsecurity.com/2026/07/24/laundry-bear-zimbra-vulnerability-cve-2025-66376/",
+     "description": "CVE-2025-66376"
     }
    ]
   },
@@ -3018,6 +3137,27 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "UnSub (FakeAgent) — Huntress",
+   "description": "Huntress documented \"FakeAgent\", a malvertising campaign that abused a public Claude Artifact hosted on Anthropic's own claude.ai domain as the delivery lure. Users searching Bing for the Claude Desktop app were served a sponsored advertisement pointing at a legitimate claude.ai URL; that URL resolved to an attacker-built Claude Artifact crafted to imitate the official Claude Desktop download page, which redirected victims to attacker-controlled infrastructure serving a fake `ClaudeDesktop.exe`. The payload was SectopRAT, a .NET remote-access trojan that steals credentials, browser data, payment-card details and files, and which retrieved its command-and-control details from data staged in the Ethereum blockchain as an anti-takedown and anti-analysis technique. The malicious artifact was downloaded roughly 7,100 times, and Huntress observed impact across 29 organizations before Anthropic removed it on 22 July 2026 following Huntress's report. *Analyst note: vendor report (Huntress, trusted tier). Included because the actor used a generative-AI app builder to produce the malicious lure page itself — the attack infrastructure was AI-generated — rather than merely abusing AI-branded hosting.*",
+   "aliases": [
+    "UnSub"
+   ],
+   "first_seen": "2026-07-01T00:00:00.000Z",
+   "last_seen": "2026-07-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Huntress",
+     "url": "https://www.huntress.com/blog/fakeagent-claude-desktop-malvertising-ends-in-dotnet-rat",
+     "description": "Huntress — Inside FakeAgent: How a Claude Desktop Malvertising Campaign Hit 29 Organizations with SectopRAT"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--fab017fb-339d-5558-9cc0-c56bd2f7b152",
    "created": "2025-11-01T00:00:00.000Z",
    "modified": "2025-11-01T00:00:00.000Z",
@@ -3244,6 +3384,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--0267a2a7-4e59-5c8f-9855-79f4dada939f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--028ed5a8-fed8-5767-b510-f16f3c3bba96",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -3290,6 +3440,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--5a3b8a83-10a8-5c24-b60c-ab8aeaf11a11",
    "target_ref": "malware--136514b4-824a-5dae-bf2a-059f8c071bde"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--03bf5a06-8524-59f6-a86d-857f3fd1191b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b1687934-45a1-5e58-974f-f9e01cb00745",
+   "target_ref": "attack-pattern--a202c7f2-f85c-5e06-ab8f-f2ac9ef599cb"
   },
   {
    "type": "relationship",
@@ -4404,12 +4564,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--4e8fd741-8863-518e-85f8-48b5b8bbea44",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "target_ref": "attack-pattern--e9046859-778e-552b-9d7c-f863fec201e5"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--4efc8f7d-a14a-5e90-8d42-c6ef5f0629b4",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--19cb50fb-6288-5d25-8a4a-0e9a5431251a",
    "target_ref": "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--4efe8b03-4735-5ef4-b3f1-7f5fdde200ef",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b1687934-45a1-5e58-974f-f9e01cb00745",
+   "target_ref": "attack-pattern--db604211-edd1-5426-a3b5-0f6f5b447297"
   },
   {
    "type": "relationship",
@@ -4480,6 +4660,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--5a3b8a83-10a8-5c24-b60c-ab8aeaf11a11",
    "target_ref": "malware--caefefbd-3640-5fde-a3df-a594eaa059d3"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--580fc1b1-2712-5976-a6ad-81cc0781ab26",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "target_ref": "attack-pattern--f2326aca-511d-505a-a5c4-19b88913a583"
   },
   {
    "type": "relationship",
@@ -4630,6 +4820,26 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--c039a697-b669-5181-8db0-5f88126f28b0",
    "target_ref": "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--5efc0bfb-190a-5e8d-b5a3-1b0f71f388f6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "target_ref": "attack-pattern--d2f1ff5a-1600-5c7e-941b-c3076dcc6213"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--5f6eef77-3458-54c1-9218-1ed6adf97bc8",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "target_ref": "attack-pattern--868ff63c-98ad-5948-bc04-79e726559ba9"
   },
   {
    "type": "relationship",
@@ -5304,6 +5514,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--969ed2df-0ff6-5886-85ed-63043be46353",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "target_ref": "attack-pattern--639a6f8a-2b42-5b8f-80be-925696d4e3f4"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--96f74b17-f453-5aad-94f0-e16ff1841c4a",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -5570,6 +5790,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--297a5295-211d-51ec-bce6-f2e1d992db36",
    "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--a9f637f4-e71f-5c8b-a609-af1e49a6d3f6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "target_ref": "attack-pattern--9ec739c6-1f79-5d3e-a3da-26869ec0c65d"
   },
   {
    "type": "relationship",
@@ -5904,6 +6134,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--c2d6329b-f12e-5482-aa70-3ae5cb649046",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "target_ref": "attack-pattern--db604211-edd1-5426-a3b5-0f6f5b447297"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--c3129ec0-c873-5a4c-962e-1e1d34a4f2cb",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -6070,6 +6310,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--c039a697-b669-5181-8db0-5f88126f28b0",
    "target_ref": "attack-pattern--c55ce859-9b9b-5480-a6a4-1df044c92bf5"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--cf11b799-f532-54a3-b842-a5fbfd9702ce",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
   },
   {
    "type": "relationship",
@@ -6270,6 +6520,26 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a83337fd-c8e9-5e1d-96c3-e21f64840ce2",
    "target_ref": "attack-pattern--a2e50fce-c8f4-58ba-8e76-ddb9d31632c4"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--da9523a6-c5f2-542a-9ed3-4612dcb4210c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
+   "target_ref": "attack-pattern--37453214-e182-5265-af3c-3db66b68caba"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--dabe4b1c-54d2-5551-9d16-e062a69e386c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "target_ref": "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538"
   },
   {
    "type": "relationship",
@@ -6594,6 +6864,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--f52b4c58-3dfc-5a9e-827f-a73a91465897",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
+   "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--f57003b5-d1ab-54a8-8faf-99481aebcf86",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -6664,6 +6944,31 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--03c11c3d-ae08-5378-9ac0-90818eaffff4",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "CVE-2025-66376",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--c8f7c265-85b6-5493-b412-97e39f77ecb0",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538",
+    "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--9ec739c6-1f79-5d3e-a3da-26869ec0c65d",
+    "attack-pattern--e9046859-778e-552b-9d7c-f863fec201e5",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df"
+   ],
+   "external_references": [
+    {
+     "source_name": "Symantec",
+     "url": "https://www.helpnetsecurity.com/2026/07/24/laundry-bear-zimbra-vulnerability-cve-2025-66376/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--0a434353-2e8e-59f8-93b6-5b54e851d3d4",
    "created": "2026-07-01T00:00:00.000Z",
    "modified": "2026-07-01T00:00:00.000Z",
@@ -6681,6 +6986,28 @@
     {
      "source_name": "The Hacker News",
      "url": "https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--132e26d6-86e8-5d3c-b922-683338d98ad4",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "FBI IC3 — FBI Warns of Scammers Impersonating the IC3 (I-072026-PSA)",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--558fc8dd-c12d-5465-9c64-c96dcaaed93b",
+   "object_refs": [
+    "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba",
+    "attack-pattern--a202c7f2-f85c-5e06-ab8f-f2ac9ef599cb",
+    "attack-pattern--db604211-edd1-5426-a3b5-0f6f5b447297",
+    "intrusion-set--b1687934-45a1-5e58-974f-f9e01cb00745"
+   ],
+   "external_references": [
+    {
+     "source_name": "FBI IC3",
+     "url": "https://www.ic3.gov/PSA/2026/PSA260720"
     }
    ]
   },
@@ -6893,6 +7220,31 @@
     {
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--41a440bb-27d5-5e77-a088-6780b15bc05d",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "CISA AA26-204A — Russian State-Supported Cyber Actors Conduct Phishing Campaign Targeting Users of Zimbra Collaboration Suite",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--f94c0d52-4d3f-5aba-b8d1-a6851e0054b1",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538",
+    "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--9ec739c6-1f79-5d3e-a3da-26869ec0c65d",
+    "attack-pattern--e9046859-778e-552b-9d7c-f863fec201e5",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df"
+   ],
+   "external_references": [
+    {
+     "source_name": "cisa.gov",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a"
     }
    ]
   },
@@ -7586,6 +7938,31 @@
     {
      "source_name": "FBI IC3",
      "url": "https://www.ic3.gov/PSA/2025/PSA251219"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--b99f15eb-3355-55b4-87be-41c17462d5c1",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "Huntress — Inside FakeAgent: How a Claude Desktop Malvertising Campaign Hit 29 Organizations with SectopRAT",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--36222262-037b-5ca3-913c-3ec913ced07a",
+   "object_refs": [
+    "attack-pattern--37453214-e182-5265-af3c-3db66b68caba",
+    "attack-pattern--639a6f8a-2b42-5b8f-80be-925696d4e3f4",
+    "attack-pattern--868ff63c-98ad-5948-bc04-79e726559ba9",
+    "attack-pattern--d2f1ff5a-1600-5c7e-941b-c3076dcc6213",
+    "attack-pattern--db604211-edd1-5426-a3b5-0f6f5b447297",
+    "attack-pattern--f2326aca-511d-505a-a5c4-19b88913a583",
+    "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1"
+   ],
+   "external_references": [
+    {
+     "source_name": "Huntress",
+     "url": "https://www.huntress.com/blog/fakeagent-claude-desktop-malvertising-ends-in-dotnet-rat"
     }
    ]
   },
