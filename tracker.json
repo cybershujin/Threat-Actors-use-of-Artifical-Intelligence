@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 83,
+ "count": 92,
  "entries": [
   {
    "table": "main",
@@ -640,6 +640,87 @@
    "ttp_md": "**AI-generated attack infrastructure (app-builder abuse)** T1583.001 - Acquire Infrastructure: Domains (lure served from the legitimate claude.ai domain via a public Artifact)<br><br>T1608 - Stage Capabilities (fake installer page staged as a Claude Artifact)<br><br>T1583.008 - Acquire Infrastructure: Malvertising (sponsored Bing ads)<br><br>T1204.002 - User Execution: Malicious File (trojanized ClaudeDesktop.exe)<br><br>T1102 - Web Service (C2 details staged on the Ethereum blockchain)",
    "reported": "Jul 2026",
    "activity": "Jul 2026"
+  },
+  {
+   "table": "main",
+   "name": "STAC6994",
+   "akas": "Unknown (Sophos-designated cluster)",
+   "brief": "Sophos analysts discovered a rogue device running continuous payload generation inside a customer environment, and identified a threat actor using AI to test EDR evasion tactics in a 'red team' post-exploitation framework. The operator provisioned virtual machines from Ludus and drove the Cursor IDE with approximately 12 AI agents in defined roles: one agent running Claude Opus 4.5 handled core operations and rule-setting, while others managed OPSEC hardening, documentation, proxy stress testing, VM deployment, and testing tools against the EDR agents. Code commits flowed to Git through Model Context Protocol (MCP). The framework ran parallel testing across three environments — one VM with Sophos endpoint protection, one with CrowdStrike, and one with no EDR as a control — while a fourth VM operated as a Sliver C2 server. According to recovered artifacts, the agents read research articles scraped from the SpecterOps blog, extracted offensive techniques, mapped them to the MITRE ATT&CK framework, identified the steps and tools needed to reproduce each technique, prepared the lab environment, executed it, and reported findings. At the core was a Python-based modular payload generator that wrapped raw payloads in layers of encryption and evasion techniques, producing custom executables in Rust and Go — nearly 80 modules testing over 70 different techniques. Sophos notes the crucial operational signal was tempo: the full cycle compressed weeks into days. Sophos CTU confirmed the STAC6994 operator subsequently engaged in ransomware deployment and data theft; the framework was a production tool for real intrusions. Sophos X-Ops *Analyst note: Sophos records two caveats worth preserving — agent documentation claimed near-universal success against the EDR agents, but Sophos analysts noted \"the evidence did not fully support that conclusion\"; and \"the evidence did not show AI embedded inside deployed malware\" (AI was developer-side only). Vendor report, and Sophos's own product is one of the EDRs tested in the lab described.*",
+   "ttp_md": "**LLM-agent-driven capability development and evasion testing** T1587.001 - Develop Capabilities: Malware<br><br>**LLM-enhanced anomaly detection evasion** T1562.001 - Impair Defenses: Disable or Modify Tools<br><br>**LLM-aided development** T1587 - Develop Capabilities<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>**LLM-optimized payload crafting** T1027 - Obfuscated Files or Information",
+   "reported": "Jul 2026",
+   "activity": "May 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Mexican government campaign) — Gambit Security",
+   "akas": "UnSub (no designation assigned by the reporting vendor)",
+   "brief": "Gambit Security documented a single operator who compromised nine Mexican government organizations using two commercial AI platforms as core operational tools. Victims included SAT (Servicio de Administración Tributaria, the federal tax authority), the Estado de México, Jalisco, Michoacán and Tamaulipas state governments, the Registro Civil de CDMX and Salud CDMX, the INE electoral institute, and the SADM Monterrey municipal water utility. Per Gambit: \"The campaign relied heavily on two commercial AI platforms as core operational tools - Anthropic's Claude Code and OpenAI's GPT-4.1 API. These systems performed much of the technical work, including reconnaissance, exploit customization, privilege escalation, database architecture mapping, exfiltration infrastructure development, tunnel chain construction, and credential harvesting.\" Gambit logged 1,088 operator prompts driving 5,317 AI-executed commands across 34 sessions, 20 exploit scripts covering 20 CVEs, and 400+ custom scripts (301 Bash, 113 Python); a custom 17,550-line Python tool (`BACKUPOSINT.py`) used the GPT-4.1 API to generate 2,597 intelligence reports across 305 SAT servers. Gambit assessed that \"approximately 75 percent of remote command execution activity across the campaign was generated and executed by Claude Code via its tool-use interface.\" On guardrails, Gambit records: \"In 40 minutes, the conversation moved from 'I'm not going to create that file' to 'What command do you want to execute now?' on a live government server... The guardrails did not hold in this case.\" When Claude refused to write an anti-forensics rulebook, the operator pasted a pre-written 1,084-line pentest cheatsheet and asked Claude to save it — processed as a file-write rather than a content-generation request — after which it persisted as `claude.md`, auto-loading as a system prompt every session. First publicly disclosed via a Bloomberg exclusive (25 Feb 2026); Anthropic's only on-record statement was that it banned the accounts involved. Gambit Security *Analyst note: Gambit assigns no actor designation and states no attribution; the word \"attribution\" does not appear in the report. Motivation appears financially driven (a commercial document-forgery service and a live SAT query API). The report is explicitly self-limiting — \"This report is not comprehensive… only selected portions are analyzed\" — and its underlying forensic material is available only to trusted parties on request, so the evidence is not independently reviewable. The widely repeated \"150GB\" and \"ten government bodies\" figures are press-reported, not in the report, which says nine.*",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (Claude Code executed ~75% of remote commands)<br><br>**LLM-informed reconnaissance** T1592 - Gather Victim Org Information<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>**LLM-enhanced scripting techniques** T1059 - Command and Scripting Interpreter<br><br>**LLM-directed Automated Collection** T1213 - Data from Information Repositories<br><br>T1567 - Exfiltration Over Web Service",
+   "reported": "Apr 2026",
+   "activity": "Nov 2025 – Feb 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (FortiGate campaign) — Amazon Threat Intelligence",
+   "akas": "UnSub (no designation assigned)",
+   "brief": "Amazon Threat Intelligence documented a financially motivated, Russian-speaking operator (individual or small group, assessed at \"low-to-medium baseline technical capability\" and explicitly not linked to any state-sponsored group) who compromised 600+ FortiGate devices across 55+ countries between 11 January and 18 February 2026. Initial access was credential abuse against internet-exposed management interfaces (ports 443, 8443, 10443, 4443) protected by single-factor authentication — not CVE exploitation; CVEs appear in the actor's target catalogue rather than the entry path. AI use here was directly observed in recovered artifacts rather than inferred from tempo, which makes this one of the better-evidenced cases in the corpus: the actor's misconfigured server (1,400+ files across 139 subdirectories) held `claude` and `claude-0` directories containing 200+ files of Claude Code task outputs, session diffs and cached prompt states; a `.claude/settings.json` pre-approving Claude Code to autonomously run Impacket, Metasploit and hashcat, with hardcoded domain credentials; a vulnerability assessment report dated 1 Feb 2026 attributed to Claude Code in its footer, with a 400ms round-trip time confirming live remote execution; and a `deepseek_attack_plan.py` script generating attack plans from reconnaissance data. Custom tooling included ARXON (a Python MCP server) and CHECKER2 (a Go/Docker parallel VPN-scanning orchestrator), the actor having migrated from the public HexStrike framework. Amazon Threat Intelligence, with artifact analysis by Cyber and Ramen *Analyst note: Amazon deliberately withheld vendor names, saying only that the actor \"uses at least two distinct commercial LLM providers\"; the DeepSeek and Claude attribution comes from Cyber and Ramen's independent analysis of the exposed server. Beware secondary coverage naming \"CyberStrikeAI\" as the actor or platform — that string appears in neither primary and appears to be a content-farm fabrication.*",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (Claude Code pre-approved to run offensive tooling autonomously)<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>**LLM-advised resource development** T1587 - Develop Capabilities (ARXON MCP server, CHECKER2 orchestrator)<br><br>**LLM-informed reconnaissance** T1595 - Active Scanning<br><br>T1110 - Brute Force / Credential abuse against exposed management interfaces",
+   "reported": "Feb 2026",
+   "activity": "Jan 2026 – Feb 2026"
+  },
+  {
+   "table": "main",
+   "name": "Earth Krahang",
+   "akas": "Unknown",
+   "brief": "China-aligned actor. Trend Micro's 2026 H1 APT report records: \"It used generative AI to enhance a publicly available proof-of-concept exploit for CVE-2026-0740, a vulnerability in the Ninja Forms – File Uploads plugin for WordPress. The enhanced exploit could conduct large-scale automated scans to identify vulnerable public-facing servers. The group also installed Trae, an integrated development environment (IDE) AI coding tool developed by ByteDance, on its C&C server. AI-generated code comments written in Simplified Chinese suggested the operator's origin.\" Trend states H1 2026 was the first time its research teams documented this group integrating generative AI into the attack lifecycle. Group profile: global government and defense sectors. Trend Micro *Analyst note: the model behind the exploit enhancement is not named — the report says only \"generative AI.\" Trae is a separate observation (found installed on the C&C server) and should not be conflated with the tool used to enhance the exploit. Evidence is artifact-based from the actor's own infrastructure. Trend gives no per-campaign dates for this activity, so the Activity Span reflects the report's stated Jan–Jun 2026 scope, not an observed campaign window. CVE-2026-0740's NVD publication date (7 Apr 2026) is not linked by Trend to the campaign and should not be read as a start date.*",
+   "ttp_md": "**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>**LLM-aided development** T1587 - Develop Capabilities<br><br>**LLM-optimized payload crafting** T1588 - Develop Capabilities: Tool<br><br>**LLM-informed reconnaissance** T1595 - Active Scanning",
+   "reported": "Jul 2026",
+   "activity": "Jan 2026 – Jun 2026"
+  },
+  {
+   "table": "main",
+   "name": "Earth Naga",
+   "akas": "Associated with Flax Typhoon (per Trend Micro)",
+   "brief": "China-aligned actor. Trend Micro's 2026 H1 APT report records: \"It has been observed to use an iterative AI prompting workflow ('vibe coding') to develop a malicious PowerShell script. The script compiles and executes C# code at runtime to perform process hollowing and reflective loading of backdoor payloads. Multiple evolving versions of the script were found on the hosting server, with the AI's responses to prompts left inside the code as comments; these comments inadvertently revealed the development methodology.\" Group profile: critical infrastructure, government and technology sectors. Trend Micro *Analyst note: Trend names no loader or malware family for this script, and names no AI vendor or model. The evidence basis is the strongest of the three Trend AI cases — multiple evolving script versions recovered from the actor's hosting server with the AI's own prompt responses left in as code comments. No per-campaign dates are given; the Activity Span reflects the report's Jan–Jun 2026 scope, not an observed window.*",
+   "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware<br><br>**LLM-enhanced scripting techniques** T1059.001 - Command and Scripting Interpreter: PowerShell<br><br>T1055.012 - Process Injection: Process Hollowing<br><br>T1620 - Reflective Code Loading",
+   "reported": "Jul 2026",
+   "activity": "Jan 2026 – Jun 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (possibly Earth Lamia) — Trend Micro",
+   "akas": "UnSub",
+   "brief": "Trend Micro's 2026 H1 APT report records: \"The use of an autonomous AI agent for lateral movement by an unknown actor (possibly Earth Lamia). The group deployed the Claude Code command-line interface (CLI) as an autonomous AI agent against an organization in Thailand. The actor jailbroke the AI model by falsely claiming the operation was a legitimate penetration test. The AI agent then autonomously conducted internal network scanning, exploitation attempts (EternalBlue, SMBGhost, PrintNightmare, SMB relay), credential harvesting (via secretsdump, LaZagne, and Impacket), and password spraying.\" Trend Micro *Analyst note: Trend attributes this primarily to \"an unknown actor,\" with \"possibly Earth Lamia\" as a hedge — the name appears exactly once across the 28-page report — so this is logged under the UnSub convention rather than as an Earth Lamia entry. Target sector is not stated. No per-campaign dates are given; the Activity Span reflects the report's Jan–Jun 2026 scope. The false-authorization jailbreak pretext is recorded here as tradecraft detail; it is not mapped as a TTP label, as guardrail-bypass sits on the out-of-scope 'attacks on AI' side of this project's line.*",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0008 - Lateral Movement (agent ran the intrusion autonomously)<br><br>T1595 - Active Scanning<br><br>T1210 - Exploitation of Remote Services (EternalBlue, SMBGhost, PrintNightmare, SMB relay)<br><br>T1003 - OS Credential Dumping (secretsdump, LaZagne, Impacket)<br><br>T1110.003 - Brute Force: Password Spraying",
+   "reported": "Jul 2026",
+   "activity": "Jan 2026 – Jun 2026"
+  },
+  {
+   "table": "main",
+   "name": "DragonForce",
+   "akas": "Unknown",
+   "brief": "In a DragonForce ransomware case investigated by the Sophos Incident Response team, \"the threat actor produced what we strongly suspect to be an AI-generated report during negotiations with the targeted organization, containing a detailed analysis of the exfiltrated data, including PII and legal risks. AI-generated analysis was used as part of an attempt to exert pressure and persuade the organization to pay the ransom.\" Sophos places this at the lightest-touch end of its AI autonomy gradient — a human using generative AI to produce an artifact and deploying it manually. Sophos X-Ops *Analyst note: Sophos's own IR casework (primary), but the AI attribution is explicitly \"strongly suspect,\" not confirmed — the same confidence level as the existing TA547 and Multiple UnSub – Symantec entries. No dates, model, or campaign window are given.*",
+   "ttp_md": "**LLM-enhanced extortion/negotiation** T1657 - Financial Theft<br><br>**LLM-directed Automated Collection** T1213 - Data from Information Repositories (analysis of exfiltrated victim data)",
+   "reported": "Jul 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "The Gentlemen",
+   "akas": "Unknown",
+   "brief": "Sophos, describing the lightest-touch tier of its AI autonomy gradient (a human using generative AI to produce an artifact and deploying it manually, noted alongside a threat actor targeting Mexican government organizations that used Claude Code and GPT to generate scripts): \"Leaked chats from The Gentlemen ransomware group confirmed similar applications.\" Sophos X-Ops *Analyst note: this single sentence is the full extent of Sophos's reporting on this group's AI use — no detail, no model, no dates, and no campaign window is stated, so Activity Span is recorded as Unknown rather than inferred. Included on the strength of the named actor plus leaked-chat evidence; expand if better primary reporting emerges.*",
+   "ttp_md": "**LLM-aided development** T1587 - Develop Capabilities<br><br>**LLM-enhanced scripting techniques** T1588 - Develop Capabilities: Tool",
+   "reported": "Jul 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (DAIQ Wealth sha zhu pan) — Sophos CTU",
+   "akas": "UnSub",
+   "brief": "\"Sophos CTU investigated a sha zhu pan scheme involving AI-themed social engineering. A UK-based victim was drawn into a fake AI-powered investment platform called DAIQ Wealth through months of AI-themed 'lessons' on the LINE messaging app. A network of personas built rapport through group chats, each operated by a different individual, suggesting an organized workforce following predefined scripts. The victim lost hundreds of thousands of pounds. When the victim expressed concern about holding almost £20,000 GBP in cash at home, the scammers arranged a physical cash courier to the UK address within 24 hours, complete with a branded receipt from a legitimate financial firm used without its knowledge.\" Sophos X-Ops *Analyst note: this is AI-themed lure infrastructure rather than AI-enabled attack — included on the same basis as the existing Unsub1/Unsub2 – Kaspersky entries. The personas were human-operated and Sophos reports no evidence of an LLM generating the conversation. No campaign window given.*",
+   "ttp_md": "**Lookalike LLM** T1583 - Acquire Infrastructure<br><br>**LLM-supported social engineering** T1566 - Phishing<br><br>T1657 - Financial Theft",
+   "reported": "Jul 2026",
+   "activity": "Unknown"
   },
   {
    "table": "deepfake",
