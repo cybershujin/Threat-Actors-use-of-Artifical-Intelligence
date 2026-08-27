@@ -49,6 +49,9 @@ This is *not* for:
 |July | Sophos X-Ops | [AI Security 2026](https://www.sophos.com/en-us/content/sophos-ai-security-2026-report) |
 |July | Trend Micro (TrendAI Research) | [2026 H1 APT Report: How APTs Are Weaponizing Trust in the Age of AI](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/2026-h1-apt-report-how-apts-are-weaponizing-trust-in-the-age-of-ai) |
 |July | FBI / IC3 | [FBI Warns of Scammers Impersonating the IC3 (I-072026-PSA)](https://www.ic3.gov/PSA/2026/PSA260720) |
+|August | CISA / NSA / FBI / DOE / EPA (joint) | [AA26-231A: Defending Against an Active Threat to Siemens S7 Series Programmable Logic Controllers](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a) |
+|August | OpenAI | [Disrupting a Criminal Scam Operation](https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation/) |
+|August | Bitdefender Labs | [SilkParasite: Tracking a China-Nexus APT Across Central Asia](https://www.bitdefender.com/en-us/blog/businessinsights/silkparasite-tracking-china-nexus-apt-across-central-asia) |
 
 
 ## 2025 Reports
