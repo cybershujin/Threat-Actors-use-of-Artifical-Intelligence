@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 92,
+ "count": 94,
  "entries": [
   {
    "table": "main",
@@ -640,6 +640,24 @@
    "ttp_md": "**AI-generated attack infrastructure (app-builder abuse)** T1583.001 - Acquire Infrastructure: Domains (lure served from the legitimate claude.ai domain via a public Artifact)<br><br>T1608 - Stage Capabilities (fake installer page staged as a Claude Artifact)<br><br>T1583.008 - Acquire Infrastructure: Malvertising (sponsored Bing ads)<br><br>T1204.002 - User Execution: Malicious File (trojanized ClaudeDesktop.exe)<br><br>T1102 - Web Service (C2 details staged on the Ethereum blockchain)",
    "reported": "Jul 2026",
    "activity": "Jul 2026"
+  },
+  {
+   "table": "main",
+   "name": "knaithe",
+   "akas": "KnYuan",
+   "brief": "Unit 42 documented a Chinese-speaking \"opportunistic exploit operator and self-described binary security researcher,\" based in Zhuhai, China, who ran DeepSeek autonomously via the \"Hermes Agent\" framework (C2'd over Telegram) to enumerate 460+ internet-exposed targets across 7 CVEs — including a Langflow RCE — using FOFA, source and adapt public PoC exploit code, launch autonomous exploitation attempts, and adaptively re-target on failure, largely without human intervention. Confirmed real-world impact included data exfiltration from three organizations and code execution on 11 Marimo notebook instances; a recovered Hermes Agent session log is dated May 7, 2026. The actor also configured/evaluated Claude Code (limited to connectivity/proxy testing), Codex, Qwen Code, GLM, Kimi and MiniMax. *Bias note: Palo Alto Networks Unit 42 (vendor); this is a first-party technical writeup of a specific observed incident, not aggregate marketing statistics.* Unit 42",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (full kill-chain, autonomous DeepSeek via Hermes Agent)<br><br>**LLM-informed reconnaissance** T1595 - Active Scanning (FOFA-based exposed-target enumeration)<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities (autonomous PoC sourcing/adaptation)<br><br>T1190 - Exploit Public-Facing Application (autonomous exploitation across 7 CVEs)",
+   "reported": "Jul 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "Storm-2945 (CaptiveCrunch)",
+   "akas": "Midnight Blizzard / APT29 / Cozy Bear / NOBELIUM / The Dukes (sub-cluster)",
+   "brief": "Microsoft Threat Intelligence disclosed \"CaptiveCrunch,\" a Midnight Blizzard sub-cluster campaign manipulating hotel/conference-venue Wi-Fi captive-portal DNS/HTTP traffic to redirect corporate travelers to phishing pages since early May 2026, and running AI-augmented device-code and OAuth-code phishing against Microsoft Entra ID since February 2026. Microsoft states it \"observed Storm-2945 leveraging AI to support a significant portion of these operations.\" Deployed malware includes CornFlake (Golang Windows RAT), ChocoShell (a PowerShell infostealer whose \"consistent coding standard and descriptive commentary suggest the author might have leveraged AI-assisted code generation\"), and the FruitStone web C2 panel; the actor also abused a Chrome App-Bound Encryption bypass for session-token theft. Microsoft",
+   "ttp_md": "**LLM-supported social engineering** T1566 - Phishing (AI-augmented device-code & OAuth phishing campaigns)<br><br>**LLM-aided development** T1587.001 - Develop Capabilities: Malware (ChocoShell infostealer; AI-assisted code generation inferred from code style)<br><br>T1528 - Steal Application Access Token (device-code/OAuth phishing against Entra ID)",
+   "reported": "Jul 2026",
+   "activity": "Feb 2026 – Jul 2026"
   },
   {
    "table": "main",

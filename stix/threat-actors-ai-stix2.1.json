@@ -1000,6 +1000,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--c5e804db-4c11-58bb-82e4-bad884f2033e",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Steal Application Access Token (device-code/OAuth phishing against Entra ID)",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1528",
+     "url": "https://attack.mitre.org/techniques/T1528/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1866,6 +1881,31 @@
      "source_name": "WeChat (Chinese vendor)",
      "url": "https://mp.weixin.qq.com/s/wR7IgBmEuqqGQ9SCAV39Uw",
      "description": "Source"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "Storm-2945 (CaptiveCrunch)",
+   "description": "Microsoft Threat Intelligence disclosed \"CaptiveCrunch,\" a Midnight Blizzard sub-cluster campaign manipulating hotel/conference-venue Wi-Fi captive-portal DNS/HTTP traffic to redirect corporate travelers to phishing pages since early May 2026, and running AI-augmented device-code and OAuth-code phishing against Microsoft Entra ID since February 2026. Microsoft states it \"observed Storm-2945 leveraging AI to support a significant portion of these operations.\" Deployed malware includes CornFlake (Golang Windows RAT), ChocoShell (a PowerShell infostealer whose \"consistent coding standard and descriptive commentary suggest the author might have leveraged AI-assisted code generation\"), and the FruitStone web C2 panel; the actor also abused a Chrome App-Bound Encryption bypass for session-token theft. Microsoft",
+   "aliases": [
+    "Midnight Blizzard",
+    "APT29",
+    "Cozy Bear",
+    "NOBELIUM",
+    "The Dukes (sub-cluster)"
+   ],
+   "first_seen": "2026-02-01T00:00:00.000Z",
+   "last_seen": "2026-07-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+     "description": "Microsoft"
     }
    ]
   },
@@ -3078,6 +3118,25 @@
      "source_name": "Microsoft",
      "url": "https://www.microsoft.com/en-us/security/blog/2026/04/02/threat-actor-abuse-of-ai-accelerates-from-tool-to-cyberattack-surface/",
      "description": "Microsoft"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "knaithe",
+   "description": "Unit 42 documented a Chinese-speaking \"opportunistic exploit operator and self-described binary security researcher,\" based in Zhuhai, China, who ran DeepSeek autonomously via the \"Hermes Agent\" framework (C2'd over Telegram) to enumerate 460+ internet-exposed targets across 7 CVEs — including a Langflow RCE — using FOFA, source and adapt public PoC exploit code, launch autonomous exploitation attempts, and adaptively re-target on failure, largely without human intervention. Confirmed real-world impact included data exfiltration from three organizations and code execution on 11 Marimo notebook instances; a recovered Hermes Agent session log is dated May 7, 2026. The actor also configured/evaluated Claude Code (limited to connectivity/proxy testing), Codex, Qwen Code, GLM, Kimi and MiniMax. *Bias note: Palo Alto Networks Unit 42 (vendor); this is a first-party technical writeup of a specific observed incident, not aggregate marketing statistics.* Unit 42",
+   "aliases": [
+    "KnYuan"
+   ],
+   "external_references": [
+    {
+     "source_name": "Palo Alto Networks Unit 42",
+     "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/",
+     "description": "Unit 42"
     }
    ]
   },
@@ -4454,6 +4513,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--27188a24-287c-5ae0-b1ef-da266bd3f47a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--2869630a-41ab-51e3-b361-c438b749db73",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -4540,6 +4609,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--184d5cca-290e-527e-b37b-bb87535524d1",
    "target_ref": "malware--e6e99ac8-0931-5225-a47e-961538277e24"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--2ef73bcc-336c-5089-aebf-eada95f1fee5",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
   },
   {
    "type": "relationship",
@@ -4854,6 +4933,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--4303fda8-15bf-56ff-9166-bcab9078c3e7",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--4327c000-9456-5060-b519-ba760fd85b4a",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -5130,6 +5219,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--b1687934-45a1-5e58-974f-f9e01cb00745",
    "target_ref": "attack-pattern--db604211-edd1-5426-a3b5-0f6f5b447297"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--4fa009f9-59c3-57d6-809e-190cd0b5c59f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
   },
   {
    "type": "relationship",
@@ -5514,6 +5613,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6930457e-7df3-5752-99cb-a98b1fdd7d87",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--6989bde7-ec36-5792-b26d-b610d06f0ac4",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -5654,6 +5763,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--7043e7a4-8618-5df4-b588-4a16256a86fe",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--71536041-17fe-5bd0-a8c9-f2ad9835871e",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -5720,6 +5839,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a0ebb8a1-48be-5a8e-ab96-9b3c11b197b2",
    "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--74a06a6a-138f-55bc-9a0e-e3589f93cc02",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9",
+   "target_ref": "attack-pattern--c5e804db-4c11-58bb-82e4-bad884f2033e"
   },
   {
    "type": "relationship",
@@ -5920,6 +6049,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--89d24fe4-7f39-5aa0-a817-114e675615f1",
    "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--86b9d7b3-db99-5b84-b94f-0eb2b5de812b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -6764,6 +6903,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--b9c08850-0031-577a-8636-10ff167b9126",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--ba13b8d3-d81d-5d52-8a34-b0a7a3198f80",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -6870,6 +7019,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a230a236-0b45-503a-954c-07c1d451a701",
    "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--bee5a209-bb7e-5090-a864-10f6f3ee3362",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9",
+   "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
   },
   {
    "type": "relationship",
@@ -7554,6 +7713,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--e66c36a6-a600-5e4f-8b23-b45d1aa5af61",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
+   "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--e714fcea-4a7b-587d-9cf8-c76833f8b3c1",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -7834,6 +8003,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--f5cb079e-675c-53f9-bcf3-5a548b9a8457",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9",
+   "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--f611e034-ffda-5995-aeea-e095ec276751",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -8008,6 +8187,30 @@
     {
      "source_name": "The Hacker News",
      "url": "https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--0d4ebb5b-d7a2-5f92-ac36-3ab7fec7d1a5",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "Microsoft – CaptiveCrunch: Midnight Blizzard targets travelers worldwide",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--394cf9c7-680f-58c0-a5d6-126c4c89ac74",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--c5e804db-4c11-58bb-82e4-bad884f2033e",
+    "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "intrusion-set--25d54347-5cdc-5109-99ef-d1e2bb20a5b9"
+   ],
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
     }
    ]
   },
@@ -8964,6 +9167,32 @@
     {
      "source_name": "NCSC UK",
      "url": "https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--9b73dd8c-5b9c-5de9-9f80-e0fbcfd67a76",
+   "created": "2026-07-01T00:00:00.000Z",
+   "modified": "2026-07-01T00:00:00.000Z",
+   "name": "Unit 42 – Autonomous AI Cyber Attack Campaign",
+   "published": "2026-07-01T00:00:00.000Z",
+   "created_by_ref": "identity--bd7bc263-20bc-52e1-86e2-e82d5d9f3704",
+   "object_refs": [
+    "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a",
+    "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a",
+    "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3",
+    "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee"
+   ],
+   "external_references": [
+    {
+     "source_name": "Palo Alto Networks Unit 42",
+     "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/"
     }
    ]
   },
