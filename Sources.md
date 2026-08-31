@@ -49,6 +49,8 @@ This is *not* for:
 |July | Sophos X-Ops | [AI Security 2026](https://www.sophos.com/en-us/content/sophos-ai-security-2026-report) |
 |July | Trend Micro (TrendAI Research) | [2026 H1 APT Report: How APTs Are Weaponizing Trust in the Age of AI](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/2026-h1-apt-report-how-apts-are-weaponizing-trust-in-the-age-of-ai) |
 |July | FBI / IC3 | [FBI Warns of Scammers Impersonating the IC3 (I-072026-PSA)](https://www.ic3.gov/PSA/2026/PSA260720) |
+|July | Unit 42 (Palo Alto Networks) | [Autonomous AI Cyber Attack Campaign](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/) |
+|July | Microsoft | [CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft](https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/) |
 
 
 ## 2025 Reports
