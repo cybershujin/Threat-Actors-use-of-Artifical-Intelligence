@@ -51,6 +51,14 @@ This is *not* for:
 |July | FBI / IC3 | [FBI Warns of Scammers Impersonating the IC3 (I-072026-PSA)](https://www.ic3.gov/PSA/2026/PSA260720) |
 |July | Unit 42 (Palo Alto Networks) | [Autonomous AI Cyber Attack Campaign](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/) |
 |July | Microsoft | [CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft](https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/) |
+|August | Dream Security | [Inside a Multi-Agent AI Framework Used to Compromise Government Entities in Asia](https://dreamgroup.com/blog/inside-a-multi-agent-ai-framework-used-to-compromise-government-entities-in-asia) |
+|August | Gambit Security | [Aurora ransomware targets ESXi, abuses Cursor Agent for exploitation](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation) |
+|August | Group-IB | [One Adversary: Fraud Is a Network, Not a Payment](https://www.group-ib.com/blog/one-adversary-fraud-network/) |
+|September | Anthropic | [Detecting and countering misuse of AI: September 2026](https://www.anthropic.com/threat-intelligence-report-september-2026) |
+|September | Google GTIG | [GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI](https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai) |
+|September | Unit 42 (Palo Alto Networks) | [Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America](https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/) |
+|September | Unit 42 (Palo Alto Networks) | [An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation](https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/) |
+|September | Focus Taiwan / CNA | [57 indicted over NT$900 million voice-cloning romance scam](https://focustaiwan.tw/society/202609020019) |
 
 
 ## 2025 Reports
