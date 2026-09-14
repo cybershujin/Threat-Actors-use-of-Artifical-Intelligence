@@ -1,8 +1,9 @@
 name: Build derived exports (STIX + interactive table)
 
 # Regenerates the interactive Pages homepage, tracker.json, and the STIX 2.1 bundle
-# from README.MD whenever the tracker tables change. Deterministic + idempotent, so it
-# only commits when something actually changed. No secrets; uses the built-in GITHUB_TOKEN.
+# from README.MD + iocs/*.csv whenever the tracker tables or IOC feeds change.
+# Deterministic + idempotent, so it only commits when something actually changed.
+# No secrets; uses the built-in GITHUB_TOKEN.
 on:
   push:
     branches: [main]
@@ -10,6 +11,7 @@ on:
       - 'README.MD'
       - 'Sources.md'
       - 'tools/build_exports.py'
+      - 'iocs/**'
   workflow_dispatch: {}
 
 permissions:
