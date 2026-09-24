@@ -59,6 +59,12 @@ This is *not* for:
 |September | Unit 42 (Palo Alto Networks) | [Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America](https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/) |
 |September | Unit 42 (Palo Alto Networks) | [An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation](https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/) |
 |September | Focus Taiwan / CNA | [57 indicted over NT$900 million voice-cloning romance scam](https://focustaiwan.tw/society/202609020019) |
+|September | Microsoft | [Disrupting EvilTokens: The AI Chatbot Built for Cybercrime](https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/) |
+|September | GreyNoise | [Agents Gone Wild: An AI-Orchestrated Global Campaign Against PaperCut NG/MF](https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf) |
+|September | Blackpoint Cyber | [Death by a Thousand PaperCuts: AI-Driven Exploitation at Scale](https://blackpointcyber.com/blog/death-by-a-thousand-papercuts-ai-driven-exploitation-at-scale/) |
+|September | Euronews | [Greece police bust gang using AI to clone relatives' voices for cash](https://www.euronews.com/my-europe/2026/09/18/greece-police-bust-gang-using-ai-to-clone-relatives-voices-for-cash) |
+|September | PSNI (Police Service of Northern Ireland) | [Warning against fraud after victim loses £250,000 in Ards and North Down](https://www.psni.police.uk/latest-news/warning-against-fraud-after-victim-loses-ps250000-ards-and-north-down-online-criminals) |
+|September | SecurityWeek | [Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme](https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/) |
 
 
 ## 2025 Reports
@@ -87,6 +93,7 @@ This is *not* for:
 |Feburary | JFrog | [Malicious AI models on Hugging Face backdoor users’ machines](https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/) |
 |March |Tripwire | [Cybersecurity in the Age of AI: Exploring AI-Generated Cyber Attacks](https://www.tripwire.com/state-of-security/cybersecurity-age-ai-exploring-ai-generated-cyber-attacks) |
 |March | Kaspersky | [Spam and phishing in 2023](https://securelist.com/spam-phishing-report-2023/112015/) |
+|October | OpenAI | [Influence and cyber operations: an update](https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf) - *Backfill added 2026-09: a genuine pre-existing gap surfaced when a secondary source misdated this report as "September 2026."* |
 
 
 ## 2023 Reports
