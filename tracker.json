@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 119,
+ "count": 134,
  "entries": [
   {
    "table": "main",
@@ -948,6 +948,123 @@
    "activity": "Apr 8 – May 21, 2026 (broader affiliate campaign Apr–Jul 2026 per CloudSEK)"
   },
   {
+   "table": "main",
+   "name": "GTG-87001",
+   "akas": "UnSub (Anthropic designation); northern-Yemen-based weapons engineering cell — *analyst note: secondary press (The Register, Politico) labeled this \"Houthi\"; Anthropic's own report never uses that word — the Houthi attribution is unconfirmed by the primary source and not repeated as fact here.*",
+   "brief": "Anthropic disrupted a northern-Yemen-based cell running three parallel AI-assisted weapons-development programs: a guided rocket using a commodity phone-class flight computer with terminal-phase homing guidance; a multi-stage ballistic missile with a stated range goal above 2,000 km; and a multi-variant missile family (\"R2000\") including a hypersonic glide-vehicle variant. The actors ran Claude Code \"in place of human software engineers\" for guidance/navigation/control (GNC) software, delegating coder/researcher/reviewer roles across multiple Claude instances and splitting work across sessions to evade safeguards. Anthropic found no evidence of a fielded operational device, but the actors test-fired a guided rocket; the field test appears to have failed, and the actors returned to Claude within hours to diagnose the failure. Anthropic",
+   "ttp_md": "**LLM-assisted weapons/munitions engineering** (no clean ATT&CK ID — physical weapons R&D, not a cyber intrusion technique; CREDIT: Rachel James based on Anthropic Sept 2026 report)<br><br>**LLM-aided development** T1587 - Develop Capabilities",
+   "reported": "Sep 2026",
+   "activity": "Unknown (report gives no calendar window for this cell; describes one undated live field test)"
+  },
+  {
+   "table": "main",
+   "name": "GTG-17001",
+   "akas": "UnSub (Anthropic designation); China-based operation",
+   "brief": "Anthropic disrupted a China-based operation that used Claude to draft a Chinese-language specification for an anti-torpedo fire-control system — \"the core logic that aims and times an anti-torpedo weapon's response\" — written to win approval from a Chinese defense manufacturer, plus a 200+ page acquisition proposal and an associated fire-control software test matrix. Anthropic",
+   "ttp_md": "**LLM-assisted weapons/munitions engineering**<br><br>**LLM-aided development** T1587 - Develop Capabilities (acquisition/proposal documentation)",
+   "reported": "Sep 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "GTG-17002",
+   "akas": "UnSub (Anthropic designation); China-based operation",
+   "brief": "A separate China-based operation used Claude's chat, coding, and agentic tooling to design, build, and iteratively refine (12 versions) a roughly 16-module Chinese-language software suite for electronic warfare and suppression of an opponent's air-defense systems. Anthropic",
+   "ttp_md": "**LLM-assisted weapons/munitions engineering**<br><br>**LLM-aided development** T1587.001 - Develop Capabilities: Tool (iterative agentic build)",
+   "reported": "Sep 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "GTG-50027",
+   "akas": "Likely a Bamako-based independent consultant contracted to Mali's state intelligence service (Agence Nationale de la Sécurité d'État, ANSE)",
+   "brief": "A single Claude subscriber — likely a Bamako-based independent consultant working for Mali's state intelligence service (ANSE) — used Claude to build \"Lakana 360,\" a population-scale domestic-surveillance platform monitoring roughly 25 million SIM cards across all three of Mali's national mobile operators (call records, text messages, and voice-call capture). The actor directed Claude to design the system so its LLM-generated intelligence-dossier component bypassed Mali's own legal requirement for a court order before disclosing surveillance records — \"the warrant requirement was removed, at the operator's request, from the component that writes an LLM-generated intelligence dossier.\" Anthropic cites US State Department/Human Rights Watch documentation of Malian security-service detention of opposition figures as context. Anthropic",
+   "ttp_md": "**LLM-aided development** T1587 - Develop Capabilities (surveillance platform)<br><br>**LLM-directed Automated Collection** T1119 - Automated Collection / T1114 - Email Collection (bulk call/text/voice capture analog)",
+   "reported": "Sep 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "GTG-27005",
+   "akas": "\"DronDoc\" / \"Serafim\" (actors' own operation names); assessed as a small freelance team, possibly linked to a Russian university/federal research center",
+   "brief": "Anthropic disrupted likely freelance Russia-based actors building a full-stack autonomous FPV kamikaze drone swarm via Claude Code — shared swarm memory/fault-tolerant coordination logic, an onboard small language model governing attack/observe/return-to-base behavior (including a \"person\" target class able to issue detonation commands without a human in the loop), camera-based terminal guidance, a control-link geolocation module to find opposing drone operators, passive acoustic detection, and low-level programmable-chip logic. The team trained a computer-vision classifier on scraped Ukrainian combat footage and used a fixed Donetsk Oblast coordinate as a demonstration strike point; systems reached TRL 3–4 (validated in simulation; confirmed hardware-in-the-loop testing). 9 accounts identified (8 used only for ordinary freelance work); unverified claimed funding ties to Russia's Advanced Research Foundation, National Technology Initiative, and Ministry of Defence. Anthropic",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution<br><br>**LLM-assisted weapons/munitions engineering**<br><br>**LLM-aided development** T1587 - Develop Capabilities",
+   "reported": "Sep 2026",
+   "activity": "Accounts created late 2025 – early 2026; operation active mid-May 2026 – Aug 2026 (report cutoff)"
+  },
+  {
+   "table": "main",
+   "name": "GTG-34007",
+   "akas": "Two linked Iranian paramilitary/domestic-security units",
+   "brief": "Anthropic banned 16 Claude accounts tied to two linked Iranian paramilitary/domestic-security units running surveillance systems and a malicious Firefox browser extension (\"al-Najm al-thāqib\") used to mass-harvest identities from social networks. One unit claimed to have surveilled/profiled 6,388 Iranians in a single year via a social-network-analysis pipeline over 155,216 tweets that named 39 Iranian opposition and diaspora accounts; both units fed a shared case-management system (\"Arman\"). Banned for Usage Policy and Supported-Regions-Policy violations, implying access-control circumvention. Anthropic",
+   "ttp_md": "**LL Models used for backdoor deployment** T1195.001 - Supply Chain Compromise (malicious browser extension)<br><br>**LLM-directed Automated Collection** T1119 - Automated Collection<br><br>**LLM-informed reconnaissance** T1589 - Gather Victim Identity Information",
+   "reported": "Sep 2026",
+   "activity": "Unknown (falls within the report's general \"Jan–Jul 2026\" surveillance-section framing, not case-specific)"
+  },
+  {
+   "table": "main",
+   "name": "GTG-14021",
+   "akas": "PRC-aligned public security and state security organs",
+   "brief": "A China-based public-and-state-security \"stability maintenance\" and transnational-repression operation, run from inside the PRC via VPN/v2ray access (device timezone consistently UTC+8 regardless of exit node), targeting Hong Kong pro-democracy figures, Tiananmen-commemoration organizers, Uyghur advocacy groups, and overseas dissidents — in one case producing \"pre-operational venue intelligence\" on planned overseas protests (a Vancouver march route, Uyghur events in Turkey, the Oslo Freedom Forum). Anthropic",
+   "ttp_md": "**LLM-directed Automated Collection** T1119 - Automated Collection<br><br>**LLM-informed reconnaissance** T1591 - Gather Victim Org Information (protest/event pre-operational intelligence)",
+   "reported": "Sep 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "GTG-14022",
+   "akas": "Contractor for PRC-government clients",
+   "brief": "A China-based contractor for PRC-government clients ran an automated daily \"public opinion monitoring\" pipeline (15–30+ articles/day) scoring social-media and news content for political sensitivity, producing restricted government briefings (\"舆情简报\") profiling dissidents, ethnic minorities, diaspora communities, and Taiwanese political figures. Anthropic",
+   "ttp_md": "**LLM-directed Automated Collection** T1119 - Automated Collection<br><br>**LLM-aided development** T1587 - Develop Capabilities (automated scoring pipeline)",
+   "reported": "Sep 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "CyberAv3ngers",
+   "akas": "IRGC-affiliated per public reporting cited by OpenAI; publicly linked to PLC compromise at the Municipal Water Authority of Aliquippa, PA (Nov 2023) and a water-service disruption in County Mayo, Ireland (Dec 2023)",
+   "brief": "OpenAI banned ChatGPT accounts assessed, per a credible-source tip, to belong to CyberAv3ngers. Interactions included listing commonly used industrial routers in Jordan; requesting default credentials for a Tridium Niagara device and a Hirschmann RS-Series industrial router; researching recently disclosed CrushFTP and Cisco Integrated Management Controller vulnerabilities plus older Asterisk VoIP flaws; and asking how to obfuscate VBA/Excel macro code (supplying code for the model to obfuscate). Request details suggested interest in/targeting of Jordan and Central Europe. OpenAI: \"we believe that these interactions did not provide CyberAv3ngers with any novel capability, resource, or information, and only offered limited, incremental capabilities that are already achievable with publicly available, non-AI powered tools.\" *Backfill note: discovered this cycle via a secondary source that misdated this report as \"September 2026\"; it is actually OpenAI's October 2024 \"Influence and cyber operations: an update\" report, a genuine pre-existing gap in the tracker, not new October 2026 reporting.* OpenAI",
+   "ttp_md": "**LLM-informed reconnaissance** T1592 - Gather Victim Host Information (industrial routers/PLC credentials)<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>**LLM-optimized payload crafting** T1027 - Obfuscated Files/Information (VBA obfuscation)",
+   "reported": "Oct 2024",
+   "activity": "Unknown (ChatGPT interactions undated in the report; the group's own prior physical intrusions were Nov–Dec 2023, a distinct window from the ChatGPT-use activity)"
+  },
+  {
+   "table": "main",
+   "name": "SweetSpecter",
+   "akas": "Suspected China-based actor",
+   "brief": "OpenAI disrupted a cluster of accounts attributed to SweetSpecter, a suspected China-based actor. The group conducted unsuccessful spear-phishing against OpenAI's own employees (a malicious \"some problems.zip\" attachment delivering the SugarGh0st RAT, identified in collaboration with Proofpoint), and separately used ChatGPT for reconnaissance and vulnerability research — checking Log4Shell-vulnerable versions, seeking sqlmap web-shell-upload guidance, looking up CVEs, asking about building internet-wide scanners, debugging an SMS-spam framework, and requesting phishing-lure \"theme\" and attachment-naming suggestions. *Backfill note: see CyberAv3ngers row above — same October 2024 report, misdated by a secondary source as \"September 2026.\"* OpenAI",
+   "ttp_md": "**LLM-supported social engineering** T1566.001 - Spearphishing Attachment<br><br>**LLM-informed reconnaissance** T1595 - Active Scanning<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities",
+   "reported": "Oct 2024",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "STORM-0817",
+   "akas": "Iran-based actor",
+   "brief": "OpenAI disrupted Storm-0817, an Iran-based actor using ChatGPT to debug rudimentary Android surveillanceware (two APKs — `com.example.myttt` and `com.mihanwebmaster.ashpazi` — capable of exfiltrating contacts, call logs, screenshots, IMEI, and geolocation, plus WhatsApp/IMO files), build C2 server code (a WAMP-stack server at `stickhero[.]pro`), debug an Instagram-scraping tool tested against an Iranian journalist critical of the government, and translate LinkedIn profiles of Pakistani cybersecurity/military-affiliated academics into Persian. OpenAI: \"we believe our models only offered limited, incremental capabilities for malicious cybersecurity tasks beyond what is already achievable with publicly available, non-AI powered tools.\" *Backfill note: see CyberAv3ngers row above — same October 2024 report.* OpenAI",
+   "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware (Android surveillanceware, C2 server)<br><br>**LLM-directed Automated Collection** T1119 - Automated Collection (Instagram scraper, target profiling)",
+   "reported": "Oct 2024",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "EvilTokens",
+   "akas": "UnSub (no named group / Storm-#### designation given in this post)",
+   "brief": "Microsoft's Digital Crimes Unit disrupted EvilTokens, an AI chatbot platform sold via Telegram ($1,500 initiation + $500/month) that used AI \"at every step of the attack chain\" — analyzing compromised inboxes to identify trusted relationships, payment authorizations, and an organization's \"money movers\"; recommending fraud strategies and targets; and drafting impersonation messages. Investigators found evidence large portions of EvilTokens itself were \"vibe coded,\" drawing on capabilities from multiple AI models. Initial access relied on device-code-style phishing that tricked victims into completing legitimate Microsoft sign-in flows. Within months of a February 2026 launch, the platform was linked to 12,000+ compromised inboxes across 10,000+ organizations worldwide (highest concentrations: US, Canada, UK, Australia, India, France), spanning wholesale distribution, construction, financial services, real estate, higher education, and healthcare. Court-authorized disruption (US District Court, Eastern District of Virginia) with partners Cloudflare, Coinbase, OpenAI, Railway, SpyCloud, Shadowserver, and TRM Labs, co-plaintiff Health-ISAC; UK authorities arrested two men (32, 38) on 2026-09-11. Microsoft's 40th court-authorized DCU disruption and its first against an \"end-to-end AI-enabled cybercrime service.\" Microsoft",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (full BEC/fraud kill-chain)<br><br>**LLM-directed Automated Collection** T1114 - Email Collection (inbox analysis, trusted-relationship mapping)<br><br>**LLM-supported social engineering** T1566 - Phishing (device-code AiTM) / T1585 - Establish Accounts (impersonation drafting)<br><br>**LLM-enhanced extortion/negotiation** T1657 - Financial Theft",
+   "reported": "Sep 2026",
+   "activity": "Feb 2026 – Sep 2026 (launched Feb 2026; disruption action Sep 2026)"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (PaperCut NG/MF agentic exploitation campaign) — GreyNoise/Blackpoint",
+   "akas": "UnSub; GreyNoise's own hedge: \"likely Russian-speaking malicious cyber actor (MCA)\" — *analyst note: this attribution is explicitly hedged (\"likely\") with no supporting linguistic evidence cited in either primary report; Blackpoint's independent report gives no nation/language attribution at all.*",
+   "brief": "GreyNoise and Blackpoint Cyber independently documented (and directly corroborate each other on IOCs/scale) an actor who wrapped a DeepSeek model inside an OpenAI Codex harness to run hundreds of autonomous AI agents against two PaperCut NG/MF vulnerabilities (CVE-2026-81578, access-control bypass; CVE-2026-82078, unsafe-reflection RCE), compromising at least 440 instances across 395 victim organizations in 48 countries. The actor first built and attacked a private lab replica (vulnerable PaperCut + Active Directory server) to develop/test exploits before going live; the campaign achieved first real-victim RCE in under 4 hours and domain admin at some victims within minutes (one US high school in 7 minutes), reaching 11 compromised organizations within a 26-second span at peak. Blackpoint recovered an exposed operator directory (IP 45.142.193[.]132) containing \"Hindsight\" (a persistent memory layer for AI agents), \"AionUI\" (a multi-agent-orchestration interface), timestamped agent session/task-state files, exploit-code generations, and target lists — direct forensic evidence of agentic tooling, not inferred from speed alone. The actor's own 28-country avoid-list (Russia, China, Iran, and 25 others) was inconsistently honored — victims were hit in several listed countries (Brazil, South Africa, Zimbabwe, China, Kazakhstan) despite it. *Bias note: both are commercial security vendors (GreyNoise: network telemetry/honeypots; Blackpoint: MDR/incident response) reporting from direct operational visibility, not aggregate marketing.* GreyNoise · Blackpoint Cyber",
+   "ttp_md": "**LLM-orchestrated operations (Agentic AI attack orchestration)** TA0002 - Execution (full kill-chain, hundreds of concurrent agents)<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities (lab-tested exploit dev)<br><br>T1190 - Exploit Public-Facing Application<br><br>T1552 - Unsecured Credentials",
+   "reported": "Sep 2026",
+   "activity": "31 Aug 2026 – 9 Sep 2026 (GreyNoise had tracked the C2 IP's broader activity since early Jul 2026)"
+  },
+  {
    "table": "deepfake",
    "name": "Multiple UnSubs",
    "akas": "",
@@ -1023,10 +1140,10 @@
    "table": "deepfake",
    "name": "DPRK IT-worker operation",
    "akas": "",
-   "brief": "DPRK operatives use AI-generated résumés/personas, AI profile photos, and real-time deepfake video to pass job interviews, and Claude to pass coding assessments and perform the work while fraudulently employed, funneling wages to the regime. CrowdStrike (FAMOUS CHOLLIMA) tracked 320+ infiltrated firms (+220% YoY); Microsoft names Jasper Sleet using the Faceswap app to insert workers' faces into stolen IDs; Anthropic confirmed Claude-enabled employment fraud; Amazon reported blocking 1,800+ suspected operatives in 2025.",
+   "brief": "DPRK operatives use AI-generated résumés/personas, AI profile photos, and real-time deepfake video to pass job interviews, and Claude to pass coding assessments and perform the work while fraudulently employed, funneling wages to the regime. CrowdStrike (FAMOUS CHOLLIMA) tracked 320+ infiltrated firms (+220% YoY); Microsoft names Jasper Sleet using the Faceswap app to insert workers' faces into stolen IDs; Anthropic confirmed Claude-enabled employment fraud; Amazon reported blocking 1,800+ suspected operatives in 2025. [Update 2026-09] A joint advisory from Japan (National Police Agency/National Cybersecurity Office), the US (FBI/DoD Cyber Crime Center), Australia (Signals Directorate), and Germany (BfV/BND) attributed a DPRK IT-worker/hiring-fraud campaign to a group dubbed WaterPlum (aka Contagious Interview), assessed to operate under the Workers' Party of Korea's 313 General Bureau of the Munitions Industry Department. WaterPlum poses as legitimate employers — often impersonating real AI, crypto, or NFT companies — to reach developers/IT professionals; per multiple outlets' reporting on the advisory, operators used AI face-swapping during video interviews, cutting their video feed minutes in under the guise of technical difficulties to evade detection. Between Dec 2025 and Jul 2026 the campaign is assessed to have infected 30,000+ devices across 100+ countries and exfiltrated ~$10.71M (¥1.7B) via 7,000+ cryptocurrency wallets; Japan conducted its first-ever dismantling of a North Korean \"laptop farm.\" *Analyst note: the primary joint advisory (hosted at cyber.gov.au) could not be directly fetched this cycle (503/timeout); the AI-face-swap detail is corroborated by three independent outlets (SecurityWeek, BleepingComputer, IBTimes UK) with consistent, non-copy-pasted phrasing, but has not been directly verified against the primary advisory text — flagging for maintainer confirmation.*",
    "ttp_md": "**DeepFake for Impersonation**<br><br>Employment/Hiring fraud<br><br>**DeepFake for Synthetic Identity**",
-   "reported": "Aug 2025 – Mar 2026",
-   "activity": "Aug 2025 – 2026"
+   "reported": "Aug 2025 – Mar 2026; Sep 2026 (WaterPlum joint advisory)",
+   "activity": "Aug 2025 – Jul 2026"
   },
   {
    "table": "deepfake",
@@ -1072,6 +1189,24 @@
    "ttp_md": "**DeepFake for Impersonation**<br><br>Financial fraud (romance scam)",
    "reported": "Sep 2026",
    "activity": "Since 2022"
+  },
+  {
+   "table": "deepfake",
+   "name": "Unnamed Greek organized-crime ring (6 suspects in case file; 2 named arrests)",
+   "akas": "",
+   "brief": "Greece's Financial Crime Squad broke up an organized-crime ring that used AI voice-cloning to impersonate victims' relatives in high-value phone fraud. \"Callers\" posed as staff of the national electricity distributor (HEDNO) or telecom/fiber providers to obtain a short voice sample of a victim's relative under pretext, then AI-cloned that voice to call the original victim back impersonating the trusted relative to validate fraudulent instructions; \"collectors\" then physically retrieved cash/valuables. Two suspects (aged 23 and 25) were arrested in Nea Ionia, Attica, caught leaving a victim's home with ~€30,000 in valuables; police estimate total illegal proceeds exceed €1 million across at least 5 documented cases since early July 2026. Euronews",
+   "ttp_md": "**DeepFake for Impersonation**<br><br>Financial fraud (voice-cloned relative-impersonation scam)",
+   "reported": "Sep 2026",
+   "activity": "Jul 2026 – Sep 2026"
+  },
+  {
+   "table": "deepfake",
+   "name": "Unnamed fraud ring",
+   "akas": "",
+   "brief": "PSNI warned after a victim in Ards and North Down lost £250,000 to a multi-stage investment scam that began with an AI-generated video appearing to feature a prominent financial-sector figure promoting a high-return investment. After an initial small payment, the victim was contacted on WhatsApp and pressured into further transfers, set up multiple accounts, and granted the fraudsters remote access to their computer. *Analyst note: PSNI's own statement does not confirm which individual's likeness was used; secondary coverage's identification is unconfirmed by the primary source and is deliberately not repeated here.* PSNI",
+   "ttp_md": "**DeepFake for Impersonation**<br><br>Financial fraud (investment scam)",
+   "reported": "Sep 2026",
+   "activity": "Unknown (reported Sep 2026)"
   }
  ]
 }

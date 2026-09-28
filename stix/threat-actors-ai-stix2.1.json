@@ -640,6 +640,16 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--838f43bc-1bde-56e1-9b03-d04cdb9203f1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "LLM-assisted weapons/munitions engineering",
+   "description": "Custom LLM-themed TTP (see Appendix A).",
+   "x_llm_ttp": true
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--868ff63c-98ad-5948-bc04-79e726559ba9",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1900,6 +1910,15 @@
   {
    "type": "identity",
    "spec_version": "2.1",
+   "id": "identity--31e7ef3a-4eca-5d36-9887-864b860fece3",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "psni.police.uk",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
    "id": "identity--350d7d85-e3d1-5f81-a4b4-086cc86acc97",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1913,6 +1932,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "Huntress",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--365b6359-b10e-543b-8e74-ad0bbba246b0",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "greynoise.io",
    "identity_class": "organization"
   },
   {
@@ -1936,6 +1964,15 @@
   {
    "type": "identity",
    "spec_version": "2.1",
+   "id": "identity--415e350b-19c9-55f4-b462-42235f80c32d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "securityweek.com",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
    "id": "identity--529790c4-59b6-520b-b0c7-a9345ddf7cb2",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1949,6 +1986,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "FBI IC3",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--604d7d71-4dcb-57de-9a9b-fe77946bb9c3",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "euronews.com",
    "identity_class": "organization"
   },
   {
@@ -2057,6 +2103,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "Amazon",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--9acbeceb-a7a7-58dc-aa76-ed578d3462c1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "blackpointcyber.com",
    "identity_class": "organization"
   },
   {
@@ -9232,6 +9287,25 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--2db9ac24-5b20-5594-b508-eee20ff13b9b",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-14022",
+   "description": "A China-based contractor for PRC-government clients ran an automated daily \"public opinion monitoring\" pipeline (15–30+ articles/day) scoring social-media and news content for political sensitivity, producing restricted government briefings (\"舆情简报\") profiling dissidents, ethnic minorities, diaspora communities, and Taiwanese political figures. Anthropic",
+   "aliases": [
+    "Contractor for PRC-government clients"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--2e99577b-41f4-5da9-abd6-9274cc3a754f",
    "created": "2026-02-01T00:00:00.000Z",
    "modified": "2026-02-01T00:00:00.000Z",
@@ -9294,6 +9368,25 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "created": "2024-10-01T00:00:00.000Z",
+   "modified": "2024-10-01T00:00:00.000Z",
+   "name": "SweetSpecter",
+   "description": "OpenAI disrupted a cluster of accounts attributed to SweetSpecter, a suspected China-based actor. The group conducted unsuccessful spear-phishing against OpenAI's own employees (a malicious \"some problems.zip\" attachment delivering the SugarGh0st RAT, identified in collaboration with Proofpoint), and separately used ChatGPT for reconnaissance and vulnerability research — checking Log4Shell-vulnerable versions, seeking sqlmap web-shell-upload guidance, looking up CVEs, asking about building internet-wide scanners, debugging an SMS-spam framework, and requesting phishing-lure \"theme\" and attachment-naming suggestions. *Backfill note: see CyberAv3ngers row above — same October 2024 report, misdated by a secondary source as \"September 2026.\"* OpenAI",
+   "aliases": [
+    "Suspected China-based actor"
+   ],
+   "external_references": [
+    {
+     "source_name": "OpenAI",
+     "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf",
+     "description": "OpenAI"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--30632294-81f0-513b-b284-8ae0a5823a43",
    "created": "2025-11-01T00:00:00.000Z",
    "modified": "2025-11-01T00:00:00.000Z",
@@ -9307,6 +9400,27 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools",
      "description": "GTIG"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "created": "2024-10-01T00:00:00.000Z",
+   "modified": "2024-10-01T00:00:00.000Z",
+   "name": "CyberAv3ngers",
+   "description": "OpenAI banned ChatGPT accounts assessed, per a credible-source tip, to belong to CyberAv3ngers. Interactions included listing commonly used industrial routers in Jordan; requesting default credentials for a Tridium Niagara device and a Hirschmann RS-Series industrial router; researching recently disclosed CrushFTP and Cisco Integrated Management Controller vulnerabilities plus older Asterisk VoIP flaws; and asking how to obfuscate VBA/Excel macro code (supplying code for the model to obfuscate). Request details suggested interest in/targeting of Jordan and Central Europe. OpenAI: \"we believe that these interactions did not provide CyberAv3ngers with any novel capability, resource, or information, and only offered limited, incremental capabilities that are already achievable with publicly available, non-AI powered tools.\" *Backfill note: discovered this cycle via a secondary source that misdated this report as \"September 2026\"; it is actually OpenAI's October 2024 \"Influence and cyber operations: an update\" report, a genuine pre-existing gap in the tracker, not new October 2026 reporting.* OpenAI",
+   "aliases": [
+    "IRGC-affiliated per public reporting cited by OpenAI; publicly linked to PLC compromise at the Municipal Water Authority of Aliquippa",
+    "PA (Nov 2023) and a water-service disruption in County Mayo",
+    "Ireland (Dec 2023)"
+   ],
+   "external_references": [
+    {
+     "source_name": "OpenAI",
+     "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf",
+     "description": "OpenAI"
     }
    ]
   },
@@ -9739,9 +9853,9 @@
    "created": "2025-08-01T00:00:00.000Z",
    "modified": "2025-08-01T00:00:00.000Z",
    "name": "DPRK IT-worker operation",
-   "description": "DPRK operatives use AI-generated résumés/personas, AI profile photos, and real-time deepfake video to pass job interviews, and Claude to pass coding assessments and perform the work while fraudulently employed, funneling wages to the regime. CrowdStrike (FAMOUS CHOLLIMA) tracked 320+ infiltrated firms (+220% YoY); Microsoft names Jasper Sleet using the Faceswap app to insert workers' faces into stolen IDs; Anthropic confirmed Claude-enabled employment fraud; Amazon reported blocking 1,800+ suspected operatives in 2025.",
+   "description": "DPRK operatives use AI-generated résumés/personas, AI profile photos, and real-time deepfake video to pass job interviews, and Claude to pass coding assessments and perform the work while fraudulently employed, funneling wages to the regime. CrowdStrike (FAMOUS CHOLLIMA) tracked 320+ infiltrated firms (+220% YoY); Microsoft names Jasper Sleet using the Faceswap app to insert workers' faces into stolen IDs; Anthropic confirmed Claude-enabled employment fraud; Amazon reported blocking 1,800+ suspected operatives in 2025. [Update 2026-09] A joint advisory from Japan (National Police Agency/National Cybersecurity Office), the US (FBI/DoD Cyber Crime Center), Australia (Signals Directorate), and Germany (BfV/BND) attributed a DPRK IT-worker/hiring-fraud campaign to a group dubbed WaterPlum (aka Contagious Interview), assessed to operate under the Workers' Party of Korea's 313 General Bureau of the Munitions Industry Department. WaterPlum poses as legitimate employers — often impersonating real AI, crypto, or NFT companies — to reach developers/IT professionals; per multiple outlets' reporting on the advisory, operators used AI face-swapping during video interviews, cutting their video feed minutes in under the guise of technical difficulties to evade detection. Between Dec 2025 and Jul 2026 the campaign is assessed to have infected 30,000+ devices across 100+ countries and exfiltrated ~$10.71M (¥1.7B) via 7,000+ cryptocurrency wallets; Japan conducted its first-ever dismantling of",
    "first_seen": "2025-08-01T00:00:00.000Z",
-   "last_seen": "2026-01-01T00:00:00.000Z",
+   "last_seen": "2026-07-01T00:00:00.000Z",
    "external_references": [
     {
      "source_name": "Anthropic",
@@ -9767,6 +9881,11 @@
      "source_name": "Amazon",
      "url": "https://aws.amazon.com/blogs/security/",
      "description": "Amazon"
+    },
+    {
+     "source_name": "securityweek.com",
+     "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/",
+     "description": "SecurityWeek – Japan Dismantles First North Korean Laptop Farm"
     }
    ],
    "labels": [
@@ -9890,6 +10009,33 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "UnSub (PaperCut NG/MF agentic exploitation campaign) — GreyNoise/Blackpoint",
+   "description": "GreyNoise and Blackpoint Cyber independently documented (and directly corroborate each other on IOCs/scale) an actor who wrapped a DeepSeek model inside an OpenAI Codex harness to run hundreds of autonomous AI agents against two PaperCut NG/MF vulnerabilities (CVE-2026-81578, access-control bypass; CVE-2026-82078, unsafe-reflection RCE), compromising at least 440 instances across 395 victim organizations in 48 countries. The actor first built and attacked a private lab replica (vulnerable PaperCut + Active Directory server) to develop/test exploits before going live; the campaign achieved first real-victim RCE in under 4 hours and domain admin at some victims within minutes (one US high school in 7 minutes), reaching 11 compromised organizations within a 26-second span at peak. Blackpoint recovered an exposed operator directory (IP 45.142.193[.]132) containing \"Hindsight\" (a persistent memory layer for AI agents), \"AionUI\" (a multi-agent-orchestration interface), timestamped agent session/task-state files, exploit-code generations, and target lists — direct forensic evidence of agentic tooling, not inferred from speed alone. The actor's own 28-country avoid-list (Russia, China, Iran, and 25 others) was inconsistently honored — victims were hit in several listed countries (Brazil, South Africa, Zimbabwe, China, Kazakhstan) despite it. *Bias note: both are commercial security vendors (GreyNoise: network telemetry/honeypots; Blackpoint: MDR/incident response) reporting from dire",
+   "aliases": [
+    "UnSub; GreyNoise's own hedge: \"likely Russian-speaking malicious cyber actor (MCA)\" — *analyst note: this attribution is explicitly hedged (\"likely\") with no supporting linguistic evidence cited in either primary report; Blackpoint's independent report gives no nation",
+    "language attribution at all.*"
+   ],
+   "first_seen": "2026-08-01T00:00:00.000Z",
+   "last_seen": "2026-09-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "greynoise.io",
+     "url": "https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf",
+     "description": "GreyNoise"
+    },
+    {
+     "source_name": "blackpointcyber.com",
+     "url": "https://blackpointcyber.com/blog/death-by-a-thousand-papercuts-ai-driven-exploitation-at-scale/",
+     "description": "Blackpoint Cyber"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--78d8a3dd-ae5b-52dd-b0b1-36dd239dbc2e",
    "created": "2026-07-01T00:00:00.000Z",
    "modified": "2026-07-01T00:00:00.000Z",
@@ -9957,6 +10103,28 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "EvilTokens",
+   "description": "Microsoft's Digital Crimes Unit disrupted EvilTokens, an AI chatbot platform sold via Telegram ($1,500 initiation + $500/month) that used AI \"at every step of the attack chain\" — analyzing compromised inboxes to identify trusted relationships, payment authorizations, and an organization's \"money movers\"; recommending fraud strategies and targets; and drafting impersonation messages. Investigators found evidence large portions of EvilTokens itself were \"vibe coded,\" drawing on capabilities from multiple AI models. Initial access relied on device-code-style phishing that tricked victims into completing legitimate Microsoft sign-in flows. Within months of a February 2026 launch, the platform was linked to 12,000+ compromised inboxes across 10,000+ organizations worldwide (highest concentrations: US, Canada, UK, Australia, India, France), spanning wholesale distribution, construction, financial services, real estate, higher education, and healthcare. Court-authorized disruption (US District Court, Eastern District of Virginia) with partners Cloudflare, Coinbase, OpenAI, Railway, SpyCloud, Shadowserver, and TRM Labs, co-plaintiff Health-ISAC; UK authorities arrested two men (32, 38) on 2026-09-11. Microsoft's 40th court-authorized DCU disruption and its first against an \"end-to-end AI-enabled cybercrime service.\" Microsoft",
+   "aliases": [
+    "UnSub (no named group",
+    "Storm-#### designation given in this post)"
+   ],
+   "first_seen": "2026-02-01T00:00:00.000Z",
+   "last_seen": "2026-09-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
+     "description": "Microsoft"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--7cae08ff-c4b4-5ea2-8001-decf2be44387",
    "created": "2023-08-01T00:00:00.000Z",
    "modified": "2023-08-01T00:00:00.000Z",
@@ -10000,6 +10168,26 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-50027",
+   "description": "A single Claude subscriber — likely a Bamako-based independent consultant working for Mali's state intelligence service (ANSE) — used Claude to build \"Lakana 360,\" a population-scale domestic-surveillance platform monitoring roughly 25 million SIM cards across all three of Mali's national mobile operators (call records, text messages, and voice-call capture). The actor directed Claude to design the system so its LLM-generated intelligence-dossier component bypassed Mali's own legal requirement for a court order before disclosing surveillance records — \"the warrant requirement was removed, at the operator's request, from the component that writes an LLM-generated intelligence dossier.\" Anthropic cites US State Department/Human Rights Watch documentation of Malian security-service detention of opposition figures as context. Anthropic",
+   "aliases": [
+    "Likely a Bamako-based independent consultant contracted to Mali's state intelligence service (Agence Nationale de la Sécurité d'État",
+    "ANSE)"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--88f2b61f-84b2-5219-a3ae-da6f5e645602",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -10016,6 +10204,27 @@
      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/",
      "description": "Unit 42"
     }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--88f2dedf-d3dd-5566-b9f4-bb3841303eec",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "Unnamed Greek organized-crime ring (6 suspects in case file; 2 named arrests)",
+   "description": "Greece's Financial Crime Squad broke up an organized-crime ring that used AI voice-cloning to impersonate victims' relatives in high-value phone fraud. \"Callers\" posed as staff of the national electricity distributor (HEDNO) or telecom/fiber providers to obtain a short voice sample of a victim's relative under pretext, then AI-cloned that voice to call the original victim back impersonating the trusted relative to validate fraudulent instructions; \"collectors\" then physically retrieved cash/valuables. Two suspects (aged 23 and 25) were arrested in Nea Ionia, Attica, caught leaving a victim's home with ~€30,000 in valuables; police estimate total illegal proceeds exceed €1 million across at least 5 documented cases since early July 2026. Euronews",
+   "first_seen": "2026-07-01T00:00:00.000Z",
+   "last_seen": "2026-09-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "euronews.com",
+     "url": "https://www.euronews.com/my-europe/2026/09/18/greece-police-bust-gang-using-ai-to-clone-relatives-voices-for-cash",
+     "description": "Euronews"
+    }
+   ],
+   "labels": [
+    "deepfake"
    ]
   },
   {
@@ -10677,6 +10886,26 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--b642a7cc-ad1c-5c85-b82d-8640e6f32988",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-87001",
+   "description": "Anthropic disrupted a northern-Yemen-based cell running three parallel AI-assisted weapons-development programs: a guided rocket using a commodity phone-class flight computer with terminal-phase homing guidance; a multi-stage ballistic missile with a stated range goal above 2,000 km; and a multi-variant missile family (\"R2000\") including a hypersonic glide-vehicle variant. The actors ran Claude Code \"in place of human software engineers\" for guidance/navigation/control (GNC) software, delegating coder/researcher/reviewer roles across multiple Claude instances and splitting work across sessions to evade safeguards. Anthropic found no evidence of a fielded operational device, but the actors test-fired a guided rocket; the field test appears to have failed, and the actors returned to Claude within hours to diagnose the failure. Anthropic",
+   "aliases": [
+    "UnSub (Anthropic designation); northern-Yemen-based weapons engineering cell — *analyst note: secondary press (The Register",
+    "Politico) labeled this \"Houthi\"; Anthropic's own report never uses that word — the Houthi attribution is unconfirmed by the primary source and not repeated as fact here.*"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--b76b437e-d1a8-5ef5-96aa-9591e46c988d",
    "created": "2025-08-01T00:00:00.000Z",
    "modified": "2025-08-01T00:00:00.000Z",
@@ -10802,6 +11031,65 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--be5e88c0-849a-5cf3-a8d2-3c9ffa8eabb8",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-17001",
+   "description": "Anthropic disrupted a China-based operation that used Claude to draft a Chinese-language specification for an anti-torpedo fire-control system — \"the core logic that aims and times an anti-torpedo weapon's response\" — written to win approval from a Chinese defense manufacturer, plus a 200+ page acquisition proposal and an associated fire-control software test matrix. Anthropic",
+   "aliases": [
+    "UnSub (Anthropic designation); China-based operation"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--bf56e76c-4eb4-5a9d-8fdf-b18adb288054",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "Unnamed fraud ring",
+   "description": "PSNI warned after a victim in Ards and North Down lost £250,000 to a multi-stage investment scam that began with an AI-generated video appearing to feature a prominent financial-sector figure promoting a high-return investment. After an initial small payment, the victim was contacted on WhatsApp and pressured into further transfers, set up multiple accounts, and granted the fraudsters remote access to their computer. *Analyst note: PSNI's own statement does not confirm which individual's likeness was used; secondary coverage's identification is unconfirmed by the primary source and is deliberately not repeated here.* PSNI",
+   "first_seen": "2026-09-01T00:00:00.000Z",
+   "last_seen": "2026-09-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "psni.police.uk",
+     "url": "https://www.psni.police.uk/latest-news/warning-against-fraud-after-victim-loses-ps250000-ards-and-north-down-online-criminals",
+     "description": "PSNI"
+    }
+   ],
+   "labels": [
+    "deepfake"
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--bf579858-9e82-5272-a3bb-705c4bec0ce9",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-17002",
+   "description": "A separate China-based operation used Claude's chat, coding, and agentic tooling to design, build, and iteratively refine (12 versions) a roughly 16-module Chinese-language software suite for electronic warfare and suppression of an opponent's air-defense systems. Anthropic",
+   "aliases": [
+    "UnSub (Anthropic designation); China-based operation"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--c039a697-b669-5181-8db0-5f88126f28b0",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -10833,6 +11121,25 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
      "description": "GTIG"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--c0d771a6-5b8e-5056-b51b-026fbc2ece9b",
+   "created": "2024-10-01T00:00:00.000Z",
+   "modified": "2024-10-01T00:00:00.000Z",
+   "name": "STORM-0817",
+   "description": "OpenAI disrupted Storm-0817, an Iran-based actor using ChatGPT to debug rudimentary Android surveillanceware (two APKs — `com.example.myttt` and `com.mihanwebmaster.ashpazi` — capable of exfiltrating contacts, call logs, screenshots, IMEI, and geolocation, plus WhatsApp/IMO files), build C2 server code (a WAMP-stack server at `stickhero[.]pro`), debug an Instagram-scraping tool tested against an Iranian journalist critical of the government, and translate LinkedIn profiles of Pakistani cybersecurity/military-affiliated academics into Persian. OpenAI: \"we believe our models only offered limited, incremental capabilities for malicious cybersecurity tasks beyond what is already achievable with publicly available, non-AI powered tools.\" *Backfill note: see CyberAv3ngers row above — same October 2024 report.* OpenAI",
+   "aliases": [
+    "Iran-based actor"
+   ],
+   "external_references": [
+    {
+     "source_name": "OpenAI",
+     "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf",
+     "description": "OpenAI"
     }
    ]
   },
@@ -11002,6 +11309,25 @@
      "source_name": "sophos.com",
      "url": "https://www.sophos.com/en-us/content/sophos-ai-security-2026-report",
      "description": "Sophos X-Ops"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--de24cb7f-a185-508b-8541-a38aea28e07d",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-14021",
+   "description": "A China-based public-and-state-security \"stability maintenance\" and transnational-repression operation, run from inside the PRC via VPN/v2ray access (device timezone consistently UTC+8 regardless of exit node), targeting Hong Kong pro-democracy figures, Tiananmen-commemoration organizers, Uyghur advocacy groups, and overseas dissidents — in one case producing \"pre-operational venue intelligence\" on planned overseas protests (a Vancouver march route, Uyghur events in Turkey, the Oslo Freedom Forum). Anthropic",
+   "aliases": [
+    "PRC-aligned public security and state security organs"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
     }
    ]
   },
@@ -11231,6 +11557,30 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-27005",
+   "description": "Anthropic disrupted likely freelance Russia-based actors building a full-stack autonomous FPV kamikaze drone swarm via Claude Code — shared swarm memory/fault-tolerant coordination logic, an onboard small language model governing attack/observe/return-to-base behavior (including a \"person\" target class able to issue detonation commands without a human in the loop), camera-based terminal guidance, a control-link geolocation module to find opposing drone operators, passive acoustic detection, and low-level programmable-chip logic. The team trained a computer-vision classifier on scraped Ukrainian combat footage and used a fixed Donetsk Oblast coordinate as a demonstration strike point; systems reached TRL 3–4 (validated in simulation; confirmed hardware-in-the-loop testing). 9 accounts identified (8 used only for ordinary freelance work); unverified claimed funding ties to Russia's Advanced Research Foundation, National Technology Initiative, and Ministry of Defence. Anthropic",
+   "aliases": [
+    "\"DronDoc\"",
+    "\"Serafim\" (actors' own operation names); assessed as a small freelance team",
+    "possibly linked to a Russian university",
+    "federal research center"
+   ],
+   "first_seen": "2025-01-01T00:00:00.000Z",
+   "last_seen": "2026-08-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--f743042c-901d-5531-9aea-e91669c7f567",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -11298,6 +11648,26 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering",
      "description": "GTIG – UNC1069"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GTG-34007",
+   "description": "Anthropic banned 16 Claude accounts tied to two linked Iranian paramilitary/domestic-security units running surveillance systems and a malicious Firefox browser extension (\"al-Najm al-thāqib\") used to mass-harvest identities from social networks. One unit claimed to have surveilled/profiled 6,388 Iranians in a single year via a social-network-analysis pipeline over 155,216 tweets that named 39 Iranian opposition and diaspora accounts; both units fed a shared case-management system (\"Arman\"). Banned for Usage Policy and Supported-Regions-Policy violations, implying access-control circumvention. Anthropic",
+   "aliases": [
+    "Two linked Iranian paramilitary",
+    "domestic-security units"
+   ],
+   "external_references": [
+    {
+     "source_name": "Anthropic",
+     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+     "description": "Anthropic"
     }
    ]
   },
@@ -12222,6 +12592,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--0a1cdf18-ac07-500a-8364-519bf7d6ce64",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--0addabf4-f785-5526-9afc-42262a9b0f21",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -12338,6 +12718,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--cc49c121-b39b-5564-8d19-1adf59f2490d",
    "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--0d1de6f2-067e-5aa2-b0a8-12b037715acd",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc"
   },
   {
    "type": "relationship",
@@ -12528,6 +12918,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--e946cd23-fc33-50d0-8e17-a2fc70e1b067",
    "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--11446fbf-3ed9-55a5-b0f5-47699978186b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "target_ref": "attack-pattern--3899c496-4983-540b-8e20-6b39d52dd7e0"
   },
   {
    "type": "relationship",
@@ -12802,6 +13202,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--171a4747-b9b7-5a67-ad33-d16e26d60e33",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--17b7c9e7-0ef9-58b1-ae68-5089e2503ea5",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -12858,6 +13268,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--6a6ed810-1fd5-5bd7-bdfa-e5a852441a0b",
    "target_ref": "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--193a2f16-73d4-51d5-bda9-97cf47dbf39b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--88f2dedf-d3dd-5566-b9f4-bb3841303eec",
+   "target_ref": "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba"
   },
   {
    "type": "relationship",
@@ -12992,12 +13412,42 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--1c5f6850-d099-5e0e-945d-218354fb3e7b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--c0d771a6-5b8e-5056-b51b-026fbc2ece9b",
+   "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--1c8926b6-ba75-5de9-9284-7d4726cc3367",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "target_ref": "attack-pattern--ecfeec05-c8d9-56e0-bf7a-09b697da74fd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--1d3da66f-8e9d-5c00-9384-4a309b2598e3",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "based-on",
    "source_ref": "indicator--10369064-b30d-5fac-93df-e57854811b1d",
    "target_ref": "software--381cb8af-e3b2-5e62-ace4-fdc4126de34f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--1d4fb15d-082c-5361-b6f8-2ed6dba6b838",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -13352,6 +13802,26 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--27f22aae-597d-579c-9a60-152428b63ee9",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+   "target_ref": "attack-pattern--838f43bc-1bde-56e1-9b03-d04cdb9203f1"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--27f8936b-0efd-5e1d-9e1f-1cbcb885ab37",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--de24cb7f-a185-508b-8541-a38aea28e07d",
+   "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--2869630a-41ab-51e3-b361-c438b749db73",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -13458,6 +13928,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--0bef2cc2-743d-5321-81f1-e305fda0b369",
    "target_ref": "domain-name--c3712561-952c-56e9-9bcd-678c441e0dd4"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--2b5ef873-8b2d-59f8-a89d-ae3cc2c6ef19",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5"
   },
   {
    "type": "relationship",
@@ -13642,6 +14122,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--309582d9-6e74-50b3-b65f-19702831ac2b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--c0d771a6-5b8e-5056-b51b-026fbc2ece9b",
+   "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--30b87e62-33c8-5c4f-b39f-7aab8b67536d",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -13808,6 +14298,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--5fc905d1-c253-5180-a93e-b94265cd4e2e",
    "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--35b19451-2c88-5dde-867b-530d853efd6a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "target_ref": "attack-pattern--81dab0da-3b91-576b-a330-f420e181cf9b"
   },
   {
    "type": "relationship",
@@ -14008,6 +14508,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--c757917d-79cf-5070-b2c3-a0afcb354fca",
    "target_ref": "attack-pattern--42469971-8ab2-50e6-a8f8-ee47975419fb"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--3a7a6d64-53b2-51d3-b331-3f23223c8184",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
   },
   {
    "type": "relationship",
@@ -14318,6 +14828,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--2de96fc4-ed76-5eb5-a4ce-b6bb3457d93d",
    "target_ref": "domain-name--983ac174-bdeb-5157-9842-015813caafce"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--4369421b-e83a-50a8-921f-6d8f3733fc69",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--de24cb7f-a185-508b-8541-a38aea28e07d",
+   "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
   },
   {
    "type": "relationship",
@@ -14892,12 +15412,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--508a7013-3728-5234-a48b-ba87e16316e6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+   "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--50c6bad3-fc9f-519b-9e5d-f45e828709e5",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "based-on",
    "source_ref": "indicator--9dbb0b2e-010e-5aac-9067-39080e3aeb1a",
    "target_ref": "ipv4-addr--1960b348-e21b-56e9-8792-4c0a69e73f6b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--50d37b29-bc01-59c1-8b1b-f7887124faf6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--be5e88c0-849a-5cf3-a8d2-3c9ffa8eabb8",
+   "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
   },
   {
    "type": "relationship",
@@ -15082,6 +15622,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--57a30a93-731e-570c-bbf0-cfc2c46c3fa1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2db9ac24-5b20-5594-b508-eee20ff13b9b",
+   "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--57f8ee69-630e-51c4-a5c6-e82ed1c7ea0d",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -15168,6 +15718,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--c616ac79-1218-58b6-a4f7-a8f3cd35f34c",
    "target_ref": "ipv4-addr--d99f4646-d500-5452-850b-f04fc0d77baf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--59f21cd6-4c6b-5f8b-8862-474bc4fe777d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd"
   },
   {
    "type": "relationship",
@@ -15532,6 +16092,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--636a155a-7d99-5308-ad81-c7d83d1321dd",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+   "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--639a1921-5916-5060-8946-0ae3b8aac5ba",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -15582,6 +16152,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6469bf74-8562-5a17-9d8d-08199d06c4a9",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--874fadca-5767-5f85-9973-49a398a49cc2"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--64aee047-d57b-57fe-8e94-9dbfd5119831",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -15628,6 +16208,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
    "target_ref": "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--66b2fcc7-28c6-523c-88fd-46f0b1c7251d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--de24cb7f-a185-508b-8541-a38aea28e07d",
+   "target_ref": "attack-pattern--1b91c674-5f59-56a5-b5a1-4069da6b45a5"
   },
   {
    "type": "relationship",
@@ -15762,6 +16352,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6a5e78b5-3798-5102-a0ed-94aeccc64cab",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--6ae8b286-2240-5a77-afc4-cb8b4383b7a2",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -15812,12 +16412,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6c4f105d-c639-51c6-985b-38744433d3b7",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--6ce4c08d-4d96-5c47-9fd1-0600e7517c9f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--30632294-81f0-513b-b284-8ae0a5823a43",
    "target_ref": "attack-pattern--c4e44002-b165-5687-b030-543cc5b0b66c"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--6cef26f0-cdab-583f-ab73-82d70c5882be",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
   },
   {
    "type": "relationship",
@@ -15918,6 +16538,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--7a486c27-c66c-5536-acd2-c8fd3985a0f0",
    "target_ref": "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--6dda8079-e7b4-51ac-8fdf-692c6a34f425",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
   },
   {
    "type": "relationship",
@@ -16152,6 +16782,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--7245caee-e8a0-5a10-9271-6202fc9babde",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "target_ref": "attack-pattern--bd0c7558-f574-5409-8a36-ac9d707a10a2"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--72a43cf8-a651-5f41-9cfe-c0ffe69f61d5",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16202,6 +16842,26 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--7377f223-acd6-5ab9-a92b-d155e37b119e",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--738812ea-152d-51ac-b42e-83523b40b58c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+   "target_ref": "attack-pattern--c55ce859-9b9b-5480-a6a4-1df044c92bf5"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--73dbf4a5-2670-5840-babb-93881d91ae88",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16212,12 +16872,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--744657a4-707f-5db5-9ab1-6e4a04fbca6a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "target_ref": "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--748a4a37-8be5-5d9e-93be-02195cb09140",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a0ebb8a1-48be-5a8e-ab96-9b3c11b197b2",
    "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--749571b0-daec-523e-88e1-0b178a209bf1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2db9ac24-5b20-5594-b508-eee20ff13b9b",
+   "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
   },
   {
    "type": "relationship",
@@ -16892,6 +17572,36 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--8c911dcc-7271-522b-afe6-139988e55450",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--bf579858-9e82-5272-a3bb-705c4bec0ce9",
+   "target_ref": "attack-pattern--838f43bc-1bde-56e1-9b03-d04cdb9203f1"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--8caaf867-7316-5c38-86ec-9622da56a3a6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b642a7cc-ad1c-5c85-b82d-8640e6f32988",
+   "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--8d1d3451-6302-5380-baea-cc89656ac02f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--8d5de9cf-bada-5fec-89ad-cfc32f85d9a0",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16958,6 +17668,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--79400019-4be7-5d46-ac20-57a840650a65",
    "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--8e3cf88a-3d72-5351-b483-9f579643de3e",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "target_ref": "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3"
   },
   {
    "type": "relationship",
@@ -17072,6 +17792,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--91a2ab8b-ddc8-5baa-a595-32edc36c3b87",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--92b722de-f5d6-5977-8118-2c0bf9f92bad",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17108,6 +17838,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--938c16e2-0819-54f5-9675-f1d1772996a1",
    "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--93cfe4c9-f014-5267-816a-43c633e68c53",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+   "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
   },
   {
    "type": "relationship",
@@ -17202,6 +17942,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--95c802b2-c62e-5405-93aa-11168c9c0499",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "target_ref": "attack-pattern--73188abe-c57c-5a7a-9c38-2d7da842ee9f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--95e1ee46-a0da-5d99-83e9-fd8f53b5511b",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17272,12 +18022,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--96b70ff8-a15e-566e-ae5a-214a91f66454",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--96f74b17-f453-5aad-94f0-e16ff1841c4a",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--594ff3ca-ae8d-5515-b0fc-622afb5cf5ee",
    "target_ref": "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--975435e1-e923-5785-a11c-91a683f14e6f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
   },
   {
    "type": "relationship",
@@ -17682,6 +18452,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--a47bd1e5-4a09-5e5b-aefc-b7d1d77f8a85",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--bf579858-9e82-5272-a3bb-705c4bec0ce9",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--a5d83e55-749a-506b-b1c6-81cb2df0ed35",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17772,6 +18552,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--a7918c8a-2b61-5641-aac1-961fe7f8b36f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b642a7cc-ad1c-5c85-b82d-8640e6f32988",
+   "target_ref": "attack-pattern--838f43bc-1bde-56e1-9b03-d04cdb9203f1"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--a7cb6577-ebcd-54ee-ab80-446a26c0c265",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17788,6 +18578,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--9d01c46f-5ac3-5231-8432-9091fd5c1a92",
    "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--a85760fb-8172-50e0-9d97-d6c308281585",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--c0d771a6-5b8e-5056-b51b-026fbc2ece9b",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
   },
   {
    "type": "relationship",
@@ -18012,6 +18812,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--af35f581-26cf-5efa-a9ab-34bca4087ca3",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "target_ref": "attack-pattern--c4e44002-b165-5687-b030-543cc5b0b66c"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--af71b9c3-eee4-5db7-8f71-d7aadd2ea731",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18212,6 +19022,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--b42dd582-c157-5fb2-9ae4-435afc16f45f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "target_ref": "attack-pattern--42026796-50a6-5357-82f1-3ee62e23ceb9"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--b4823512-6c71-58ab-9aaf-5508580b7957",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18328,6 +19148,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--d8b11f0b-01ab-50dc-baf0-9f6cedf85d49",
    "target_ref": "attack-pattern--c4dbec54-10a1-5152-b879-daffba0bf227"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--b600fe51-341f-5eee-9659-ccd6a4d0b74c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--bf579858-9e82-5272-a3bb-705c4bec0ce9",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
   },
   {
    "type": "relationship",
@@ -18452,6 +19282,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--b9c95743-21dd-5065-85a8-47b300982b67",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b642a7cc-ad1c-5c85-b82d-8640e6f32988",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--b9d50f10-e3d7-527b-ae45-1808c9366f14",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18478,6 +19318,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--c2459785-fc67-553c-9ca8-7379c727ddfb",
    "target_ref": "ipv4-addr--0a97d3fd-851e-5913-8c00-1aa351c582a2"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--ba92ad57-a3b4-53a5-ad18-6dc8ab4bd509",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2db9ac24-5b20-5594-b508-eee20ff13b9b",
+   "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
   },
   {
    "type": "relationship",
@@ -18548,6 +19398,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--e60ffa6e-09ac-50be-8839-1dc6b6d21293",
    "target_ref": "intrusion-set--166ae14e-49aa-5972-bbcb-25b7ca464ad7"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--bbedb0a2-6461-535c-9dfb-ebe4952910fd",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -18708,6 +19568,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--021d9d4f-1106-519c-97f0-20b3a2897983",
    "target_ref": "attack-pattern--3899c496-4983-540b-8e20-6b39d52dd7e0"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--c01bf4e3-77fd-5cd1-8a62-a78b69b0e470",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--be5e88c0-849a-5cf3-a8d2-3c9ffa8eabb8",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
   },
   {
    "type": "relationship",
@@ -18912,6 +19782,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--c39bedac-e2ea-5e51-a658-a091579c5b8a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6",
+   "target_ref": "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--c3e1670f-f1b5-5677-acc9-a083d8dd37eb",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18928,6 +19808,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6",
    "target_ref": "attack-pattern--4c50bda8-50bb-52f6-90ae-e0853062cf8f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--c4ce018b-246c-5397-bc38-0b056aa4e7bb",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2db9ac24-5b20-5594-b508-eee20ff13b9b",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
   },
   {
    "type": "relationship",
@@ -19178,6 +20068,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--5fc905d1-c253-5180-a93e-b94265cd4e2e",
    "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--cd9fba10-382d-5e08-aed4-42892961c9ee",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--be5e88c0-849a-5cf3-a8d2-3c9ffa8eabb8",
+   "target_ref": "attack-pattern--838f43bc-1bde-56e1-9b03-d04cdb9203f1"
   },
   {
    "type": "relationship",
@@ -19492,12 +20392,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--d63a582b-4746-59ea-ab47-a5386829305d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--bf56e76c-4eb4-5a9d-8fdf-b18adb288054",
+   "target_ref": "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--d6938da0-2b86-57fe-918a-64191da8da1f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "indicates",
    "source_ref": "indicator--13ab5e9d-c488-520b-bd2e-b71ff0f2734b",
    "target_ref": "intrusion-set--166ae14e-49aa-5972-bbcb-25b7ca464ad7"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--d6a3ef09-a5cc-5ab1-9597-1ed6eb9cff54",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+   "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
   },
   {
    "type": "relationship",
@@ -20042,12 +20962,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--e7352fee-95b2-5ebc-857b-e8874a07c8e1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+   "target_ref": "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--e764dcab-c046-52f5-b94a-1ef458558859",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a22c2b9b-5f2b-5278-b88f-600d5f05884c",
    "target_ref": "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--e796dbce-4ef9-5af5-905b-920e17293653",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
   },
   {
    "type": "relationship",
@@ -20072,6 +21012,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--e7e0acef-2316-51a1-b1e9-8b9ae5d03c48",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--c0d771a6-5b8e-5056-b51b-026fbc2ece9b",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--e7e3b78d-1c27-5460-8522-3adf1caccde7",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -20088,6 +21038,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a30cb4e1-2647-589c-92df-827ccc05660d",
    "target_ref": "attack-pattern--31f17af2-fc2e-5411-9da1-c987d9937898"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--e8168343-11cd-5f41-8dab-d0f9bfcfb2dd",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--c55ce859-9b9b-5480-a6a4-1df044c92bf5"
   },
   {
    "type": "relationship",
@@ -20372,6 +21332,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--ef4c4bd2-3c4f-5f43-bed8-683fd13d86db",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3",
+   "target_ref": "attack-pattern--e7efd052-800c-5d50-ad28-cfddcde8b6bb"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--efaae1de-09df-5809-8f4a-74d21c9639bb",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -20482,6 +21452,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--f3bc755d-ab09-5472-bf7d-9e720e8ef68d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--f4988ba7-acbb-5d68-bc8a-e8fe4d276385",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -20572,12 +21552,52 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--f89f7e9c-4636-57c1-aab7-089f19ec3fd3",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+   "target_ref": "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f8cf336f-0f73-56e4-9ac8-d351c8f6ad7b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+   "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--f9356e1e-7570-54f4-bcee-f88a56495f79",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--5a3b8a83-10a8-5c24-b60c-ab8aeaf11a11",
    "target_ref": "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f9650e15-7e8b-5830-88af-3d0cc1ca8b9b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f9aaf635-0d67-5f87-b62c-a6ceb9b9a0ce",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62",
+   "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
   },
   {
    "type": "relationship",
@@ -20728,6 +21748,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--6daade92-1e00-536e-bf74-dac53ac72c5a",
    "target_ref": "ipv4-addr--02adf4d2-759c-58af-a93b-76874b828b2d"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--fe4217e9-0417-5d63-adfe-afe51104d114",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--de24cb7f-a185-508b-8541-a38aea28e07d",
+   "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
   },
   {
    "type": "relationship",
@@ -20883,6 +21913,40 @@
     {
      "source_name": "Symantec",
      "url": "https://www.helpnetsecurity.com/2026/07/24/laundry-bear-zimbra-vulnerability-cve-2025-66376/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--03eb5b27-9617-51cd-ba1a-6d28e5eb3bc3",
+   "created": "2024-10-01T00:00:00.000Z",
+   "modified": "2024-10-01T00:00:00.000Z",
+   "name": "OpenAI – Influence and cyber operations: an update",
+   "published": "2024-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--b1c8e857-e2ae-51cc-96ec-0e62e793c44d",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019",
+    "attack-pattern--3899c496-4983-540b-8e20-6b39d52dd7e0",
+    "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd",
+    "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc",
+    "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a",
+    "attack-pattern--73188abe-c57c-5a7a-9c38-2d7da842ee9f",
+    "attack-pattern--c4e44002-b165-5687-b030-543cc5b0b66c",
+    "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a",
+    "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
+    "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "attack-pattern--ecfeec05-c8d9-56e0-bf7a-09b697da74fd",
+    "intrusion-set--303f20af-6a65-50b1-945c-6585c8001844",
+    "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
+    "intrusion-set--c0d771a6-5b8e-5056-b51b-026fbc2ece9b"
+   ],
+   "external_references": [
+    {
+     "source_name": "OpenAI",
+     "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf"
     }
    ]
   },
@@ -21140,6 +22204,26 @@
     {
      "source_name": "Check Point",
      "url": "https://research.checkpoint.com/2025/funksec-alleged-top-ransomware-group-powered-by-ai/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--209f3b66-8a29-51db-9524-79b97216ace4",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "Euronews – Greece police bust gang using AI to clone relatives' voices for cash",
+   "published": "2026-09-01T00:00:00.000Z",
+   "created_by_ref": "identity--604d7d71-4dcb-57de-9a9b-fe77946bb9c3",
+   "object_refs": [
+    "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba",
+    "intrusion-set--88f2dedf-d3dd-5566-b9f4-bb3841303eec"
+   ],
+   "external_references": [
+    {
+     "source_name": "euronews.com",
+     "url": "https://www.euronews.com/my-europe/2026/09/18/greece-police-bust-gang-using-ai-to-clone-relatives-voices-for-cash"
     }
    ]
   },
@@ -21496,6 +22580,31 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--6146a7bf-3f42-5f0f-8cad-fdb83ebe6e23",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "Blackpoint Cyber – Death by a Thousand PaperCuts",
+   "published": "2026-09-01T00:00:00.000Z",
+   "created_by_ref": "identity--9acbeceb-a7a7-58dc-aa76-ed578d3462c1",
+   "object_refs": [
+    "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--81dab0da-3b91-576b-a330-f420e181cf9b",
+    "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3",
+    "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6"
+   ],
+   "external_references": [
+    {
+     "source_name": "blackpointcyber.com",
+     "url": "https://blackpointcyber.com/blog/death-by-a-thousand-papercuts-ai-driven-exploitation-at-scale/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--62c62a3c-773d-575a-a041-63e5664a7670",
    "created": "2024-02-01T00:00:00.000Z",
    "modified": "2024-02-01T00:00:00.000Z",
@@ -21770,6 +22879,31 @@
     {
      "source_name": "github.com",
      "url": "https://github.com/cybershujin/Threat-Actors-Use-of-Artifical-Intelligence/tree/main/Multiple UnSub SlashNext"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--77d1720b-eafa-5d50-8b5e-39cee527e0fc",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "GreyNoise – Agents Gone Wild: An AI-Orchestrated Global Campaign Against PaperCut NG/MF",
+   "published": "2026-09-01T00:00:00.000Z",
+   "created_by_ref": "identity--365b6359-b10e-543b-8e74-ad0bbba246b0",
+   "object_refs": [
+    "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--81dab0da-3b91-576b-a330-f420e181cf9b",
+    "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3",
+    "intrusion-set--77c3a1c5-3e01-53f2-a908-89f7a1522fd6"
+   ],
+   "external_references": [
+    {
+     "source_name": "greynoise.io",
+     "url": "https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf"
     }
    ]
   },
@@ -22236,7 +23370,9 @@
    "published": "2026-09-01T00:00:00.000Z",
    "created_by_ref": "identity--dcefb8c0-4554-5b08-ac7b-11c4f06a579c",
    "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
     "attack-pattern--0fc65fa3-c82c-5570-8a1b-e59995568d9f",
+    "attack-pattern--1b91c674-5f59-56a5-b5a1-4069da6b45a5",
     "attack-pattern--29fdd22a-f083-5777-ba3a-264190b7e019",
     "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd",
     "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd",
@@ -22249,6 +23385,7 @@
     "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a",
     "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac",
     "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--838f43bc-1bde-56e1-9b03-d04cdb9203f1",
     "attack-pattern--874fadca-5767-5f85-9973-49a398a49cc2",
     "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
     "attack-pattern--9dec1bf5-72b1-537d-9817-d76b33174159",
@@ -22256,21 +23393,32 @@
     "attack-pattern--a001756b-2de1-5584-b1ff-9af0e567b175",
     "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc",
     "attack-pattern--b0afaa5c-c5c8-52e5-a501-0f919a76eea0",
+    "attack-pattern--bd0c7558-f574-5409-8a36-ac9d707a10a2",
     "attack-pattern--c0667f3d-a71e-5505-8aeb-f4a02f0198f6",
     "attack-pattern--c4e44002-b165-5687-b030-543cc5b0b66c",
+    "attack-pattern--c55ce859-9b9b-5480-a6a4-1df044c92bf5",
     "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e",
     "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
     "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3",
+    "attack-pattern--e7efd052-800c-5d50-ad28-cfddcde8b6bb",
     "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
     "attack-pattern--ecfeec05-c8d9-56e0-bf7a-09b697da74fd",
     "intrusion-set--0601f62d-5cc1-5355-a9d7-9d80646ed561",
     "intrusion-set--07416603-3245-5074-b255-43f737f5608e",
     "intrusion-set--166ae14e-49aa-5972-bbcb-25b7ca464ad7",
+    "intrusion-set--2db9ac24-5b20-5594-b508-eee20ff13b9b",
     "intrusion-set--76fd2d32-aaf5-5d6e-b2b7-e1f29643f826",
+    "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
+    "intrusion-set--b642a7cc-ad1c-5c85-b82d-8640e6f32988",
+    "intrusion-set--be5e88c0-849a-5cf3-a8d2-3c9ffa8eabb8",
+    "intrusion-set--bf579858-9e82-5272-a3bb-705c4bec0ce9",
+    "intrusion-set--de24cb7f-a185-508b-8541-a38aea28e07d",
     "intrusion-set--e946cd23-fc33-50d0-8e17-a2fc70e1b067",
     "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6",
     "intrusion-set--ec04a894-e39c-59c7-85b1-aa9a8617b041",
-    "intrusion-set--f9912fe2-312a-5554-9bb4-37ccbc7a3d15"
+    "intrusion-set--f606aadb-a702-5151-babf-df02b9d0997c",
+    "intrusion-set--f9912fe2-312a-5554-9bb4-37ccbc7a3d15",
+    "intrusion-set--fc06f005-0efd-572d-99a8-64f31dba32c3"
    ],
    "external_references": [
     {
@@ -22306,6 +23454,55 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--a8b0eb96-d6d7-5667-bd65-b8c96be00242",
+   "created": "2025-08-01T00:00:00.000Z",
+   "modified": "2025-08-01T00:00:00.000Z",
+   "name": "SecurityWeek – Japan Dismantles First North Korean Laptop Farm",
+   "published": "2025-08-01T00:00:00.000Z",
+   "created_by_ref": "identity--415e350b-19c9-55f4-b462-42235f80c32d",
+   "object_refs": [
+    "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba",
+    "attack-pattern--45aaf61b-cc86-5a64-86f9-d1d9318dca6f",
+    "intrusion-set--69116b48-ff5c-51df-8be6-77b09a1514e4"
+   ],
+   "external_references": [
+    {
+     "source_name": "securityweek.com",
+     "url": "https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--ae366797-de2f-5c0c-a796-b8ed544e4d77",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "Microsoft – Disrupting EvilTokens: The AI Chatbot Built for Cybercrime",
+   "published": "2026-09-01T00:00:00.000Z",
+   "created_by_ref": "identity--394cf9c7-680f-58c0-a5d6-126c4c89ac74",
+   "object_refs": [
+    "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc",
+    "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--874fadca-5767-5f85-9973-49a398a49cc2",
+    "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5",
+    "attack-pattern--a7784b97-1ca9-5ad6-9c79-b33fe650cbbc",
+    "attack-pattern--c55ce859-9b9b-5480-a6a4-1df044c92bf5",
+    "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
+    "intrusion-set--7be40148-8a0e-565e-936c-660ad3c12c62"
+   ],
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--b0dedaf8-e83f-5636-9e87-d44891577bae",
    "created": "2025-12-01T00:00:00.000Z",
    "modified": "2025-12-01T00:00:00.000Z",
@@ -22320,6 +23517,26 @@
     {
      "source_name": "FBI IC3",
      "url": "https://www.ic3.gov/PSA/2025/PSA251219"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--b2d41e38-a79c-5039-a9da-27d7473ae9b7",
+   "created": "2026-09-01T00:00:00.000Z",
+   "modified": "2026-09-01T00:00:00.000Z",
+   "name": "PSNI – Warning against fraud after victim loses £250,000 in Ards and North Down",
+   "published": "2026-09-01T00:00:00.000Z",
+   "created_by_ref": "identity--31e7ef3a-4eca-5d36-9887-864b860fece3",
+   "object_refs": [
+    "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba",
+    "intrusion-set--bf56e76c-4eb4-5a9d-8fdf-b18adb288054"
+   ],
+   "external_references": [
+    {
+     "source_name": "psni.police.uk",
+     "url": "https://www.psni.police.uk/latest-news/warning-against-fraud-after-victim-loses-ps250000-ards-and-north-down-online-criminals"
     }
    ]
   },
