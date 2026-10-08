@@ -33,6 +33,7 @@ This is *not* for:
 |April | Microsoft | [Threat actor abuse of AI accelerates from tool to cyberattack surface](https://www.microsoft.com/en-us/security/blog/2026/04/02/threat-actor-abuse-of-ai-accelerates-from-tool-to-cyberattack-surface/) |
 |April | Gambit Security | [A Single Operator, Two AI Platforms, Nine Government Agencies: The Full Technical Report](https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report) |
 |May | Google GTIG | [GTIG AI Threat Tracker: Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access) |
+|May | WithSecure Labs | [GREYVIBE](https://www.withsecure.com/en/resources-hub/w-labs/greyvibe/) |
 |June | Anthropic | [What we learned mapping a year's worth of AI-enabled cyber threats (MITRE ATT&CK mapping)](https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack) |
 
 |July | Kaspersky | [Armored Likho's new weapon: BusySnake Stealer](https://securelist.com/armored-likho-apt-with-busysnake-stealer/120292/) |
@@ -64,6 +65,10 @@ This is *not* for:
 |September | Blackpoint Cyber | [Death by a Thousand PaperCuts: AI-Driven Exploitation at Scale](https://blackpointcyber.com/blog/death-by-a-thousand-papercuts-ai-driven-exploitation-at-scale/) |
 |September | Euronews | [Greece police bust gang using AI to clone relatives' voices for cash](https://www.euronews.com/my-europe/2026/09/18/greece-police-bust-gang-using-ai-to-clone-relatives-voices-for-cash) |
 |September | PSNI (Police Service of Northern Ireland) | [Warning against fraud after victim loses £250,000 in Ards and North Down](https://www.psni.police.uk/latest-news/warning-against-fraud-after-victim-loses-ps250000-ards-and-north-down-online-criminals) |
+|September | Gambit Security | [AI Agents Are Hacking Online Retailers for $25 a Company](https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company) |
+|September | Microsoft | [Storm-3168: Agentic-driven cloud attacks using compromised service principals](https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/) |
+|September | Il Post (Fideuram case) | [Fideuram, la truffa via WhatsApp e AI](https://www.ilpost.it/2026/09/25/fideuram-truffa-whatsapp-ai/) |
+|October | CrowdStrike | [Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance](https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/) |
 |September | SecurityWeek | [Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme](https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/) |
 
 
