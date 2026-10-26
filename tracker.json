@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 134,
+ "count": 140,
  "entries": [
   {
    "table": "main",
@@ -572,9 +572,9 @@
   {
    "table": "main",
    "name": "JADEPUFFER",
-   "akas": "\"Agentic Threat Actor (ATA)\" (Sysdig)",
-   "brief": "Sysdig's Threat Research Team documented what it assesses as the first fully agentic ransomware operation — an extortion campaign driven end-to-end by an LLM agent. The agent gained initial access to an internet-facing Langflow instance (CVE-2025-3248, unauthenticated Python execution), then autonomously ran reconnaissance, harvested credentials (LLM API keys, cloud, database, crypto wallets), moved laterally (MinIO default credentials, Nacos compromise), established persistence (a crontab beacon every 30 minutes), and executed impact — AES-encrypting 1,342 Nacos configurations, dropping database tables, and writing a ransom note — across 600+ coordinated payloads. Sysdig's evidence that it was LLM-driven: self-narrating payload commentary, machine-speed error diagnosis/correction (a failed Nacos login was root-caused and fixed in 31 seconds), natural-language context comprehension, and structured task-completion markers. *Bias note: Sysdig sells cloud/runtime security.* Sysdig",
-   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (full end-to-end kill-chain)<br><br>T1190 - Exploit Public-Facing Application<br><br>T1552 - Unsecured Credentials<br><br>T1486 - Data Encrypted for Impact<br><br>**LLM-enhanced extortion/negotiation** T1657 - Financial Theft",
+   "akas": "\"Agentic Threat Actor (ATA)\" (Sysdig); Storm-3168 (Microsoft)",
+   "brief": "Sysdig's Threat Research Team documented what it assesses as the first fully agentic ransomware operation — an extortion campaign driven end-to-end by an LLM agent. The agent gained initial access to an internet-facing Langflow instance (CVE-2025-3248, unauthenticated Python execution), then autonomously ran reconnaissance, harvested credentials (LLM API keys, cloud, database, crypto wallets), moved laterally (MinIO default credentials, Nacos compromise), established persistence (a crontab beacon every 30 minutes), and executed impact — AES-encrypting 1,342 Nacos configurations, dropping database tables, and writing a ransom note — across 600+ coordinated payloads. Sysdig's evidence that it was LLM-driven: self-narrating payload commentary, machine-speed error diagnosis/correction (a failed Nacos login was root-caused and fixed in 31 seconds), natural-language context comprehension, and structured task-completion markers. *Bias note: Sysdig sells cloud/runtime security.* Sysdig [Update 2026-10] Microsoft tracks JADEPUFFER as Storm-3168 and reports an early-June 2026 Azure intrusion: two compromised service principals (a client secret was exposed in a public GitHub issue; initial access unconfirmed) performed ~15.5 hours of reconnaissance, then a ~7-minute destructive burst (150+ operations in 35 minutes) against Storage Accounts, SQL databases, Key Vaults, Function Apps and recovery protection locks, followed by credential collection. *Analyst note: Microsoft shows no direct LLM evidence — only \"automated or scripted execution\" — and relies on Sysdig's disclosure for the \"agentic\" label; no ransom note or exfiltration was observed in the Microsoft case. Vendor sources (Sysdig, Microsoft).* Microsoft",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (full end-to-end kill-chain)<br><br>T1190 - Exploit Public-Facing Application<br><br>T1552 - Unsecured Credentials<br><br>T1486 - Data Encrypted for Impact<br><br>**LLM-enhanced extortion/negotiation** T1657 - Financial Theft<br><br>T1078.004 - Valid Accounts: Cloud Accounts<br><br>T1526 - Cloud Service Discovery<br><br>T1485 - Data Destruction<br><br>T1490 - Inhibit System Recovery",
    "reported": "Jul 2026",
    "activity": "Unknown"
   },
@@ -1065,6 +1065,51 @@
    "activity": "31 Aug 2026 – 9 Sep 2026 (GreyNoise had tracked the C2 IP's broader activity since early Jul 2026)"
   },
   {
+   "table": "main",
+   "name": "UnSub (Chinese-speaking retail-skimmer operator, Strix/Cairn/Hermes) — Gambit Security",
+   "akas": "UnSub (no designation; \"Chinese-speaking, financially motivated\" per Gambit)",
+   "brief": "Gambit Security recovered the operator's staging server and documented an ongoing campaign in which three open-source AI harnesses automated nearly the whole intrusion chain against hundreds of online retailers to plant payment-card skimmers: Strix for vulnerability discovery (146 deep-mode runs against 138 hosts), Cairn for autonomous exploitation, and the Hermes orchestration console (121 skills, 78 attack-oriented) driving frontier and open-weight models via OpenRouter. Exploitation included unauthenticated SQLi, MFA bypass, file-upload RCE, sudo/NFS misconfiguration abuse and cloud-secret harvesting, followed by skimmer injection, cron persistence and database wipes. Gambit confirmed 19 victims and 100+ further infected sites. *Analyst note: interim report from a vendor; actor unnamed; Security.io rates its own confidence medium because some conclusions rest on agent-generated logs. Tool overlap (Strix) with the GTIG PRC-nexus row is not evidence of the same actor.* Gambit Security",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>T1190 - Exploit Public-Facing Application<br><br>T1059 - Command and Scripting Interpreter<br><br>T1053.003 - Scheduled Task/Job: Cron<br><br>T1485 - Data Destruction",
+   "reported": "Sep 2026",
+   "activity": "Jul 2026 – Sep 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (ARTEX agentic pentest, South Korean finance) — CrowdStrike",
+   "akas": "Unknown (CrowdStrike: not attributed to a named adversary; moderate-confidence Chinese-speaking, financially motivated individual)",
+   "brief": "CrowdStrike recovered exposed open directories showing an actor using ARTEX, a recently released open-source, LLM-driven agentic pentesting tool, with Claude Code session histories/config (including a Chinese-language pentest prompt) and DeepSeek, GLM and Grok backends (reportedly via a reseller), to breach South Korean financial organizations and exfiltrate customer data; the actor also asked Claude where Korean breach data is sold and for help finding Korean Telegram data-sales groups. Reuters reports at least nine banks affected (victim counts come from industry reports and are not independently confirmed by CrowdStrike). *Bias note: CrowdStrike is a security vendor; attribution is explicitly hedged.* CrowdStrike",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic pentest automation)<br><br>T1588.007 - Obtain Capabilities: Artificial Intelligence<br><br>T1583.003 - Acquire Infrastructure: Virtual Private Server<br><br>T1090 - Proxy<br><br>T1567 - Exfiltration Over Web Service",
+   "reported": "Oct 2026",
+   "activity": "Sep 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "GREYVIBE",
+   "akas": "Russia-nexus (WithSecure); possible, low-likelihood association with UAC-0098 / TrickBot; campaigns PhantomMail, PhantomClick, PrincessClub, DroneLink, Nebo",
+   "brief": "WithSecure Labs reports \"strong evidence suggesting systematic use of generative AI (GenAI) and large language models (LLMs)\" by a low-to-moderately sophisticated Russia-nexus group targeting Ukraine with spear-phishing, ClickFix and fake adult-club lures (Telegram personas). Strong indicators point to ChatGPT, Google Gemini and Ideogram AI (lure imagery) used across the lifecycle, including custom obfuscators (LOOKVALPS, LOOKVALJS, DAYLIGHT, TEASOUP), loaders and RATs (PhantomRelay, LegionRelay PowerShell RATs; FallSpy Android spyware). *Analyst note: WithSecure rates the claim that the obfuscators were LLM-assisted at moderate confidence and does not tie each task to a specific AI platform. Vendor source.* WithSecure Labs",
+   "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware<br><br>**LLM-supported social engineering** T1566 - Phishing<br><br>T1204.002 - User Execution: Malicious File<br><br>T1027 - Obfuscated Files or Information (LLM-assisted obfuscators)",
+   "reported": "May 2026",
+   "activity": "Aug 2025 – Apr 2026"
+  },
+  {
+   "table": "main",
+   "name": "GTG-30006",
+   "akas": "Iran-linked (Anthropic designation); domestic-surveillance toolmaker",
+   "brief": "Anthropic reports an Iran-linked actor that used free Claude accounts across 16 organizations, splitting tasks into small requests to evade safeguards, to build phishing pages (delivery geo-gated to Iranian IPs), a VBScript dropper, the SECOMS64 implant and Microsoft 365 token-theft tooling. *Analyst note: summarized from the report via a fetch tool — maintainer to verify details against the primary; the activity is framed by Anthropic as domestic surveillance tooling.* Anthropic",
+   "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware<br><br>**LLM-supported social engineering** T1566 - Phishing<br><br>T1528 - Steal Application Access Token",
+   "reported": "Sep 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "GTG-15001",
+   "akas": "Deceptive dating-app network (Anthropic designation); PRC-based API reseller/proxy infrastructure",
+   "brief": "Anthropic describes a network of deceptive dating apps in which Claude ran autonomous personas (other providers' models generated reply suggestions and images), obtaining and rotating model access at scale through PRC-based API reseller/proxy infrastructure; the apps were engineered to evade App Store and Play Store review. Anthropic",
+   "ttp_md": "**DeepFake for Impersonation** T1656 - Impersonation (AI personas)<br><br>T1585 - Establish Accounts<br><br>T1657 - Financial Theft",
+   "reported": "Sep 2026",
+   "activity": "Apr 2026"
+  },
+  {
    "table": "deepfake",
    "name": "Multiple UnSubs",
    "akas": "",
@@ -1207,6 +1252,15 @@
    "ttp_md": "**DeepFake for Impersonation**<br><br>Financial fraud (investment scam)",
    "reported": "Sep 2026",
    "activity": "Unknown (reported Sep 2026)"
+  },
+  {
+   "table": "deepfake",
+   "name": "Unnamed fraud group (Milan prosecutors investigating; at least one foreign suspect registered)",
+   "akas": "",
+   "brief": "Fraudsters posing as Intesa CEO Carlo Messina sent a WhatsApp message asking for urgent help with an overseas transaction, then placed a call using an AI-cloned voice of a trusted lawyer (A&O Shearman Italia partner Paolo Nastasi) to persuade the chairman to authorise transfers of ~€95M, mostly to accounts in China and Hong Kong; much was recovered but ~€36M remains unrecovered (some reports say €39.5M). *Analyst note: the AI-voice detail comes via press reporting of the case file (prosecutors' wording is \"reportedly\"); the WhatsApp message itself was not AI.* Il Post",
+   "ttp_md": "**DeepFake for Impersonation** T1656 - Impersonation<br><br>Financial fraud (BEC-style wire fraud)",
+   "reported": "Sep 2026",
+   "activity": "Feb 2026"
   }
  ]
 }
