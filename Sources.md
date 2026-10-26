@@ -50,6 +50,9 @@ This is *not* for:
 |July | Sophos X-Ops | [AI Security 2026](https://www.sophos.com/en-us/content/sophos-ai-security-2026-report) |
 |July | Trend Micro (TrendAI Research) | [2026 H1 APT Report: How APTs Are Weaponizing Trust in the Age of AI](https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/2026-h1-apt-report-how-apts-are-weaponizing-trust-in-the-age-of-ai) |
 |July | FBI / IC3 | [FBI Warns of Scammers Impersonating the IC3 (I-072026-PSA)](https://www.ic3.gov/PSA/2026/PSA260720) |
+|August | CISA / NSA / FBI / DOE / EPA (joint) | [AA26-231A: Defending Against an Active Threat to Siemens S7 Series Programmable Logic Controllers](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a) |
+|August | OpenAI | [Disrupting a Criminal Scam Operation](https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation/) |
+|August | Bitdefender Labs | [SilkParasite: Tracking a China-Nexus APT Across Central Asia](https://www.bitdefender.com/en-us/blog/businessinsights/silkparasite-tracking-china-nexus-apt-across-central-asia) |
 |July | Unit 42 (Palo Alto Networks) | [Autonomous AI Cyber Attack Campaign](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/) |
 |July | Microsoft | [CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft](https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/) |
 |August | Dream Security | [Inside a Multi-Agent AI Framework Used to Compromise Government Entities in Asia](https://dreamgroup.com/blog/inside-a-multi-agent-ai-framework-used-to-compromise-government-entities-in-asia) |
