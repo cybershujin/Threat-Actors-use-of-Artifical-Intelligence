@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 149,
+ "count": 152,
  "entries": [
   {
    "table": "main",
@@ -361,6 +361,33 @@
    "ttp_md": "**LLM-informed reconnaissance** T1590 - Gather Victim Network Information<br><br>T1021 - Remote Services (lateral movement)<br><br>T1071 - Application Layer Protocol (C2)<br><br>T1567 - Exfiltration Over Web Service",
    "reported": "Nov 2025",
    "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Siemens S7 PLC targeting) — CISA",
+   "akas": "UnSub",
+   "brief": "A CISA/NSA/FBI/DOE/EPA joint advisory (AA26-231A) warns that unidentified threat actors are conducting persistent reconnaissance and capability development against U.S.-based Siemens S7 Series PLC (S7-200/300/400/1200/1500) installations, using AI-generated exploitation scripts built on the open-source `snap7.dll`/`python-snap7` library and disguised as legitimate OT monitoring tools to gain read/write access to PLC memory, data blocks and ladder logic via S7comm. CISA's own MITRE ATT&CK mapping cites Resource Development → Obtain Capabilities: Artificial Intelligence (T1588.007) for \"rapidly iterating exploit code through AI-assisted development.\" No named actor or nation-state attribution is given, and no confirmed compromise or operational impact is described — CISA frames this as active reconnaissance and pre-positioning, not confirmed intrusion. CISA",
+   "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware (AI-generated exploitation scripts)<br><br>T1588.007 - Obtain Capabilities: Artificial Intelligence (CISA's own mapping)<br><br>T1595 - Active Scanning (Censys/ZoomEye reconnaissance)",
+   "reported": "Aug 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Cambodia scam operation) — OpenAI",
+   "akas": "UnSub",
+   "brief": "OpenAI disrupted a Cambodia-based (Poipet border-town) scam network that used ChatGPT across its full \"ping–zing–sting\" fraud lifecycle: translating and generating scam conversations on WhatsApp/Telegram, researching and building fake dating/investment personas, drafting promotional content for fraudulent investment/crypto/spot-gold and fake-gambling schemes, and generating forged images of passports, legal notices, stock-purchase confirmations and gambling-platform interfaces. A subset of operators also used ChatGPT for internal administrative work — translating staff messages and documenting matters OpenAI says \"appeared related to recruitment, immigration status, working conditions, and employee discipline,\" including social-media ads recruiting \"chatter\" jobs in Poipet and records of employee debts/disciplinary fines — consistent with forced-labor/human-trafficking indicators alongside the fraud operation. *Analyst note: victim-loss figures are drawn from the scammers' own chat logs, not independently verified by OpenAI (\"we are unable to independently verify those claims\"); no named actor/group designation is given.* OpenAI",
+   "ttp_md": "**LLM-supported social engineering** T1566 - Phishing (persona-based scam messaging, translation)<br><br>**DeepFake for Impersonation** T1656 - Impersonation (forged passport/legal-document images)<br><br>T1585 - Establish Accounts (fake personas)<br><br>T1657 - Financial Theft",
+   "reported": "Aug 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "SilkParasite",
+   "akas": "Unknown (Bitdefender declines firm attribution; notes tooling/infrastructure overlap with FamousSparrow/SneakyChef, medium-confidence China-nexus)",
+   "brief": "Bitdefender Labs tracked a ~10-month Central Asian espionage campaign (Oct 2025 – Aug 2026) deploying seven RAT families, five previously undocumented, against government targets. Bitdefender assesses medium confidence that development was AI-assisted — not AI-generated — based on code artifacts: leftover AI-scaffolding test functions in GoginRAT, a hardcoded placeholder AES key (`0123456789abcdef`), a literal `change_this_key` placeholder in NodeEdgeRAT's config, and architectural similarity between a Go and a C++ implant that Bitdefender calls \"not conclusive\" but \"the kind of thing an AI-assisted workflow makes easy.\" Separately, two recovered phishing lures — a fake regional energy-cooperation platform and a fake GPU cloud-computing advertisement — were themselves AI-generated. Bitdefender explicitly distinguishes this \"AI-assisted development\" evidence from a stronger \"AI-generated malware\" claim. Bitdefender *Analyst note: vendor report (Bitdefender sells EDR/endpoint security); China-nexus attribution and the SpiceRAT/SneakyChef/FamousSparrow overlap are all held at medium confidence by Bitdefender itself, so this row is NOT merged into the existing Salt Typhoon (FamousSparrow AKA) row pending firmer attribution.*",
+   "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware (AI-assisted RAT development; code-artifact evidence)<br><br>**LLM-supported social engineering** T1566.001 - Spearphishing Attachment (AI-generated phishing lures)",
+   "reported": "Aug 2026",
+   "activity": "Oct 2025 – Aug 2026"
   },
   {
    "table": "main",

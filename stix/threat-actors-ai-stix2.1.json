@@ -628,7 +628,7 @@
    "id": "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
-   "name": "Obtain Capabilities: Artificial Intelligence (AI tooling assessed as used to build the Flowerbed framework)",
+   "name": "Obtain Capabilities: Artificial Intelligence (CISA's own mapping)",
    "external_references": [
     {
      "source_name": "mitre-attack",
@@ -868,7 +868,7 @@
    "id": "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
-   "name": "Establish Accounts (AI personas)",
+   "name": "Establish Accounts (fake personas)",
    "external_references": [
     {
      "source_name": "mitre-attack",
@@ -2160,6 +2160,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "huggingface.co",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--7605a522-8991-5f30-92ce-18d98fe5d5d9",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "bitdefender.com",
    "identity_class": "organization"
   },
   {
@@ -9206,6 +9215,30 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--0b4f6e8c-16e1-50af-a787-d8b5052345f4",
+   "created": "2026-08-01T00:00:00.000Z",
+   "modified": "2026-08-01T00:00:00.000Z",
+   "name": "SilkParasite",
+   "description": "Bitdefender Labs tracked a ~10-month Central Asian espionage campaign (Oct 2025 – Aug 2026) deploying seven RAT families, five previously undocumented, against government targets. Bitdefender assesses medium confidence that development was AI-assisted — not AI-generated — based on code artifacts: leftover AI-scaffolding test functions in GoginRAT, a hardcoded placeholder AES key (`0123456789abcdef`), a literal `change_this_key` placeholder in NodeEdgeRAT's config, and architectural similarity between a Go and a C++ implant that Bitdefender calls \"not conclusive\" but \"the kind of thing an AI-assisted workflow makes easy.\" Separately, two recovered phishing lures — a fake regional energy-cooperation platform and a fake GPU cloud-computing advertisement — were themselves AI-generated. Bitdefender explicitly distinguishes this \"AI-assisted development\" evidence from a stronger \"AI-generated malware\" claim. Bitdefender *Analyst note: vendor report (Bitdefender sells EDR/endpoint security); China-nexus attribution and the SpiceRAT/SneakyChef/FamousSparrow overlap are all held at medium confidence by Bitdefender itself, so this row is NOT merged into the existing Salt Typhoon (FamousSparrow AKA) row pending firmer attribution.*",
+   "aliases": [
+    "Unknown (Bitdefender declines firm attribution; notes tooling",
+    "infrastructure overlap with FamousSparrow",
+    "SneakyChef",
+    "medium-confidence China-nexus)"
+   ],
+   "first_seen": "2025-10-01T00:00:00.000Z",
+   "last_seen": "2026-08-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "bitdefender.com",
+     "url": "https://www.bitdefender.com/en-us/blog/businessinsights/silkparasite-tracking-china-nexus-apt-across-central-asia",
+     "description": "Bitdefender"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--0eefe612-a485-5267-ba07-f02daba3811e",
    "created": "2023-12-01T00:00:00.000Z",
    "modified": "2023-12-01T00:00:00.000Z",
@@ -10124,6 +10157,25 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--6600c0ec-4962-5a91-b12e-6042943cb1b5",
+   "created": "2026-08-01T00:00:00.000Z",
+   "modified": "2026-08-01T00:00:00.000Z",
+   "name": "UnSub (Siemens S7 PLC targeting) — CISA",
+   "description": "A CISA/NSA/FBI/DOE/EPA joint advisory (AA26-231A) warns that unidentified threat actors are conducting persistent reconnaissance and capability development against U.S.-based Siemens S7 Series PLC (S7-200/300/400/1200/1500) installations, using AI-generated exploitation scripts built on the open-source `snap7.dll`/`python-snap7` library and disguised as legitimate OT monitoring tools to gain read/write access to PLC memory, data blocks and ladder logic via S7comm. CISA's own MITRE ATT&CK mapping cites Resource Development → Obtain Capabilities: Artificial Intelligence (T1588.007) for \"rapidly iterating exploit code through AI-assisted development.\" No named actor or nation-state attribution is given, and no confirmed compromise or operational impact is described — CISA frames this as active reconnaissance and pre-positioning, not confirmed intrusion. CISA",
+   "aliases": [
+    "UnSub"
+   ],
+   "external_references": [
+    {
+     "source_name": "cisa.gov",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a",
+     "description": "CISA"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--69116b48-ff5c-51df-8be6-77b09a1514e4",
    "created": "2025-08-01T00:00:00.000Z",
    "modified": "2025-08-01T00:00:00.000Z",
@@ -10604,6 +10656,25 @@
    ],
    "labels": [
     "deepfake"
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "created": "2026-08-01T00:00:00.000Z",
+   "modified": "2026-08-01T00:00:00.000Z",
+   "name": "UnSub (Cambodia scam operation) — OpenAI",
+   "description": "OpenAI disrupted a Cambodia-based (Poipet border-town) scam network that used ChatGPT across its full \"ping–zing–sting\" fraud lifecycle: translating and generating scam conversations on WhatsApp/Telegram, researching and building fake dating/investment personas, drafting promotional content for fraudulent investment/crypto/spot-gold and fake-gambling schemes, and generating forged images of passports, legal notices, stock-purchase confirmations and gambling-platform interfaces. A subset of operators also used ChatGPT for internal administrative work — translating staff messages and documenting matters OpenAI says \"appeared related to recruitment, immigration status, working conditions, and employee discipline,\" including social-media ads recruiting \"chatter\" jobs in Poipet and records of employee debts/disciplinary fines — consistent with forced-labor/human-trafficking indicators alongside the fraud operation. *Analyst note: victim-loss figures are drawn from the scammers' own chat logs, not independently verified by OpenAI (\"we are unable to independently verify those claims\"); no named actor/group designation is given.* OpenAI",
+   "aliases": [
+    "UnSub"
+   ],
+   "external_references": [
+    {
+     "source_name": "OpenAI",
+     "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation/",
+     "description": "OpenAI"
+    }
    ]
   },
   {
@@ -13963,6 +14034,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--1b304f98-9665-5cf6-8c05-f4628dce642d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--1b4f0749-bb37-53f5-bda8-657e6bf2d169",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -14399,6 +14480,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a83337fd-c8e9-5e1d-96c3-e21f64840ce2",
    "target_ref": "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--2704b0bb-b97c-52fe-bd87-5f82d11a3472",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--6600c0ec-4962-5a91-b12e-6042943cb1b5",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
   },
   {
    "type": "relationship",
@@ -15663,6 +15754,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--460b1700-2c17-595b-ad9c-6cc846ee0b8c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--0b4f6e8c-16e1-50af-a787-d8b5052345f4",
+   "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--4632ddea-7665-531c-882e-94fe29c37e25",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16109,6 +16210,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
    "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--4f681bf0-505e-5b1d-9c13-2d720502808a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--0b4f6e8c-16e1-50af-a787-d8b5052345f4",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
   },
   {
    "type": "relationship",
@@ -17013,6 +17124,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--64e077fa-d285-5e32-9409-0dbee2f34737",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--654bcfc6-470d-5489-a010-8a405c2b3f10",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17069,6 +17190,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--54e78173-071e-56c0-b638-e1eb5123fc31",
    "target_ref": "domain-name--5956e918-134c-5d1f-811b-b0946010ca83"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--673036e9-13ac-5c85-b311-ed3ddfc25abb",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "target_ref": "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd"
   },
   {
    "type": "relationship",
@@ -17413,6 +17544,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6e5b1749-ca37-5b41-aca2-d8c952b5a0d9",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "target_ref": "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--6e7f671d-8481-5bf4-a6b6-3d7ba92e09e2",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17549,6 +17690,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--af35c5d3-d3bd-5e65-af38-0f2fbac52bee",
    "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--709f5d82-607e-5a88-8a20-c3ec9194238a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--6600c0ec-4962-5a91-b12e-6042943cb1b5",
+   "target_ref": "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538"
   },
   {
    "type": "relationship",
@@ -17959,6 +18110,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--cc49c121-b39b-5564-8d19-1adf59f2490d",
    "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--7c5a94d2-092e-519a-ac71-953eec2e113f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--6600c0ec-4962-5a91-b12e-6042943cb1b5",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
   },
   {
    "type": "relationship",
@@ -21443,6 +21604,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--d1566812-35b3-5f9c-ac1a-8aa65bba461c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--0b4f6e8c-16e1-50af-a787-d8b5052345f4",
+   "target_ref": "attack-pattern--73188abe-c57c-5a7a-9c38-2d7da842ee9f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--d1637e08-19c4-5921-b2a1-9695adb0bfce",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -22073,6 +22244,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--df4ad29c-5e71-58b6-888e-6ffffbf2740d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--6600c0ec-4962-5a91-b12e-6042943cb1b5",
+   "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--df55b72b-10d4-5730-8068-41bf50cb2199",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -22593,6 +22774,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--ed00de6a-f9a4-5498-b6fb-7a51fc11890d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "target_ref": "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--ed0ddf1e-7f6c-5ec2-aa05-020cdeb25688",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -22919,6 +23110,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--d95ceee9-5841-58ec-bb7c-d04c5f80f705",
    "target_ref": "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f77a9a94-b9e7-5b9a-acc5-e9b57091e606",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef",
+   "target_ref": "attack-pattern--a202c7f2-f85c-5e06-ab8f-f2ac9ef599cb"
   },
   {
    "type": "relationship",
@@ -23269,6 +23470,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--486632e0-b768-5622-b577-3376edce1a45",
    "target_ref": "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--fffda94e-785a-510a-9be1-d0be723a0166",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--0b4f6e8c-16e1-50af-a787-d8b5052345f4",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
   },
   {
    "type": "report",
@@ -24220,6 +24431,29 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--6d4f750a-2362-5517-a33c-a76a9166d347",
+   "created": "2026-08-01T00:00:00.000Z",
+   "modified": "2026-08-01T00:00:00.000Z",
+   "name": "Bitdefender — SilkParasite: Tracking a China-Nexus APT Across Central Asia",
+   "published": "2026-08-01T00:00:00.000Z",
+   "created_by_ref": "identity--7605a522-8991-5f30-92ce-18d98fe5d5d9",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--73188abe-c57c-5a7a-9c38-2d7da842ee9f",
+    "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "intrusion-set--0b4f6e8c-16e1-50af-a787-d8b5052345f4"
+   ],
+   "external_references": [
+    {
+     "source_name": "bitdefender.com",
+     "url": "https://www.bitdefender.com/en-us/blog/businessinsights/silkparasite-tracking-china-nexus-apt-across-central-asia"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--6e9b700c-655a-500c-a87c-e915c3c2ad39",
    "created": "2026-07-01T00:00:00.000Z",
    "modified": "2026-07-01T00:00:00.000Z",
@@ -25015,6 +25249,31 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--a18f0c14-b2c4-5d67-a086-ec4bba25339f",
+   "created": "2026-08-01T00:00:00.000Z",
+   "modified": "2026-08-01T00:00:00.000Z",
+   "name": "OpenAI — Disrupting a Criminal Scam Operation",
+   "published": "2026-08-01T00:00:00.000Z",
+   "created_by_ref": "identity--b1c8e857-e2ae-51cc-96ec-0e62e793c44d",
+   "object_refs": [
+    "attack-pattern--2962f035-759d-5d5f-9ed8-590f143a28ba",
+    "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd",
+    "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5",
+    "attack-pattern--a202c7f2-f85c-5e06-ab8f-f2ac9ef599cb",
+    "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
+    "intrusion-set--8ead25ab-e47e-5252-a110-78aaac7d87ef"
+   ],
+   "external_references": [
+    {
+     "source_name": "OpenAI",
+     "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--a4e9bc1c-a87f-575d-8ebf-56e2514aea08",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -25246,6 +25505,29 @@
     {
      "source_name": "Huntress",
      "url": "https://www.huntress.com/blog/fakeagent-claude-desktop-malvertising-ends-in-dotnet-rat"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--b9c2d530-6411-5935-8c15-716a8eb505ab",
+   "created": "2026-08-01T00:00:00.000Z",
+   "modified": "2026-08-01T00:00:00.000Z",
+   "name": "CISA — AA26-231A: Defending Against an Active Threat to Siemens S7 Series PLCs",
+   "published": "2026-08-01T00:00:00.000Z",
+   "created_by_ref": "identity--f94c0d52-4d3f-5aba-b8d1-a6851e0054b1",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538",
+    "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "intrusion-set--6600c0ec-4962-5a91-b12e-6042943cb1b5"
+   ],
+   "external_references": [
+    {
+     "source_name": "cisa.gov",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a"
     }
    ]
   },
