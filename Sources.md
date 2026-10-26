@@ -70,6 +70,13 @@ This is *not* for:
 |September | Il Post (Fideuram case) | [Fideuram, la truffa via WhatsApp e AI](https://www.ilpost.it/2026/09/25/fideuram-truffa-whatsapp-ai/) |
 |October | CrowdStrike | [Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance](https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/) |
 |September | SecurityWeek | [Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme](https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/) |
+|October | SOCRadar | [INC and The Gentlemen Ransomware: Exposed AI Infrastructure](https://socradar.io/blog/inc-gentlemen-ransomware-ai-infrastructure/) |
+|October | SOCRadar | [CyberXero: An AI-Augmented Initial Access Broker Targeting Ukrainian Critical Infrastructure](https://socradar.io/blog/cyberxero-ai-iab-ukra) |
+|October | Microsoft | [AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise (Storm-0940)](https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/) |
+|October | CrowdStrike | [CrowdStrike Uncovers New Agentic AI Campaigns](https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/) |
+|October | Recorded Future (Insikt Group) | [TAG-217 Targets South Korean Financial Services with ARTEX](https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks) |
+|October | Zscaler ThreatLabz | [Inside a Global AI-Assisted Hacking Campaign](https://www.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign) |
+|October | Unit 42 (Palo Alto Networks) | [Next Exploit Opportunities: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities](https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/) |
 
 
 ## 2025 Reports
