@@ -2,16 +2,20 @@
 """
 build_exports.py — regenerate the derived artifacts from README.MD (the source of truth).
 
-Parses the main threat-actor table + the deepfake table (+ Appendix A TTP definitions)
-and emits three files:
+Parses the main threat-actor table + the deepfake table (+ Appendix A TTP definitions),
+plus any IOC CSVs under iocs/ (one file per report, schema in iocs/README.md), and emits:
   - index.html                              interactive, searchable Pages homepage
   - tracker.json                            structured data (machine-readable)
-  - stix/threat-actors-ai-stix2.1.json      complete STIX 2.1 bundle
+  - stix/threat-actors-ai-stix2.1.json      complete STIX 2.1 bundle (actors + indicators)
+
+The iocs/*.csv files add STIX 2.1 `indicator` objects (+ observable SCOs and `indicates`
+relationships to the matching intrusion-set). Fields are emitted ONLY when the CSV cell is
+non-empty — the builder never guesses or back-fills an indicator field it wasn't given.
 
 Deterministic + idempotent: UUIDv5 IDs and content-derived stable timestamps (never now()),
 stdlib only. Run from the repo root:  python tools/build_exports.py
 """
-import json, re, sys, uuid, hashlib
+import json, re, sys, uuid, hashlib, csv, calendar
 from pathlib import Path
 
 ROOT = Path(".")
@@ -161,6 +165,79 @@ def sdo(t, key, **kw):
     o.update({k:v for k,v in kw.items() if v not in (None,[],"")})
     return o
 
+# ---------- IOCs / indicators (from iocs/*.csv) ----------
+def refang(v):
+    """Undo common defanging so the value is a real observable. No-op if nothing to undo."""
+    if not v: return v
+    s = v.strip()
+    s = re.sub(r"^h(?:xx|XX)ps?", lambda m: "https" if m.group(0)[-1] in "sS" else "http", s)
+    s = (s.replace("[.]", ".").replace("(.)", ".").replace("{.}", ".").replace("[dot]", ".").replace("(dot)", ".")
+          .replace("[:]", ":").replace("[at]", "@").replace("(at)", "@"))
+    return s
+
+def _stix_str(v):
+    """Escape a value for a single-quoted STIX pattern string literal."""
+    return v.replace("\\", "\\\\").replace("'", "\\'")
+
+def _ioc_date_iso(s, end=False):
+    """ISO date cell ('YYYY-MM-DD' | 'YYYY-MM' | 'YYYY') -> STIX timestamp, or None. Never guesses.
+    end=True resolves to the last moment of the stated day/month/year, so a same-day first_seen/
+    last_seen yields valid_until strictly greater than valid_from (STIX requirement)."""
+    s = (s or "").strip()
+    T = "23:59:59.999Z" if end else "00:00:00.000Z"
+    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", s)
+    if m: return f"{m.group(1)}-{m.group(2)}-{m.group(3)}T{T}"
+    m = re.match(r"^(\d{4})-(\d{2})$", s)
+    if m:
+        y, mo = int(m.group(1)), int(m.group(2))
+        d = calendar.monthrange(y, mo)[1] if end else 1
+        return f"{y:04d}-{mo:02d}-{d:02d}T{T}"
+    m = re.match(r"^(\d{4})$", s)
+    if m: return (f"{m.group(1)}-12-31T{T}" if end else f"{m.group(1)}-01-01T{T}")
+    return None
+
+def _sco(scotype, **props):
+    """Deterministic STIX SCO (UUIDv5 over its defining properties)."""
+    key = scotype + ":" + "|".join(f"{k}={props[k]!r}" for k in sorted(props))
+    o = {"type": scotype, "spec_version": "2.1", "id": sid(scotype, key)}
+    o.update(props)
+    return o
+
+def ioc_pattern_and_sco(ioc_type, value, platform):
+    """(pattern, sco, x_extra) for a refanged value. Unknown type -> (None, None, {}); the
+    caller still emits an indicator (with x_ioc_type preserving the raw type) — no detail is lost."""
+    t = (ioc_type or "").lower()
+    v = refang(value)
+    e = _stix_str(v)
+    if t in ("domain", "hostname"):
+        return f"[domain-name:value = '{e}']", _sco("domain-name", value=v), {}
+    if t == "ipv4":
+        return f"[ipv4-addr:value = '{e}']", _sco("ipv4-addr", value=v), {}
+    if t == "ipv6":
+        return f"[ipv6-addr:value = '{e}']", _sco("ipv6-addr", value=v), {}
+    if t in ("url", "onion"):
+        return f"[url:value = '{e}']", _sco("url", value=v), {}
+    if t == "email":
+        return f"[email-addr:value = '{e}']", _sco("email-addr", value=v), {}
+    if t == "sha256":
+        return f"[file:hashes.'SHA-256' = '{e}']", _sco("file", hashes={"SHA-256": v}), {}
+    if t in ("filename", "filepath"):
+        return f"[file:name = '{e}']", _sco("file", name=v), {}
+    if t in ("android_package", "app_id"):
+        return f"[software:name = '{e}']", _sco("software", name=v), {}
+    if t in ("account", "telegram_user_id", "telegram_bot_id", "telegram_chat_id"):
+        if t == "account" and v.lower().startswith(("http://", "https://")):
+            return f"[url:value = '{e}']", _sco("url", value=v), {}
+        acct = "telegram" if t.startswith("telegram") else (platform or "").strip().lower()
+        x = {"x_telegram_id_kind": t} if t.startswith("telegram") else {}
+        if acct:
+            return (f"[user-account:account_type = '{_stix_str(acct)}' AND user-account:user_id = '{e}']",
+                    _sco("user-account", account_type=acct, user_id=v), x)
+        return f"[user-account:user_id = '{e}']", _sco("user-account", user_id=v), x
+    if t == "scheduled_task":
+        return f"[process:name = '{e}']", None, {}
+    return None, None, {}
+
 def build_stix(recs, appendix):
     objs = {}   # id -> obj (dedup)
     reports = {}  # url -> {name, org, created, refs:set}  (a report can cover many actors)
@@ -170,6 +247,7 @@ def build_stix(recs, appendix):
         rid = sid("relationship", f"{rtype}:{src}:{tgt}")
         rels.setdefault(rid, {"type":"relationship","spec_version":"2.1","id":rid,"created":EPOCH,"modified":EPOCH,
                               "relationship_type":rtype,"source_ref":src,"target_ref":tgt})
+    gtg_index = {}   # 'GTG-####' -> intrusion-set id, for linking indicators to actors
     for r in recs:
         created = reported_iso(r["reported"])
         fs, ls = first_last(r["activity"])
@@ -188,6 +266,8 @@ def build_stix(recs, appendix):
         if exts: iset["external_references"] = exts
         if r["table"] == "deepfake": iset.setdefault("labels", []).append("deepfake")
         add(iset)
+        for g in re.findall(r"GTG-\d+", " ".join([r["name"], r["akas"], r["brief"]])):
+            gtg_index.setdefault(g, is_id)   # first mention (usually the row name) wins
         # attack-patterns
         ap_ids = []
         for chunk in r["ttp"]:
@@ -223,9 +303,58 @@ def build_stix(recs, appendix):
         add({"type":"report","spec_version":"2.1","id":sid("report","rpt:"+url),"created":rp["created"],"modified":rp["created"],
              "name":(rp["name"] or f"Report ({rp['org']})")[:200],"published":rp["created"],"created_by_ref":ident["id"],
              "object_refs":sorted(rp["refs"]),"external_references":[{"source_name":rp["org"],"url":url}]})
+    # indicators from iocs/*.csv (one file per report). Emit a property ONLY when its CSV cell
+    # is non-empty — never guess or back-fill. Link to an actor only on a real GTG match.
+    ioc_stats = {"files": [], "total": 0, "linked": 0, "unlinked": 0, "no_clean_pattern": 0,
+                 "by_type": {}, "by_harm_area": {}, "unlinked_gtg": {}}
+    ioc_dir = ROOT / "iocs"
+    for csvpath in (sorted(ioc_dir.glob("*.csv")) if ioc_dir.is_dir() else []):
+        with csvpath.open(encoding="utf-8-sig", newline="") as fh:
+            rows = list(csv.DictReader(fh))
+        fstat = {"file": csvpath.name, "rows": len(rows), "indicators": 0}
+        for row in rows:
+            g = lambda k: (row.get(k) or "").strip()
+            val, ioc_type = g("value"), g("type")
+            if not val or not ioc_type:      # a row with no observable is not an indicator
+                continue
+            pattern, scobj, x_extra = ioc_pattern_and_sco(ioc_type, val, g("platform"))
+            rid = g("id")
+            ind_id = rid if re.fullmatch(r"indicator--[0-9a-fA-F-]{36}", rid) else sid("indicator", refang(val))
+            created = _ioc_date_iso(g("report_date")) or EPOCH
+            valid_from = _ioc_date_iso(g("first_seen")) or _ioc_date_iso(g("report_date")) or EPOCH
+            ind = {"type":"indicator","spec_version":"2.1","id":ind_id,"created":created,"modified":created,
+                   "indicator_types":["malicious-activity"],"name":f"{ioc_type}: {val}",
+                   "pattern": pattern or f"[x-defanged-observable:value = '{_stix_str(refang(val))}']",
+                   "pattern_type":"stix","valid_from":valid_from}
+            vu = _ioc_date_iso(g("last_seen"), end=True)
+            if vu and vu > valid_from: ind["valid_until"] = vu   # STIX: valid_until must exceed valid_from
+            if g("description"): ind["description"] = g("description")
+            if g("reference_url"):
+                ind["external_references"] = [{"source_name": org_for(g("reference_url")), "url": g("reference_url")}]
+            labels = [x for x in (g("role"), g("handling")) if x]
+            if labels: ind["labels"] = labels
+            for prop, col in (("x_ioc_type","type"),("x_ioc_role","role"),("x_handling","handling"),
+                              ("x_gtg","gtg"),("x_harm_area","harm_area"),("x_case_study","case_study"),
+                              ("x_platform","platform")):
+                if g(col): ind[prop] = g(col)
+            ind.update(x_extra)
+            add(ind); fstat["indicators"] += 1; ioc_stats["total"] += 1
+            ioc_stats["by_type"][ioc_type] = ioc_stats["by_type"].get(ioc_type, 0) + 1
+            ha = g("harm_area") or "(unspecified)"
+            ioc_stats["by_harm_area"][ha] = ioc_stats["by_harm_area"].get(ha, 0) + 1
+            if not pattern: ioc_stats["no_clean_pattern"] += 1
+            if scobj:
+                add(scobj); rel(ind_id, scobj["id"], "based-on")
+            isid = gtg_index.get(g("gtg"))
+            if isid:
+                rel(ind_id, isid, "indicates"); ioc_stats["linked"] += 1
+            else:
+                ioc_stats["unlinked"] += 1
+                if g("gtg"): ioc_stats["unlinked_gtg"][g("gtg")] = ioc_stats["unlinked_gtg"].get(g("gtg"), 0) + 1
+        ioc_stats["files"].append(fstat)
     allobjs = list(objs.values()) + list(rels.values())
     allobjs.sort(key=lambda o: (o["type"], o["id"]))
-    return {"type":"bundle","id":sid("bundle","threat-actors-ai"),"objects":allobjs}
+    return {"type":"bundle","id":sid("bundle","threat-actors-ai"),"objects":allobjs}, ioc_stats
 
 # ---------- HTML ----------
 def build_html(recs):
@@ -321,13 +450,21 @@ def main():
     (ROOT/"tracker.json").write_text(json.dumps({"generated_from":"README.MD","count":len(recs),
         "entries":[{k:r[k] for k in ("table","name","akas","brief","ttp_md","reported","activity")} for r in recs]},
         indent=1, ensure_ascii=False), encoding="utf-8")
-    bundle = build_stix(recs, appendix)
+    bundle, ioc_stats = build_stix(recs, appendix)
     (ROOT/"stix").mkdir(exist_ok=True)
     (ROOT/"stix"/"threat-actors-ai-stix2.1.json").write_text(json.dumps(bundle, indent=1, ensure_ascii=False), encoding="utf-8")
     (ROOT/"index.html").write_text(build_html(recs), encoding="utf-8")
     types = {}
     for o in bundle["objects"]: types[o["type"]] = types.get(o["type"],0)+1
     print(f"entries={len(recs)}  stix_objects={len(bundle['objects'])}  {types}")
+    if ioc_stats["total"]:
+        print(f"iocs: {ioc_stats['total']} indicators from {len(ioc_stats['files'])} file(s)  "
+              f"linked={ioc_stats['linked']} unlinked={ioc_stats['unlinked']} "
+              f"no_clean_pattern={ioc_stats['no_clean_pattern']}")
+        print(f"  by_type={ioc_stats['by_type']}")
+        print(f"  by_harm_area={ioc_stats['by_harm_area']}")
+        if ioc_stats["unlinked_gtg"]:
+            print(f"  unlinked_gtg (no matching actor row)={ioc_stats['unlinked_gtg']}")
 
 if __name__ == "__main__":
     main()

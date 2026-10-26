@@ -33,6 +33,7 @@ This is *not* for:
 |April | Microsoft | [Threat actor abuse of AI accelerates from tool to cyberattack surface](https://www.microsoft.com/en-us/security/blog/2026/04/02/threat-actor-abuse-of-ai-accelerates-from-tool-to-cyberattack-surface/) |
 |April | Gambit Security | [A Single Operator, Two AI Platforms, Nine Government Agencies: The Full Technical Report](https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report) |
 |May | Google GTIG | [GTIG AI Threat Tracker: Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access](https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access) |
+|May | WithSecure Labs | [GREYVIBE](https://www.withsecure.com/en/resources-hub/w-labs/greyvibe/) |
 |June | Anthropic | [What we learned mapping a year's worth of AI-enabled cyber threats (MITRE ATT&CK mapping)](https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack) |
 
 |July | Kaspersky | [Armored Likho's new weapon: BusySnake Stealer](https://securelist.com/armored-likho-apt-with-busysnake-stealer/120292/) |
@@ -52,6 +53,33 @@ This is *not* for:
 |August | CISA / NSA / FBI / DOE / EPA (joint) | [AA26-231A: Defending Against an Active Threat to Siemens S7 Series Programmable Logic Controllers](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a) |
 |August | OpenAI | [Disrupting a Criminal Scam Operation](https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation/) |
 |August | Bitdefender Labs | [SilkParasite: Tracking a China-Nexus APT Across Central Asia](https://www.bitdefender.com/en-us/blog/businessinsights/silkparasite-tracking-china-nexus-apt-across-central-asia) |
+|July | Unit 42 (Palo Alto Networks) | [Autonomous AI Cyber Attack Campaign](https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/) |
+|July | Microsoft | [CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft](https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/) |
+|August | Dream Security | [Inside a Multi-Agent AI Framework Used to Compromise Government Entities in Asia](https://dreamgroup.com/blog/inside-a-multi-agent-ai-framework-used-to-compromise-government-entities-in-asia) |
+|August | Gambit Security | [Aurora ransomware targets ESXi, abuses Cursor Agent for exploitation](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation) |
+|August | Group-IB | [One Adversary: Fraud Is a Network, Not a Payment](https://www.group-ib.com/blog/one-adversary-fraud-network/) |
+|September | Anthropic | [Detecting and countering misuse of AI: September 2026](https://www.anthropic.com/threat-intelligence-report-september-2026) |
+|September | Google GTIG | [GTIG AI Threat Tracker: From Prompting to Autonomy – The Evolution of Adversarial AI](https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai) |
+|September | Unit 42 (Palo Alto Networks) | [Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America](https://unit42.paloaltonetworks.com/ai-tool-use-targeting-latam-orgs/) |
+|September | Unit 42 (Palo Alto Networks) | [An AI-Assisted Cyber Attack: Inside a Unit 42 Investigation](https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/) |
+|September | Focus Taiwan / CNA | [57 indicted over NT$900 million voice-cloning romance scam](https://focustaiwan.tw/society/202609020019) |
+|September | Microsoft | [Disrupting EvilTokens: The AI Chatbot Built for Cybercrime](https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/) |
+|September | GreyNoise | [Agents Gone Wild: An AI-Orchestrated Global Campaign Against PaperCut NG/MF](https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf) |
+|September | Blackpoint Cyber | [Death by a Thousand PaperCuts: AI-Driven Exploitation at Scale](https://blackpointcyber.com/blog/death-by-a-thousand-papercuts-ai-driven-exploitation-at-scale/) |
+|September | Euronews | [Greece police bust gang using AI to clone relatives' voices for cash](https://www.euronews.com/my-europe/2026/09/18/greece-police-bust-gang-using-ai-to-clone-relatives-voices-for-cash) |
+|September | PSNI (Police Service of Northern Ireland) | [Warning against fraud after victim loses £250,000 in Ards and North Down](https://www.psni.police.uk/latest-news/warning-against-fraud-after-victim-loses-ps250000-ards-and-north-down-online-criminals) |
+|September | Gambit Security | [AI Agents Are Hacking Online Retailers for $25 a Company](https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company) |
+|September | Microsoft | [Storm-3168: Agentic-driven cloud attacks using compromised service principals](https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/) |
+|September | Il Post (Fideuram case) | [Fideuram, la truffa via WhatsApp e AI](https://www.ilpost.it/2026/09/25/fideuram-truffa-whatsapp-ai/) |
+|October | CrowdStrike | [Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance](https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/) |
+|September | SecurityWeek | [Japan Dismantles First North Korean Laptop Farm as US and Allies Detail Wider Scheme](https://www.securityweek.com/japan-dismantles-first-north-korean-laptop-farm-as-us-and-allies-detail-wider-scheme/) |
+|October | SOCRadar | [INC and The Gentlemen Ransomware: Exposed AI Infrastructure](https://socradar.io/blog/inc-gentlemen-ransomware-ai-infrastructure/) |
+|October | SOCRadar | [CyberXero: An AI-Augmented Initial Access Broker Targeting Ukrainian Critical Infrastructure](https://socradar.io/blog/cyberxero-ai-iab-ukra) |
+|October | Microsoft | [AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise (Storm-0940)](https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/) |
+|October | CrowdStrike | [CrowdStrike Uncovers New Agentic AI Campaigns](https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/) |
+|October | Recorded Future (Insikt Group) | [TAG-217 Targets South Korean Financial Services with ARTEX](https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks) |
+|October | Zscaler ThreatLabz | [Inside a Global AI-Assisted Hacking Campaign](https://www.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign) |
+|October | Unit 42 (Palo Alto Networks) | [Next Exploit Opportunities: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities](https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/) |
 
 
 ## 2025 Reports
@@ -80,6 +108,7 @@ This is *not* for:
 |Feburary | JFrog | [Malicious AI models on Hugging Face backdoor users’ machines](https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/) |
 |March |Tripwire | [Cybersecurity in the Age of AI: Exploring AI-Generated Cyber Attacks](https://www.tripwire.com/state-of-security/cybersecurity-age-ai-exploring-ai-generated-cyber-attacks) |
 |March | Kaspersky | [Spam and phishing in 2023](https://securelist.com/spam-phishing-report-2023/112015/) |
+|October | OpenAI | [Influence and cyber operations: an update](https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf) - *Backfill added 2026-09: a genuine pre-existing gap surfaced when a secondary source misdated this report as "September 2026."* |
 
 
 ## 2023 Reports
