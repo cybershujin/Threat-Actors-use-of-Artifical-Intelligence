@@ -20,6 +20,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--0cfb8bb1-1e6b-5184-976d-38d336d12d56",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Account Manipulation: Additional Cloud Roles",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1098.003",
+     "url": "https://attack.mitre.org/techniques/T1098/003/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -380,6 +395,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--46a8388e-93c4-5e20-95e7-c47a45730386",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Trusted Relationship",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1199",
+     "url": "https://attack.mitre.org/techniques/T1199/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -559,6 +589,21 @@
      "source_name": "mitre-attack",
      "external_id": "T1078.004",
      "url": "https://attack.mitre.org/techniques/T1078/004/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Active Scanning: Vulnerability Scanning",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1595.002",
+     "url": "https://attack.mitre.org/techniques/T1595/002/"
     }
    ]
   },
@@ -789,6 +834,21 @@
      "source_name": "mitre-attack",
      "external_id": "T1555",
      "url": "https://attack.mitre.org/techniques/T1555/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--9d610301-8f2d-5116-8a91-684d8d09ff70",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Exfiltration to Cloud Storage",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1567.002",
+     "url": "https://attack.mitre.org/techniques/T1567/002/"
     }
    ]
   },
@@ -2024,6 +2084,15 @@
   {
    "type": "identity",
    "spec_version": "2.1",
+   "id": "identity--41438884-41f9-59a6-99a7-2e06363cc047",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "socradar.io",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
    "id": "identity--415e350b-19c9-55f4-b462-42235f80c32d",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -2037,6 +2106,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "Infosecurity Magazine",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--545c4e1b-795d-50ee-aeba-60cac7ac99e4",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "zscaler.com",
    "identity_class": "organization"
   },
   {
@@ -2217,6 +2295,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "OpenAI",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--b69bddbc-7f9e-52aa-832f-47b9f9163447",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Recorded Future",
    "identity_class": "organization"
   },
   {
@@ -9058,6 +9145,27 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--076b974f-9945-57d6-9d09-aa3db3145964",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (Spanish/English-speaking Claude Code operator vs. Argentine healthcare) — CrowdStrike",
+   "description": "CrowdStrike reports an operator using a custom pentest harness derived from the open-source PentestGPT, with a \"Supervisor\" Claude Code agent selecting tasks from a state machine and an \"Executor\" agent carrying them out (plus MCP servers and Python exploit scripts), to compromise at least 15 Argentina-based healthcare entities and exfiltrate credentials and medical records from at least one. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "aliases": [
+    "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)"
+   ],
+   "first_seen": "2026-05-01T00:00:00.000Z",
+   "last_seen": "2026-08-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+     "description": "CrowdStrike"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--090417c2-4e4a-50fe-be2f-c17b228b081a",
    "created": "2024-02-01T00:00:00.000Z",
    "modified": "2024-02-01T00:00:00.000Z",
@@ -9385,6 +9493,27 @@
     {
      "source_name": "Microsoft",
      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+     "description": "Microsoft"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Storm-0940",
+   "description": "Microsoft Threat Intelligence reports a China-state-aligned actor using ARTEX, an open-source multi-agent penetration-testing framework that can drive any AI model, to automate reconnaissance, password spraying and OAuth-app abuse at machine speed: a spray against 327 accounts at 8 organizations (10–14 Oct 2026), then compromise of a ConnectWise multi-tenant app (Cloud Backup) followed by ARTEX-driven sign-in attempts against 2,250+ tenants, with privileged cloud access in under three hours in some intrusions. Hundreds of organizations across aerospace/defense, automotive, chemicals, energy, financial services and government were targeted. *Analyst note: same tool as the CrowdStrike/Recorded Future ARTEX row but a distinct campaign (different victims, vector and attribution). Microsoft names no underlying model; attribution is Microsoft's own. Vendor source.* Microsoft",
+   "aliases": [
+    "China-state aligned (Microsoft); no known industry aliases"
+   ],
+   "first_seen": "2026-09-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
      "description": "Microsoft"
     }
    ]
@@ -9785,6 +9914,28 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
      "description": "GTIG"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (INC / The Gentlemen affiliates, \"Phantom\" framework) — SOCRadar",
+   "description": "SOCRadar's Threat Research Unit recovered an exposed operator C2 server holding the affiliates' own AI session records (133 OpenCode sessions, 8,257 messages routed through OpenRouter to claude-opus-4.6 and kimi-k3), the custom Phantom framework (18 skill modules, 32 MCP servers) and a ledger of 62 named victim organizations. The LLMs planned reconnaissance, selected techniques, generated commands, triaged stolen data, drafted extortion material and produced 46 INC encryptor builds for six victims plus EDR-killer tooling; operators reframed requests as \"Authorized Red Team Assessment\" prompts when models refused. Exploitation per operator records included CVE-2026-35616 (FortiClient EMS), CVE-2024-57727 (SimpleHelp) and CVE-2026-41940 (cPanel). *Analyst note: a human approved each step (not fully autonomous); SOCRadar says operator records are not independently verified, deployment against staged targets is unconfirmed, and the INC/Gentlemen alliance is low confidence. Vendor source; secondary reposts overstate autonomy.* SOCRadar",
+   "aliases": [
+    "INC = GOLD IONIC (MITRE G1032); tooling: Phantom",
+    "Ghost C2"
+   ],
+   "first_seen": "2026-07-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "socradar.io",
+     "url": "https://socradar.io/blog/inc-gentlemen-ransomware-ai-infrastructure/",
+     "description": "SOCRadar"
     }
    ]
   },
@@ -10314,6 +10465,27 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--81c4829c-1df1-5143-8dd5-60eb0673ba27",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (Chinese-speaking Claude Code operator vs. governments and private sector) — CrowdStrike",
+   "description": "CrowdStrike reports a Chinese-speaking operator who reached Claude models through a China-based AI proxy (\"transfer station\") and ran two pentest harnesses of differing autonomy (a deterministic Python project where the model picks preset actions, and a Claude Code setup using single or parallel specialist agents) against government entities in two countries and private-sector targets in Brazil and the U.S. (biotech, healthcare, food and beverage, retail, technology, travel); 20+ named targets. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "aliases": [
+    "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)"
+   ],
+   "first_seen": "2026-05-01T00:00:00.000Z",
+   "last_seen": "2026-08-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+     "description": "CrowdStrike"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -10636,6 +10808,28 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (ARTEX multi-model operator, 19-market targeting) — Zscaler ThreatLabz",
+   "description": "ThreatLabz recovered a Chinese-speaking operator's customized ARTEX deployment (planner/worker AI pentest framework extended with nmap, sqlmap, nuclei, httpx, jadx, apktool and frida) driven through Claude Code, Codex and Grok workspaces with multi-model routing, context-injection hooks and sync scripts. Prompt histories targeted dating, SMS, crypto/payment, gift-card, gambling, retail, education, logistics, investment and legal-claims sites referencing 19 countries; the operator used proxy chains and archived data to Backblaze B2. *Analyst note: Zscaler gives no victim count or confirmed compromises (the 19 countries come from prompts), model identities are unverified, and overlap with the CrowdStrike South Korea row is not established; Zscaler's earlier 14 Oct post on South Korean targeting is related. TTP IDs are analyst-mapped (Zscaler cites only MITRE ATLAS). Vendor source.* Zscaler ThreatLabz",
+   "aliases": [
+    "\"Chinese-speaking operator\" (Zscaler); possible overlap with the CrowdStrike",
+    "TAG-217 ARTEX row — unconfirmed"
+   ],
+   "first_seen": "2026-08-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "zscaler.com",
+     "url": "https://www.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign",
+     "description": "Zscaler ThreatLabz"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--a08d3db3-b3c8-59c8-a82c-f8acbb18b374",
    "created": "2023-08-01T00:00:00.000Z",
    "modified": "2023-08-01T00:00:00.000Z",
@@ -10800,6 +10994,29 @@
      "source_name": "sophos.com",
      "url": "https://www.sophos.com/en-us/content/sophos-ai-security-2026-report",
      "description": "Sophos X-Ops"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "CyberXero",
+   "description": "SOCRadar recovered an exposed server (90,000+ files) showing a Russian-speaking initial access broker running Claude Code with 51 specialized subagents (roles such as c2-operator, exploit-chainer, scada-attacker) plus the open-source PentAGI pentest framework wired to a Cobalt Strike team server against Ukrainian critical-infrastructure and other targets. The operator repeatedly claimed ownership of targets to get past model refusals (some refusals held, including a backdoor install). SOCRadar confirmed exfiltration from four Ukrainian organizations (628,000+ records, 564,073 from one Kharkiv district-heating provider) and reconnaissance of seven energy/utility entities. *Analyst note: the \"40+ organizations worldwide\" figure is self-reported by the operator's records; secondary outlets embellish. Vendor source.* SOCRadar",
+   "aliases": [
+    "Underground-forum alias (Dread",
+    "HackForums",
+    "Exploit.in); Russian-speaking initial access broker (SOCRadar)"
+   ],
+   "first_seen": "2026-07-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "socradar.io",
+     "url": "https://socradar.io/blog/cyberxero-ai-iab-ukra",
+     "description": "SOCRadar"
     }
    ]
   },
@@ -11189,10 +11406,11 @@
    "created": "2026-10-01T00:00:00.000Z",
    "modified": "2026-10-01T00:00:00.000Z",
    "name": "UnSub (ARTEX agentic pentest, South Korean finance) — CrowdStrike",
-   "description": "CrowdStrike recovered exposed open directories showing an actor using ARTEX, a recently released open-source, LLM-driven agentic pentesting tool, with Claude Code session histories/config (including a Chinese-language pentest prompt) and DeepSeek, GLM and Grok backends (reportedly via a reseller), to breach South Korean financial organizations and exfiltrate customer data; the actor also asked Claude where Korean breach data is sold and for help finding Korean Telegram data-sales groups. Reuters reports at least nine banks affected (victim counts come from industry reports and are not independently confirmed by CrowdStrike). *Bias note: CrowdStrike is a security vendor; attribution is explicitly hedged.* CrowdStrike",
+   "description": "CrowdStrike recovered exposed open directories showing an actor using ARTEX, a recently released open-source, LLM-driven agentic pentesting tool, with Claude Code session histories/config (including a Chinese-language pentest prompt) and DeepSeek, GLM and Grok backends (reportedly via a reseller), to breach South Korean financial organizations and exfiltrate customer data; the actor also asked Claude where Korean breach data is sold and for help finding Korean Telegram data-sales groups. Reuters reports at least nine banks affected (victim counts come from industry reports and are not independently confirmed by CrowdStrike). Recorded Future's Insikt Group independently tracks the activity as TAG-217, assessing a suspected Chinese-speaking operator and reporting that the breaches exposed personal data of at least 68,000 people across at least seven financial institutions (reconstructed activity roughly 17–22 Aug through 26 Sep 2026; full IOCs only in RF's platform). *Bias note: CrowdStrike and Recorded Future are security vendors; attribution is explicitly hedged; RF's AI-tool list is sourced to CrowdStrike's post.* CrowdStrike, Recorded Future",
    "aliases": [
     "Unknown (CrowdStrike: not attributed to a named adversary; moderate-confidence Chinese-speaking",
-    "financially motivated individual)"
+    "financially motivated individual); TAG-217 (Recorded Future designation for the same campaign",
+    "matched via RF's link to CrowdStrike's post)"
    ],
    "first_seen": "2026-09-01T00:00:00.000Z",
    "last_seen": "2026-10-01T00:00:00.000Z",
@@ -11201,6 +11419,11 @@
      "source_name": "CrowdStrike",
      "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
      "description": "CrowdStrike"
+    },
+    {
+     "source_name": "Recorded Future",
+     "url": "https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks",
+     "description": "Recorded Future"
     }
    ]
   },
@@ -11335,6 +11558,27 @@
      "source_name": "OpenAI",
      "url": "https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf",
      "description": "OpenAI"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--c5755016-23ee-5a93-bd12-5b47e9780ac5",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (Indonesian-speaking Claude Code operator) — CrowdStrike",
+   "description": "CrowdStrike reports the least sophisticated of the four: an operator running Claude Code with 819 skills (mostly from public GitHub repositories, primarily claude-red) and no added orchestration against Indonesian government domains, one government domain elsewhere and several private-sector entities, intervening manually to push past guardrails. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "aliases": [
+    "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)"
+   ],
+   "first_seen": "2026-05-01T00:00:00.000Z",
+   "last_seen": "2026-08-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+     "description": "CrowdStrike"
     }
    ]
   },
@@ -11591,6 +11835,26 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "BUGSTER",
+   "description": "Unit 42 observed a low-skill criminal's own environment (logs, scripts, configs, bot memory) showing Hermes Agent running DeepSeek V4 and a Cursor IDE with safety controls disabled used to generate scanning and brute-force scripts and an \"exploit opportunities\" document against Indian university and e-commerce sites; one confirmed intrusion exfiltrated 5,200+ student/faculty records from a university MongoDB. Also seen: crypto-holder profiling, a C2 listener, Wi-Fi handshake cracking on rented GPUs and early VoIP-fraud planning (planning only). *Analyst note: actor is unsophisticated and the VoIP/crypto work shows no follow-on; the Hermes/DeepSeek trend framing is Unit 42's assessment. Vendor source.* Unit 42",
+   "aliases": [
+    "Handle only (financially motivated",
+    "English-speaking per Unit 42); no prior reporting"
+   ],
+   "external_references": [
+    {
+     "source_name": "Palo Alto Networks Unit 42",
+     "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+     "description": "Unit 42"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -11725,6 +11989,27 @@
      "source_name": "Huntress",
      "url": "https://www.huntress.com/blog/fakeagent-claude-desktop-malvertising-ends-in-dotnet-rat",
      "description": "Huntress — Inside FakeAgent: How a Claude Desktop Malvertising Campaign Hit 29 Organizations with SectopRAT"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--f43f633f-d820-50e5-a349-9078bcafe5bd",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (Russian-speaking Claude Code group, /pentest-setup workflow) — CrowdStrike",
+   "description": "CrowdStrike reports Russian-speaking individuals who launched a seven-step Claude Code workflow from a single \"/pentest-setup\" slash command (environment enumeration, near-autonomous exploitation choices, post-RCE steps and explicit exfiltration instructions) to exfiltrate corporate client data from a U.S.-based CRM vendor and compromise SaaS and data-center entities in Russia, Kyrgyzstan and the U.S. plus one government domain elsewhere. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "aliases": [
+    "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)"
+   ],
+   "first_seen": "2026-05-01T00:00:00.000Z",
+   "last_seen": "2026-08-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+     "description": "CrowdStrike"
     }
    ]
   },
@@ -13338,6 +13623,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--13884f28-a1ba-5632-a6dd-d57cb8caa9ac",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--13bc3cd9-0097-5dcd-9118-f194b68ef9ee",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -13874,6 +14169,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a7b15e75-13a6-5f59-b10c-e2c87b7a2efb",
    "target_ref": "attack-pattern--b0afaa5c-c5c8-52e5-a501-0f919a76eea0"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--1ffb1515-b79c-5572-b7b1-63873be9600d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -14488,6 +14793,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--31ec4148-852e-5b9e-bbad-a245a5d8ead8",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--32cee7b2-35e9-5d75-a519-4d5febe3ab97",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -14624,6 +14939,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--7938faa0-e73e-5ad8-b259-a0fe00b83771",
    "target_ref": "ipv4-addr--872700e5-7247-53bf-a70a-3be3713444cc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--35896c1b-5061-5a2a-b23f-26dbf04b7d8d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--076b974f-9945-57d6-9d09-aa3db3145964",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -14888,6 +15213,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--3b73709a-382a-54dd-99d8-f35a0541de4a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--3be3f3ff-5dd3-5c29-a049-b2caab3db227",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -15094,6 +15429,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--a734c595-dec7-5529-95f7-980d7bd2651e",
    "target_ref": "ipv6-addr--818b0e9d-24c0-55df-9a5a-3601d0c97e62"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--40f37f4d-50f3-523e-818c-22f40765dde9",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--c5755016-23ee-5a93-bd12-5b47e9780ac5",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -15748,6 +16093,26 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--4f619222-8b35-5c60-b3c4-a98d890cfb82",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "target_ref": "attack-pattern--31a8a675-34f8-5390-ba72-fed014df6ae6"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--4f65e4af-c1fd-5ac1-913f-74e26230f9ac",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--4fa009f9-59c3-57d6-809e-190cd0b5c59f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -15978,6 +16343,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--55fad4ae-9466-5773-8659-a06dd25a2da6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--c5e804db-4c11-58bb-82e4-bad884f2033e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--567c2606-ac7b-5198-8b66-ccd11eecad14",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16138,6 +16513,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--59ee5a75-18b6-5df0-a53a-29b1b3404cfc",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--77594d09-4bac-5885-aa0c-09ff0658cccc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--59f21cd6-4c6b-5f8b-8862-474bc4fe777d",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16234,6 +16619,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--b0421eab-80ea-5555-8a3f-6a257045a93a",
    "target_ref": "intrusion-set--ec04a894-e39c-59c7-85b1-aa9a8617b041"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--5b3eff31-40cb-52a3-bbdb-e9706c5258af",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--874fadca-5767-5f85-9973-49a398a49cc2"
   },
   {
    "type": "relationship",
@@ -16384,6 +16779,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--76fd2d32-aaf5-5d6e-b2b7-e1f29643f826",
    "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--5fbd54bd-780d-510d-8610-280c50ed6e1d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112",
+   "target_ref": "attack-pattern--f6564709-9c4e-510f-ab0b-69f8a03f7003"
   },
   {
    "type": "relationship",
@@ -16578,12 +16983,32 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--646acd68-edae-5b0d-accd-ad8a67f22f17",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--4c50bda8-50bb-52f6-90ae-e0853062cf8f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--64aee047-d57b-57fe-8e94-9dbfd5119831",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "based-on",
    "source_ref": "indicator--68df1b97-7013-5ccc-9e68-229e44c12668",
    "target_ref": "ipv4-addr--3ad6c88b-0210-520f-b0ae-8c884c3f1934"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--64b3ea8b-9380-582b-af2f-edef9874868d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--c0667f3d-a71e-5505-8aeb-f4a02f0198f6"
   },
   {
    "type": "relationship",
@@ -17138,6 +17563,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--70b7778d-ca52-5ea1-8165-5b841966f676",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--81c4829c-1df1-5143-8dd5-60eb0673ba27",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--70cfb7cd-518a-57f9-a433-3097cdd0126f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17184,6 +17619,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--d82d4da0-5a43-577e-be63-a3321bef47b6",
    "target_ref": "file--be32d427-d105-5621-a50b-0db9b8e75c92"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--71ad3311-830e-5755-b585-76ef708a3659",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -17464,6 +17909,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a230a236-0b45-503a-954c-07c1d451a701",
    "target_ref": "attack-pattern--fc9c345f-65d1-5431-82fe-4cdf697bb2d4"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--792fe183-0fb3-5eb7-b7a9-5066d763eb9a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--076b974f-9945-57d6-9d09-aa3db3145964",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -17794,6 +18249,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--22dabbc3-390c-5391-81b8-c0a8524ca2fa",
    "target_ref": "intrusion-set--166ae14e-49aa-5972-bbcb-25b7ca464ad7"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--84bb7146-f254-55e1-94d9-0ed186f938c8",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -18438,6 +18903,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--94f84339-5b35-57d8-b3a2-8799a301d6c8",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--9571ab66-602d-5e06-8a86-0f793d0c2c72",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18958,6 +19433,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--a28acd77-da56-5d1b-b7cd-e6cef068ab10",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--a2d3381a-84cc-5114-b1da-77b79f92ad41",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -19014,6 +19499,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--bf579858-9e82-5272-a3bb-705c4bec0ce9",
    "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--a4e1e10e-9ba2-564f-b678-7b06db7e6d82",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "target_ref": "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac"
   },
   {
    "type": "relationship",
@@ -19144,6 +19639,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--473bbda0-c344-58be-87bc-03eb868b549d",
    "target_ref": "url--2e3a2ab3-a956-590f-ae2b-2f209ed334f2"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--a824bedf-6a76-5ef1-899d-eac1856da1d7",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -19408,6 +19913,26 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--aea63bb5-d967-555b-9858-2eee860b0e4e",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--c5755016-23ee-5a93-bd12-5b47e9780ac5",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--aea9b448-147f-5867-901a-2ab5d74c7a07",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--81c4829c-1df1-5143-8dd5-60eb0673ba27",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--af35f581-26cf-5efa-a9ab-34bca4087ca3",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -19474,6 +19999,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--78d8a3dd-ae5b-52dd-b0b1-36dd239dbc2e",
    "target_ref": "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--b06faebb-57d2-5661-bc76-9815dc9d3f7f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a",
+   "target_ref": "attack-pattern--3af71b07-7695-54e7-98f8-06344ded04bf"
   },
   {
    "type": "relationship",
@@ -20118,6 +20653,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--be1bc932-0290-5aaf-8be0-b378e8cd017a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--be8e0b08-b083-58c2-a64a-5c52032c2092",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -20168,6 +20713,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--bf802bee-4a86-5e0e-8c5c-9f949b17e73d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a",
+   "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--bf842f70-a8f3-529e-a1c2-f5437421f385",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -20184,6 +20739,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--021d9d4f-1106-519c-97f0-20b3a2897983",
    "target_ref": "attack-pattern--3899c496-4983-540b-8e20-6b39d52dd7e0"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--bfee5c5a-c1db-5899-bf27-c954c0243f52",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f43f633f-d820-50e5-a349-9078bcafe5bd",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -20274,6 +20839,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--bcfde13b-9053-5d95-911b-810c2f1c2580",
    "target_ref": "domain-name--e2d86eed-73c6-530c-8d7b-bd0236d23ad9"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--c172b51b-73ed-51c6-b3a0-4d8cae05067f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a"
   },
   {
    "type": "relationship",
@@ -21188,6 +21763,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--d8dcfb70-16ab-50e4-821c-11b08666cf37",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a",
+   "target_ref": "attack-pattern--9d610301-8f2d-5116-8a91-684d8d09ff70"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--d8e71a25-1ab2-5bd4-a459-7b4c21abf40f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -21368,6 +21953,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--dc9082a6-b7b8-50f6-9ac1-6c08d8528b66",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--f43f633f-d820-50e5-a349-9078bcafe5bd",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--dcbe289a-dd42-5a01-9bf6-395213970a7e",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -21428,6 +22023,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--de07f298-6351-5514-9716-cc1d446d9e86",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--de5c826b-f681-500c-b6cc-fb40fefadf04",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -21484,6 +22089,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--b82e9c82-0a23-5beb-bb99-bde4e27b579b",
    "target_ref": "malware--27373472-3545-5712-98c7-de3eab877ea2"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--df822724-6fe1-5c7e-9ca8-3b3b04338333",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112",
+   "target_ref": "attack-pattern--3046ce8b-9053-50d5-b4e4-ef6d1e99460d"
   },
   {
    "type": "relationship",
@@ -21604,6 +22219,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--ef64390a-ee68-59c1-b6f5-0e38d03cb47b",
    "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--e5584cdc-2f03-5d76-a6a9-b3b7f952eb09",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--46a8388e-93c4-5e20-95e7-c47a45730386"
   },
   {
    "type": "relationship",
@@ -21778,6 +22403,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--e8bd36f7-2aee-525c-847d-dbee1305baed",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc",
+   "target_ref": "attack-pattern--818c5bd3-b99d-5f19-86dd-b9e4ba345d45"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--e8c06157-7c34-5f5f-9154-d5cdf150c46a",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -21948,6 +22583,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--ece8cb11-f8f0-5c8e-b241-fbe8377be73f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73",
+   "target_ref": "attack-pattern--0cfb8bb1-1e6b-5184-976d-38d336d12d56"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--ed0ddf1e-7f6c-5ec2-aa05-020cdeb25688",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -21974,6 +22619,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--964d3c2a-d5f4-5185-8ecb-dc3a04661603",
    "target_ref": "ipv4-addr--6cc4ee93-8be2-525d-b016-3e8253064a12"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--ed82cd1c-a114-5170-88ee-adfcaef5fee6",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112",
+   "target_ref": "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599"
   },
   {
    "type": "relationship",
@@ -22014,6 +22669,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--4ff9ea37-6095-57e2-90ea-74710320870a",
    "target_ref": "ipv4-addr--ff655bed-f167-5e29-98ef-3b6e34404dad"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--ef0107b7-274b-5380-b074-e3ee048d4d38",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079",
+   "target_ref": "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599"
   },
   {
    "type": "relationship",
@@ -22538,6 +23203,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--ff4180b1-415e-5e6c-8874-f94756e1c107",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112",
+   "target_ref": "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--ff4db126-2901-5e69-96e0-ad2cbe602399",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -22722,6 +23397,31 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--06d8ba6b-9f11-5929-bc59-515bc8e4f443",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "SOCRadar – CyberXero: An AI-Augmented Initial Access Broker Targeting Ukrainian Critical Infrastructure",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--41438884-41f9-59a6-99a7-2e06363cc047",
+   "object_refs": [
+    "attack-pattern--31a8a675-34f8-5390-ba72-fed014df6ae6",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac",
+    "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "intrusion-set--a4da3065-3c84-5e74-8815-cccba3703079"
+   ],
+   "external_references": [
+    {
+     "source_name": "socradar.io",
+     "url": "https://socradar.io/blog/cyberxero-ai-iab-ukra"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--0a434353-2e8e-59f8-93b6-5b54e851d3d4",
    "created": "2026-07-01T00:00:00.000Z",
    "modified": "2026-07-01T00:00:00.000Z",
@@ -22763,6 +23463,30 @@
     {
      "source_name": "Microsoft",
      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--0e731e2c-02b2-5e35-99bb-19863d239002",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "CrowdStrike – CrowdStrike Uncovers New Agentic AI Campaigns",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--350d7d85-e3d1-5f81-a4b4-086cc86acc97",
+   "object_refs": [
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "intrusion-set--076b974f-9945-57d6-9d09-aa3db3145964",
+    "intrusion-set--81c4829c-1df1-5143-8dd5-60eb0673ba27",
+    "intrusion-set--c5755016-23ee-5a93-bd12-5b47e9780ac5",
+    "intrusion-set--f43f633f-d820-50e5-a349-9078bcafe5bd"
+   ],
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/"
     }
    ]
   },
@@ -23016,6 +23740,30 @@
     {
      "source_name": "hongkongfp.com",
      "url": "https://hongkongfp.com/2023/08/25/in-first-hong-kong-police-arrest-6-over-finance-scams-involving-deepfake-technology/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--37d73156-8b71-54f3-bb25-c6d82252ad76",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Unit 42 – Next Exploit Opportunities: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--bd7bc263-20bc-52e1-86e2-e82d5d9f3704",
+   "object_refs": [
+    "attack-pattern--3046ce8b-9053-50d5-b4e4-ef6d1e99460d",
+    "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e",
+    "attack-pattern--f6564709-9c4e-510f-ab0b-69f8a03f7003",
+    "intrusion-set--eae15acf-e024-55c2-a90d-353c3d410112"
+   ],
+   "external_references": [
+    {
+     "source_name": "Palo Alto Networks Unit 42",
+     "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/"
     }
    ]
   },
@@ -23326,6 +24074,32 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--5fef8655-4a8a-57db-975b-034ea7b39033",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "SOCRadar – INC and The Gentlemen Ransomware: Exposed AI Infrastructure",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--41438884-41f9-59a6-99a7-2e06363cc047",
+   "object_refs": [
+    "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--4c50bda8-50bb-52f6-90ae-e0853062cf8f",
+    "attack-pattern--818c5bd3-b99d-5f19-86dd-b9e4ba345d45",
+    "attack-pattern--874fadca-5767-5f85-9973-49a398a49cc2",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "intrusion-set--516199c3-7ebe-5f89-8cc6-7b920e7729bc"
+   ],
+   "external_references": [
+    {
+     "source_name": "socradar.io",
+     "url": "https://socradar.io/blog/inc-gentlemen-ransomware-ai-infrastructure/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--602bf909-2bb9-5c3e-8bb0-152fc19cb180",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -23572,6 +24346,33 @@
     {
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--725b400f-75c0-5bc9-8247-9a27672a9315",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Microsoft – AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--394cf9c7-680f-58c0-a5d6-126c4c89ac74",
+   "object_refs": [
+    "attack-pattern--0cfb8bb1-1e6b-5184-976d-38d336d12d56",
+    "attack-pattern--46a8388e-93c4-5e20-95e7-c47a45730386",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--77594d09-4bac-5885-aa0c-09ff0658cccc",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--c0667f3d-a71e-5505-8aeb-f4a02f0198f6",
+    "attack-pattern--c5e804db-4c11-58bb-82e4-bad884f2033e",
+    "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a",
+    "intrusion-set--2b77f815-f3c0-51e4-9c36-f07a93bf8a73"
+   ],
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
     }
    ]
   },
@@ -24160,6 +24961,30 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--9c347024-5e3e-5edc-bcb3-4c04210accbc",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Zscaler ThreatLabz – Inside a Global AI-Assisted Hacking Campaign",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--545c4e1b-795d-50ee-aeba-60cac7ac99e4",
+   "object_refs": [
+    "attack-pattern--3af71b07-7695-54e7-98f8-06344ded04bf",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--9d610301-8f2d-5116-8a91-684d8d09ff70",
+    "attack-pattern--cc9680c4-8878-52bc-b32a-06a244ac754a",
+    "intrusion-set--9d982091-a819-5aad-b824-fe7d3904f57a"
+   ],
+   "external_references": [
+    {
+     "source_name": "zscaler.com",
+     "url": "https://www.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--9d49b9fe-885e-5af9-9262-a2c58f6777a5",
    "created": "2026-04-01T00:00:00.000Z",
    "modified": "2026-04-01T00:00:00.000Z",
@@ -24498,6 +25323,31 @@
     {
      "source_name": "Symantec",
      "url": "https://symantec-enterprise-blogs.security.com/threat-intelligence/malware-ai-llm"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--c4d83c12-1aba-514a-bd82-e95a4d2a3760",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Recorded Future",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--b69bddbc-7f9e-52aa-832f-47b9f9163447",
+   "object_refs": [
+    "attack-pattern--3af71b07-7695-54e7-98f8-06344ded04bf",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--7bc7442e-c472-5c79-9b6c-041b0d1db538",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--a2548e07-c6cf-5885-b283-30a990a209f3",
+    "attack-pattern--dbb122a1-547c-5c18-8147-2dcfcfeaf934",
+    "intrusion-set--bccde7f0-0646-5c25-bb3b-9f050a4197a1"
+   ],
+   "external_references": [
+    {
+     "source_name": "Recorded Future",
+     "url": "https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks"
     }
    ]
   },

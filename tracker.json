@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 140,
+ "count": 149,
  "entries": [
   {
    "table": "main",
@@ -1076,8 +1076,8 @@
   {
    "table": "main",
    "name": "UnSub (ARTEX agentic pentest, South Korean finance) — CrowdStrike",
-   "akas": "Unknown (CrowdStrike: not attributed to a named adversary; moderate-confidence Chinese-speaking, financially motivated individual)",
-   "brief": "CrowdStrike recovered exposed open directories showing an actor using ARTEX, a recently released open-source, LLM-driven agentic pentesting tool, with Claude Code session histories/config (including a Chinese-language pentest prompt) and DeepSeek, GLM and Grok backends (reportedly via a reseller), to breach South Korean financial organizations and exfiltrate customer data; the actor also asked Claude where Korean breach data is sold and for help finding Korean Telegram data-sales groups. Reuters reports at least nine banks affected (victim counts come from industry reports and are not independently confirmed by CrowdStrike). *Bias note: CrowdStrike is a security vendor; attribution is explicitly hedged.* CrowdStrike",
+   "akas": "Unknown (CrowdStrike: not attributed to a named adversary; moderate-confidence Chinese-speaking, financially motivated individual); TAG-217 (Recorded Future designation for the same campaign, matched via RF's link to CrowdStrike's post)",
+   "brief": "CrowdStrike recovered exposed open directories showing an actor using ARTEX, a recently released open-source, LLM-driven agentic pentesting tool, with Claude Code session histories/config (including a Chinese-language pentest prompt) and DeepSeek, GLM and Grok backends (reportedly via a reseller), to breach South Korean financial organizations and exfiltrate customer data; the actor also asked Claude where Korean breach data is sold and for help finding Korean Telegram data-sales groups. Reuters reports at least nine banks affected (victim counts come from industry reports and are not independently confirmed by CrowdStrike). Recorded Future's Insikt Group independently tracks the activity as TAG-217, assessing a suspected Chinese-speaking operator and reporting that the breaches exposed personal data of at least 68,000 people across at least seven financial institutions (reconstructed activity roughly 17–22 Aug through 26 Sep 2026; full IOCs only in RF's platform). *Bias note: CrowdStrike and Recorded Future are security vendors; attribution is explicitly hedged; RF's AI-tool list is sourced to CrowdStrike's post.* CrowdStrike, Recorded Future",
    "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic pentest automation)<br><br>T1588.007 - Obtain Capabilities: Artificial Intelligence<br><br>T1583.003 - Acquire Infrastructure: Virtual Private Server<br><br>T1090 - Proxy<br><br>T1567 - Exfiltration Over Web Service",
    "reported": "Oct 2026",
    "activity": "Sep 2026 – Oct 2026"
@@ -1108,6 +1108,87 @@
    "ttp_md": "**DeepFake for Impersonation** T1656 - Impersonation (AI personas)<br><br>T1585 - Establish Accounts<br><br>T1657 - Financial Theft",
    "reported": "Sep 2026",
    "activity": "Apr 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (INC / The Gentlemen affiliates, \"Phantom\" framework) — SOCRadar",
+   "akas": "INC = GOLD IONIC (MITRE G1032); tooling: Phantom, Ghost C2",
+   "brief": "SOCRadar's Threat Research Unit recovered an exposed operator C2 server holding the affiliates' own AI session records (133 OpenCode sessions, 8,257 messages routed through OpenRouter to claude-opus-4.6 and kimi-k3), the custom Phantom framework (18 skill modules, 32 MCP servers) and a ledger of 62 named victim organizations. The LLMs planned reconnaissance, selected techniques, generated commands, triaged stolen data, drafted extortion material and produced 46 INC encryptor builds for six victims plus EDR-killer tooling; operators reframed requests as \"Authorized Red Team Assessment\" prompts when models refused. Exploitation per operator records included CVE-2026-35616 (FortiClient EMS), CVE-2024-57727 (SimpleHelp) and CVE-2026-41940 (cPanel). *Analyst note: a human approved each step (not fully autonomous); SOCRadar says operator records are not independently verified, deployment against staged targets is unconfirmed, and the INC/Gentlemen alliance is low confidence. Vendor source; secondary reposts overstate autonomy.* SOCRadar",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>**LLM-enhanced extortion/negotiation** T1657 - Financial Theft<br><br>T1190 - Exploit Public-Facing Application<br><br>T1486 - Data Encrypted for Impact<br><br>T1562.001 - Impair Defenses: Disable or Modify Tools",
+   "reported": "Oct 2026",
+   "activity": "Jul 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "CyberXero",
+   "akas": "Underground-forum alias (Dread, HackForums, Exploit.in); Russian-speaking initial access broker (SOCRadar)",
+   "brief": "SOCRadar recovered an exposed server (90,000+ files) showing a Russian-speaking initial access broker running Claude Code with 51 specialized subagents (roles such as c2-operator, exploit-chainer, scada-attacker) plus the open-source PentAGI pentest framework wired to a Cobalt Strike team server against Ukrainian critical-infrastructure and other targets. The operator repeatedly claimed ownership of targets to get past model refusals (some refusals held, including a backdoor install). SOCRadar confirmed exfiltration from four Ukrainian organizations (628,000+ records, 564,073 from one Kharkiv district-heating provider) and reconnaissance of seven energy/utility entities. *Analyst note: the \"40+ organizations worldwide\" figure is self-reported by the operator's records; secondary outlets embellish. Vendor source.* SOCRadar",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1595.002 - Active Scanning: Vulnerability Scanning<br><br>T1190 - Exploit Public-Facing Application<br><br>T1110.003 - Brute Force: Password Spraying<br><br>T1505.003 - Server Software Component: Web Shell",
+   "reported": "Oct 2026",
+   "activity": "Jul 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "Storm-0940",
+   "akas": "China-state aligned (Microsoft); no known industry aliases",
+   "brief": "Microsoft Threat Intelligence reports a China-state-aligned actor using ARTEX, an open-source multi-agent penetration-testing framework that can drive any AI model, to automate reconnaissance, password spraying and OAuth-app abuse at machine speed: a spray against 327 accounts at 8 organizations (10–14 Oct 2026), then compromise of a ConnectWise multi-tenant app (Cloud Backup) followed by ARTEX-driven sign-in attempts against 2,250+ tenants, with privileged cloud access in under three hours in some intrusions. Hundreds of organizations across aerospace/defense, automotive, chemicals, energy, financial services and government were targeted. *Analyst note: same tool as the CrowdStrike/Recorded Future ARTEX row but a distinct campaign (different victims, vector and attribution). Microsoft names no underlying model; attribution is Microsoft's own. Vendor source.* Microsoft",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1595 - Active Scanning<br><br>T1078.004 - Valid Accounts: Cloud Accounts<br><br>T1195 - Supply Chain Compromise<br><br>T1199 - Trusted Relationship<br><br>T1528 - Steal Application Access Token<br><br>T1098.003 - Account Manipulation: Additional Cloud Roles",
+   "reported": "Oct 2026",
+   "activity": "Sep 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Spanish/English-speaking Claude Code operator vs. Argentine healthcare) — CrowdStrike",
+   "akas": "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)",
+   "brief": "CrowdStrike reports an operator using a custom pentest harness derived from the open-source PentestGPT, with a \"Supervisor\" Claude Code agent selecting tasks from a state machine and an \"Executor\" agent carrying them out (plus MCP servers and Python exploit scripts), to compromise at least 15 Argentina-based healthcare entities and exfiltrate credentials and medical records from at least one. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)",
+   "reported": "Oct 2026",
+   "activity": "May 2026 – Aug 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Chinese-speaking Claude Code operator vs. governments and private sector) — CrowdStrike",
+   "akas": "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)",
+   "brief": "CrowdStrike reports a Chinese-speaking operator who reached Claude models through a China-based AI proxy (\"transfer station\") and ran two pentest harnesses of differing autonomy (a deterministic Python project where the model picks preset actions, and a Claude Code setup using single or parallel specialist agents) against government entities in two countries and private-sector targets in Brazil and the U.S. (biotech, healthcare, food and beverage, retail, technology, travel); 20+ named targets. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)",
+   "reported": "Oct 2026",
+   "activity": "May 2026 – Aug 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Indonesian-speaking Claude Code operator) — CrowdStrike",
+   "akas": "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)",
+   "brief": "CrowdStrike reports the least sophisticated of the four: an operator running Claude Code with 819 skills (mostly from public GitHub repositories, primarily claude-red) and no added orchestration against Indonesian government domains, one government domain elsewhere and several private-sector entities, intervening manually to push past guardrails. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)",
+   "reported": "Oct 2026",
+   "activity": "May 2026 – Aug 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (Russian-speaking Claude Code group, /pentest-setup workflow) — CrowdStrike",
+   "akas": "Unnamed (CrowdStrike: operator-language descriptor only; no designation assigned)",
+   "brief": "CrowdStrike reports Russian-speaking individuals who launched a seven-step Claude Code workflow from a single \"/pentest-setup\" slash command (environment enumeration, near-autonomous exploitation choices, post-RCE steps and explicit exfiltration instructions) to exfiltrate corporate client data from a U.S.-based CRM vendor and compromise SaaS and data-center entities in Russia, Kyrgyzstan and the U.S. plus one government domain elsewhere. *Analyst note: one of four distinct Claude Code–using operators in a single CrowdStrike report; actors are unnamed and labelled by operator language, not verified nationality. Vendor source.* CrowdStrike",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)",
+   "reported": "Oct 2026",
+   "activity": "May 2026 – Aug 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (ARTEX multi-model operator, 19-market targeting) — Zscaler ThreatLabz",
+   "akas": "\"Chinese-speaking operator\" (Zscaler); possible overlap with the CrowdStrike/TAG-217 ARTEX row — unconfirmed",
+   "brief": "ThreatLabz recovered a Chinese-speaking operator's customized ARTEX deployment (planner/worker AI pentest framework extended with nmap, sqlmap, nuclei, httpx, jadx, apktool and frida) driven through Claude Code, Codex and Grok workspaces with multi-model routing, context-injection hooks and sync scripts. Prompt histories targeted dating, SMS, crypto/payment, gift-card, gambling, retail, education, logistics, investment and legal-claims sites referencing 19 countries; the operator used proxy chains and archived data to Backblaze B2. *Analyst note: Zscaler gives no victim count or confirmed compromises (the 19 countries come from prompts), model identities are unverified, and overlap with the CrowdStrike South Korea row is not established; Zscaler's earlier 14 Oct post on South Korean targeting is related. TTP IDs are analyst-mapped (Zscaler cites only MITRE ATLAS). Vendor source.* Zscaler ThreatLabz",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1595 - Active Scanning<br><br>T1090 - Proxy<br><br>T1567.002 - Exfiltration to Cloud Storage",
+   "reported": "Oct 2026",
+   "activity": "Aug 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "BUGSTER",
+   "akas": "Handle only (financially motivated, English-speaking per Unit 42); no prior reporting",
+   "brief": "Unit 42 observed a low-skill criminal's own environment (logs, scripts, configs, bot memory) showing Hermes Agent running DeepSeek V4 and a Cursor IDE with safety controls disabled used to generate scanning and brute-force scripts and an \"exploit opportunities\" document against Indian university and e-commerce sites; one confirmed intrusion exfiltrated 5,200+ student/faculty records from a university MongoDB. Also seen: crypto-holder profiling, a C2 listener, Wi-Fi handshake cracking on rented GPUs and early VoIP-fraud planning (planning only). *Analyst note: actor is unsophisticated and the VoIP/crypto work shows no follow-on; the Hermes/DeepSeek trend framing is Unit 42's assessment. Vendor source.* Unit 42",
+   "ttp_md": "**LLM-enhanced scripting techniques** T1059 - Command and Scripting Interpreter<br><br>T1595.002 - Active Scanning: Vulnerability Scanning<br><br>T1110 - Brute Force<br><br>T1190 - Exploit Public-Facing Application",
+   "reported": "Oct 2026",
+   "activity": "Unknown"
   },
   {
    "table": "deepfake",
