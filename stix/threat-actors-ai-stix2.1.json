@@ -580,6 +580,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--75d32510-ac69-54f3-a829-fbe75d1e4062",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Valid Accounts",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1078",
+     "url": "https://attack.mitre.org/techniques/T1078/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--77594d09-4bac-5885-aa0c-09ff0658cccc",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1285,6 +1300,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--e46da37f-02fe-5b8e-89ac-5148270bdb49",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Kerberoasting",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1558.003",
+     "url": "https://attack.mitre.org/techniques/T1558/003/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--e4b13e6a-88cb-5da3-a573-d4500cf2ebe1",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1335,6 +1365,21 @@
   {
    "type": "attack-pattern",
    "spec_version": "2.1",
+   "id": "attack-pattern--e9bf6b66-e590-5fe9-935e-691b6db08172",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "Protocol Tunneling",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1572",
+     "url": "https://attack.mitre.org/techniques/T1572/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
    "id": "attack-pattern--e9cbfbee-70bb-5185-80a7-3d372ca8da55",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -1344,6 +1389,21 @@
      "source_name": "mitre-attack",
      "external_id": "T1055.012",
      "url": "https://attack.mitre.org/techniques/T1055/012/"
+    }
+   ]
+  },
+  {
+   "type": "attack-pattern",
+   "spec_version": "2.1",
+   "id": "attack-pattern--ea4009b1-dbb7-53b7-a536-fe2659f0d473",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "DCSync",
+   "external_references": [
+    {
+     "source_name": "mitre-attack",
+     "external_id": "T1003.006",
+     "url": "https://attack.mitre.org/techniques/T1003/006/"
     }
    ]
   },
@@ -2268,6 +2328,15 @@
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
    "name": "sj.com",
+   "identity_class": "organization"
+  },
+  {
+   "type": "identity",
+   "spec_version": "2.1",
+   "id": "identity--a1f34186-e89a-54be-894d-bfa44d1ddf8c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "name": "cert-in.org.in",
    "identity_class": "organization"
   },
   {
@@ -9080,7 +9149,7 @@
    "created": "2026-03-01T00:00:00.000Z",
    "modified": "2026-03-01T00:00:00.000Z",
    "name": "Coral Sleet",
-   "description": "Microsoft observed rapid capability growth via AI-assisted iterative development — using AI coding tools to generate, refine and reimplement malware components, agentic AI for an end-to-end lure-development workflow, and jailbroken LLM software to generate malicious code. Microsoft",
+   "description": "Microsoft observed rapid capability growth via AI-assisted iterative development — using AI coding tools to generate, refine and reimplement malware components, agentic AI for an end-to-end lure-development workflow, and jailbroken LLM software to generate malicious code. Microsoft *Update (Microsoft, Oct 2026):* since April 2026 Coral Sleet used an AI-enabled development platform to build a workflow that trojanizes private GitHub repositories and feeds them into its existing malware chain. Microsoft",
    "aliases": [
     "Storm-1877 (DPRK)"
    ],
@@ -9088,6 +9157,11 @@
     {
      "source_name": "Microsoft",
      "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/",
+     "description": "Microsoft"
+    },
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
      "description": "Microsoft"
     }
    ]
@@ -9367,7 +9441,7 @@
    "created": "2026-05-01T00:00:00.000Z",
    "modified": "2026-05-01T00:00:00.000Z",
    "name": "APT45",
-   "description": "GTIG observed APT45 sending thousands of repetitive prompts that recursively analyze different CVEs and validate PoC exploits — scaled, automated AI-assisted vulnerability research — and experimenting with agentic tooling. GTIG",
+   "description": "GTIG observed APT45 sending thousands of repetitive prompts that recursively analyze different CVEs and validate PoC exploits — scaled, automated AI-assisted vulnerability research — and experimenting with agentic tooling. GTIG *Update (Microsoft, Oct 2026), tracked by Microsoft as Onyx Sleet:* made 100+ target-specific PDF lures in rapid bursts (Aug–Sep 2026), likely with an AI platform, to phish South Korean users, and has used the agentic pentest framework ARTEX since late Oct 2026. Microsoft",
    "aliases": [
     "DPRK state-sponsored (GTIG",
     "Mandiant)"
@@ -9377,6 +9451,11 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
      "description": "GTIG"
+    },
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+     "description": "Microsoft"
     }
    ]
   },
@@ -9539,7 +9618,7 @@
    "name": "Storm-0940",
    "description": "Microsoft Threat Intelligence reports a China-state-aligned actor using ARTEX, an open-source multi-agent penetration-testing framework that can drive any AI model, to automate reconnaissance, password spraying and OAuth-app abuse at machine speed: a spray against 327 accounts at 8 organizations (10–14 Oct 2026), then compromise of a ConnectWise multi-tenant app (Cloud Backup) followed by ARTEX-driven sign-in attempts against 2,250+ tenants, with privileged cloud access in under three hours in some intrusions. Hundreds of organizations across aerospace/defense, automotive, chemicals, energy, financial services and government were targeted. *Analyst note: same tool as the CrowdStrike/Recorded Future ARTEX row but a distinct campaign (different victims, vector and attribution). Microsoft names no underlying model; attribution is Microsoft's own. Vendor source.* Microsoft",
    "aliases": [
-    "China-state aligned (Microsoft); no known industry aliases"
+    "China-state aligned (Microsoft); UNC7228 (GTIG's identifier for the same activity)"
    ],
    "first_seen": "2026-09-01T00:00:00.000Z",
    "last_seen": "2026-10-01T00:00:00.000Z",
@@ -9548,6 +9627,27 @@
      "source_name": "Microsoft",
      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
      "description": "Microsoft"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--2d4be0d9-839c-5a6f-b2ae-79241d0bf34d",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (PentAGI-based orchestration, Asian telecom/integrators) — GTIG",
+   "description": "GTIG describes a customized PentAGI (multi-agent Kali sandbox with Metasploit, nmap, SQLmap) orchestration campaign, used between at least late August and early October 2026, systematically scanning system integrators and major telecommunications firms in Asia; most activity stayed at WHOIS asset mapping or vulnerability scanning but some operations progressed to active intrusion and persistence. A separate PentAGI chain with proxy services targeted the aerospace sector. *Analyst note: no nexus, motivation or victim counts stated. Vendor source.* GTIG",
+   "aliases": [
+    "Unattributed"
+   ],
+   "first_seen": "2026-08-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Google Threat Intelligence Group",
+     "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks",
+     "description": "GTIG"
     }
    ]
   },
@@ -9673,6 +9773,27 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Jade Sleet",
+   "description": "Microsoft observed Jade Sleet running job-themed targeting through three front companies in June 2026, posing as recruiters for a spoofed AI blockchain-intelligence firm, using generative AI for reconnaissance, persona development and outreach. *Analyst note: Microsoft's AI-use description is brief. Vendor source.* Microsoft",
+   "aliases": [
+    "DPRK (Microsoft)"
+   ],
+   "first_seen": "2026-06-01T00:00:00.000Z",
+   "last_seen": "2026-06-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+     "description": "Microsoft"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--322952a6-c5d9-57e4-8d07-6056a9e31f3a",
    "created": "2024-10-01T00:00:00.000Z",
    "modified": "2024-10-01T00:00:00.000Z",
@@ -9708,6 +9829,27 @@
      "source_name": "JFrog",
      "url": "https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/",
      "description": "Source"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "UnSub (ARTEX extortion and suspected PRC-nexus clusters) — GTIG",
+   "description": "GTIG/Mandiant report that since late August 2026 multiple actors have operated ARTEX (autonomous multi-agent LLM pentesting/C2 platform written in Go, using frontier and open-source model APIs) in incident-response engagements: data-theft extortion groups and suspected PRC-nexus clusters hit US government, technology, chemicals/materials and manufacturing. Observed behavior included self-correcting scripts and web shells, MySQL general_log poisoning to write JSP web shells, Kerberoasting, DCSync, 27 AWS probing events in 23 seconds, 491 rotating webhook.site C2 URLs, and enumeration of 110,000+ AD objects. *Analyst note: victim counts and MITRE IDs not stated by GTIG (IDs analyst-mapped); the Asia financial-sector ARTEX case GTIG cites is the already-tracked CrowdStrike row. Vendor source.* GTIG",
+   "aliases": [
+    "Financially motivated extortion groups and suspected PRC-nexus clusters; no GTIG UNC designation given"
+   ],
+   "first_seen": "2026-08-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "Google Threat Intelligence Group",
+     "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks",
+     "description": "GTIG"
     }
    ]
   },
@@ -10141,7 +10283,7 @@
    "created": "2026-03-01T00:00:00.000Z",
    "modified": "2026-03-01T00:00:00.000Z",
    "name": "Sapphire Sleet",
-   "description": "Develops fake digital personas using AI to support social-engineering campaigns targeting employment/recruitment opportunities. Microsoft",
+   "description": "Develops fake digital personas using AI to support social-engineering campaigns targeting employment/recruitment opportunities. Microsoft *Update (Microsoft, Oct 2026):* an Aug 2026 Rust software compromise was likely AI-assisted development; the malware used dynamic .NET compilation post-exploitation, probably for evasion. Microsoft",
    "aliases": [
     "DPRK (crypto-theft",
     "fake-recruiter cluster)"
@@ -10150,6 +10292,11 @@
     {
      "source_name": "Microsoft",
      "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/",
+     "description": "Microsoft"
+    },
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
      "description": "Microsoft"
     }
    ]
@@ -10538,6 +10685,27 @@
   {
    "type": "intrusion-set",
    "spec_version": "2.1",
+   "id": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "VAPOR PANDA",
+   "description": "CrowdStrike reports a China-nexus espionage actor running ARTEX, a multi-agent framework (main agent coordinating planner and worker agents over a shared graph of facts, findings and goals), driven primarily by DeepSeek plus a second commercial LLM CrowdStrike could not confirm. Starting 17 Oct 2026 the campaign hit 200+ organizations in 14+ countries over an 11-day window (post-exploitation confirmed at 9, password spraying/credential scanning against 12+ more), targeting foreign ministries, government, pharma, semiconductor, defense, nuclear, financial, telecom and think-tank organizations. One intrusion's planning agents consumed roughly 1.4 billion input tokens while a human operator steered in Chinese at decision points. Tooling included the BLOODALCHEMY backdoor, web shells and Chisel/SoftEther tunnels. *Analyst note: ATT&CK IDs below are a subset of those CrowdStrike lists; the second model is unconfirmed. Vendor source.* CrowdStrike",
+   "aliases": [
+    "China-nexus (CrowdStrike); not equated with Microsoft's Storm-0940"
+   ],
+   "first_seen": "2026-10-01T00:00:00.000Z",
+   "last_seen": "2026-10-01T00:00:00.000Z",
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+     "description": "CrowdStrike"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
    "id": "intrusion-set--8666acdf-3d3b-5de2-97a2-761b5a491f51",
    "created": "2026-09-01T00:00:00.000Z",
    "modified": "2026-09-01T00:00:00.000Z",
@@ -10740,6 +10908,25 @@
      "source_name": "Google Threat Intelligence Group",
      "url": "https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools",
      "description": "GTIG"
+    }
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--928ca34e-3249-552c-a46a-9d8973ce0843",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Pearl Sleet",
+   "description": "Microsoft reports Pearl Sleet using AI-assisted development tooling and, like Onyx Sleet, the open-source agentic pentest framework ARTEX in operations. *Analyst note: very little detail in Microsoft's post. Vendor source.* Microsoft",
+   "aliases": [
+    "DPRK (Microsoft)"
+   ],
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+     "description": "Microsoft"
     }
    ]
   },
@@ -11321,6 +11508,26 @@
    ],
    "labels": [
     "deepfake"
+   ]
+  },
+  {
+   "type": "intrusion-set",
+   "spec_version": "2.1",
+   "id": "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15",
+   "created": "2026-11-01T00:00:00.000Z",
+   "modified": "2026-11-01T00:00:00.000Z",
+   "name": "CRAFTY FALCON",
+   "description": "India's CERT-In (with CSIRT-Fin) issued advisory CIAD-2026-0058 (Critical) on an ongoing financial-crime actor targeting NBFCs, digital lenders, fintechs, payment aggregators/PSPs and crypto exchanges, assessed to be using AI-driven offensive tooling. The actor abuses victims' payment and disbursement APIs, uses AWS SSM/Lambda abuse, exposed UAT/staging environments to pivot to production, PHP/Node.js web shells via file-upload and deserialization flaws, crypto-wallet key theft and Rs.1 micro-test transactions, with infrastructure rotating within hours to days. *Analyst note: AI use is inferred by CERT-In from tooling and script-variant tempo (\"consistent with AI-generated code\"); the advisory names public agentic tools (ARTEX, PentAGI, Cairn, CyberStrikeAI) without saying which was used; IOCs are TLP-restricted, so TTP IDs are analyst-mapped. Government source.* CERT-In",
+   "aliases": [
+    "Designation by CERT-In",
+    "CSIRT-Fin; no other vendor aliases found"
+   ],
+   "external_references": [
+    {
+     "source_name": "cert-in.org.in",
+     "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058",
+     "description": "CERT-In"
+    }
    ]
   },
   {
@@ -13054,6 +13261,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--06578aca-c7a4-52b6-b69d-acaa602a7819",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--06c9a379-8959-532c-9200-55922fc78e4c",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -13290,6 +13507,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--486632e0-b768-5622-b577-3376edce1a45",
    "target_ref": "attack-pattern--3046ce8b-9053-50d5-b4e4-ef6d1e99460d"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--0c60218f-d018-532d-9f44-4184c059a3d1",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2d4be0d9-839c-5a6f-b2ae-79241d0bf34d",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -14464,6 +14691,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--2631a8c4-2534-58ec-a437-55b8d73d180b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--ea4009b1-dbb7-53b7-a536-fe2659f0d473"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--2685d3b1-1c65-51e9-a647-99cd135787ea",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -14759,6 +14996,16 @@
    "modified": "2024-01-01T00:00:00.000Z",
    "relationship_type": "uses",
    "source_ref": "intrusion-set--fab017fb-339d-5558-9cc0-c56bd2f7b152",
+   "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--2e691312-1334-5737-b770-dfec6caaa5dd",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
    "target_ref": "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021"
   },
   {
@@ -16034,6 +16281,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--4cc46030-61e0-5961-8fd5-671e911ec8a8",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--4cdd6a6c-4b09-5151-9441-2c5b3daddd11",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16444,6 +16701,26 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--550cfe9f-5782-5199-93aa-3ae04213a78e",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--928ca34e-3249-552c-a46a-9d8973ce0843",
+   "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--55172638-f479-5af9-b70c-17385cc56c56",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--55711404-3060-59bb-ad0c-55caa268fad6",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16560,6 +16837,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--f26ed611-fc2a-53b6-a634-aeb5ee759ae1",
    "target_ref": "attack-pattern--f2326aca-511d-505a-a5c4-19b88913a583"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--58c1b49b-4ef8-5c9f-ac92-65abaac6c94c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
+   "target_ref": "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a"
   },
   {
    "type": "relationship",
@@ -16894,6 +17181,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--5fbc691b-a155-5227-8eed-e56bd3f7c73b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2d4be0d9-839c-5a6f-b2ae-79241d0bf34d",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--5fbd54bd-780d-510d-8610-280c50ed6e1d",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -16954,6 +17251,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--614038e2-3f47-5f8a-b127-a2befc21c2c7",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--75d32510-ac69-54f3-a829-fbe75d1e4062"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--615a0352-7059-5ef8-ae23-46a9bd70ad68",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17000,6 +17307,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--78d8a3dd-ae5b-52dd-b0b1-36dd239dbc2e",
    "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--6332c920-11bd-52c9-b6d5-73e72058ebdf",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--928ca34e-3249-552c-a46a-9d8973ce0843",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
   },
   {
    "type": "relationship",
@@ -17240,6 +17557,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6",
    "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--68d2b4ea-4cee-56e5-ba65-8478cd3504cf",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
+   "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
   },
   {
    "type": "relationship",
@@ -17574,6 +17901,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--6ecc6e02-491a-5c0a-bf48-719ae76c060d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15",
+   "target_ref": "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--6ee78db6-2a21-5396-929a-c0c70c949035",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17794,6 +18131,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--71bd811b-22ba-5f49-8c42-eb2e9b015d0d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--e9bf6b66-e590-5fe9-935e-691b6db08172"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--71dc3792-e2a9-587c-8bb7-93558e10fb3c",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -17880,6 +18227,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--f771082c-777c-54b9-ab1c-364271862e5d",
    "target_ref": "intrusion-set--eb03e27c-f174-547e-856f-46a80cb406b6"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--732d4169-a15f-5057-990f-491109ca45c2",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
+   "target_ref": "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5"
   },
   {
    "type": "relationship",
@@ -18074,6 +18431,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--7aa5fb7f-6194-5cd3-8c1e-508195b981c0",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--31a8a675-34f8-5390-ba72-fed014df6ae6"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--7aedd7e1-5b9c-574e-960c-8808a3e2f417",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18180,6 +18547,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--5521f1e0-a750-5938-b98a-a8176c330363",
    "target_ref": "attack-pattern--db604211-edd1-5426-a3b5-0f6f5b447297"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--7e3b1d92-2977-5a81-b4d4-2dd7aab08836",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -18864,6 +19241,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--8f14b014-9d55-5cdf-8f6c-b389dd5249a0",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--8fca6a2b-6ff7-5110-b2f4-04b31454c932",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18924,6 +19311,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--90f98ac1-d6a5-5c48-942d-3619c4e3c07c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
+   "target_ref": "attack-pattern--d7f5ec6e-0492-55ec-a0dc-6d481a68b603"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--911234bb-736f-5813-b4e5-76586e47b63f",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -18970,6 +19367,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--a22c2b9b-5f2b-5278-b88f-600d5f05884c",
    "target_ref": "attack-pattern--514f83a2-c1de-5f2c-823b-f63408c046dc"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--9390587e-3a7e-5fe6-9782-ff9635639ae5",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac"
   },
   {
    "type": "relationship",
@@ -19384,6 +19791,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--9b91f9ad-48c7-5cb3-9647-974c0d21fe15",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--9bf0d21e-3401-5f1a-afea-7e2722863ece",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -19580,6 +19997,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--184d5cca-290e-527e-b37b-bb87535524d1",
    "target_ref": "attack-pattern--cedd0c5c-469b-5f44-9d39-06b5e9c5165e"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--a23eeb6a-c330-5baa-bbe1-1a695681fc4f",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--e46da37f-02fe-5b8e-89ac-5148270bdb49"
   },
   {
    "type": "relationship",
@@ -20264,6 +20691,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--b2559e67-7a03-525b-ab77-bc9537d30e60",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2d4be0d9-839c-5a6f-b2ae-79241d0bf34d",
+   "target_ref": "attack-pattern--a001756b-2de1-5584-b1ff-9af0e567b175"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--b265a2db-2df6-5921-970c-ff7b980df38e",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -20300,6 +20737,16 @@
    "relationship_type": "indicates",
    "source_ref": "indicator--46880f5c-491e-5857-bf56-a0579083bfc8",
    "target_ref": "intrusion-set--166ae14e-49aa-5972-bbcb-25b7ca464ad7"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--b36b157a-f6fe-5333-a1de-0528f4b2091a",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
   },
   {
    "type": "relationship",
@@ -20360,6 +20807,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--584d446e-787d-5e50-99f5-f36441c27f08",
    "target_ref": "domain-name--5a4a01f9-bae8-53d5-bf54-e026a5a700d1"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--b4ec8d06-29e5-5ba6-bcba-c7d9105b1ee0",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac"
   },
   {
    "type": "relationship",
@@ -21494,6 +21951,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--ce9e3205-c6d4-56f8-8502-5c6be6a5225c",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--928ca34e-3249-552c-a46a-9d8973ce0843",
+   "target_ref": "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--cea09da7-6dbf-5781-a24d-eb7f85851038",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -21520,6 +21987,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--45083e8b-1c13-5d99-8a70-b7861ab0d6df",
    "target_ref": "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--cf5a0de9-e065-5277-96f7-3deb5560f49d",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15",
+   "target_ref": "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac"
   },
   {
    "type": "relationship",
@@ -21680,6 +22157,16 @@
    "relationship_type": "based-on",
    "source_ref": "indicator--b1fab3e0-94f9-5a73-aeec-00655e93854c",
    "target_ref": "domain-name--ac777638-5387-5bbf-a15a-54bc8c53e41f"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--d28ed129-30b6-50c4-8903-1cf7272add3b",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--928ca34e-3249-552c-a46a-9d8973ce0843",
+   "target_ref": "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf"
   },
   {
    "type": "relationship",
@@ -22284,6 +22771,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--df9898b8-ac87-51d4-9a18-cdcb8fdbfcbc",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c",
+   "target_ref": "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--e0084ef0-b9d8-58b2-93d4-44322c708207",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -22344,6 +22841,16 @@
   {
    "type": "relationship",
    "spec_version": "2.1",
+   "id": "relationship--e3525116-5605-50a0-92be-dbc4d12d04be",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--2d4be0d9-839c-5a6f-b2ae-79241d0bf34d",
+   "target_ref": "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
    "id": "relationship--e3bc92f7-072c-55f0-bb20-f8afc27db692",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -22390,6 +22897,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--722b7d7a-53a8-512c-862d-ca939b296240",
    "target_ref": "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--e4f30d82-a8d2-5a81-a75a-e2ec952440b9",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15",
+   "target_ref": "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b"
   },
   {
    "type": "relationship",
@@ -23130,6 +23647,16 @@
    "relationship_type": "uses",
    "source_ref": "intrusion-set--89d24fe4-7f39-5aa0-a817-114e675615f1",
    "target_ref": "attack-pattern--459f1a72-f3e9-53f0-a9d1-4764253d6afb"
+  },
+  {
+   "type": "relationship",
+   "spec_version": "2.1",
+   "id": "relationship--f8481457-29c0-581f-8060-bbbee9fd1358",
+   "created": "2024-01-01T00:00:00.000Z",
+   "modified": "2024-01-01T00:00:00.000Z",
+   "relationship_type": "uses",
+   "source_ref": "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560",
+   "target_ref": "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd"
   },
   {
    "type": "relationship",
@@ -24221,6 +24748,32 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--5248ff64-5c04-5e19-9b31-94f968513e61",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "CrowdStrike – VAPOR PANDA Uses AI-Driven ARTEX to Scale a Global Espionage Campaign",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--350d7d85-e3d1-5f81-a4b4-086cc86acc97",
+   "object_refs": [
+    "attack-pattern--31a8a675-34f8-5390-ba72-fed014df6ae6",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac",
+    "attack-pattern--75d32510-ac69-54f3-a829-fbe75d1e4062",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "attack-pattern--e9bf6b66-e590-5fe9-935e-691b6db08172",
+    "intrusion-set--8600a4f7-fded-57f2-86bc-ec8f28a5552c"
+   ],
+   "external_references": [
+    {
+     "source_name": "CrowdStrike",
+     "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--5314599e-6ad6-5c72-88ec-fcb2700757dc",
    "created": "2024-01-01T00:00:00.000Z",
    "modified": "2024-01-01T00:00:00.000Z",
@@ -25048,6 +25601,30 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--9ab1fb4b-18cd-5f97-b39a-03c01832ed70",
+   "created": "2026-11-01T00:00:00.000Z",
+   "modified": "2026-11-01T00:00:00.000Z",
+   "name": "CERT-In – CIAD-2026-0058: Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor \"CRAFTY FALCON\"",
+   "published": "2026-11-01T00:00:00.000Z",
+   "created_by_ref": "identity--a1f34186-e89a-54be-894d-bfa44d1ddf8c",
+   "object_refs": [
+    "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "intrusion-set--b42bfebd-15ef-59cd-8836-22083b655f15"
+   ],
+   "external_references": [
+    {
+     "source_name": "cert-in.org.in",
+     "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--9b73dd8c-5b9c-5de9-9f80-e0fbcfd67a76",
    "created": "2026-07-01T00:00:00.000Z",
    "modified": "2026-07-01T00:00:00.000Z",
@@ -25249,6 +25826,35 @@
   {
    "type": "report",
    "spec_version": "2.1",
+   "id": "report--9e69b373-f7cd-50ec-8762-55959091deab",
+   "created": "2026-10-01T00:00:00.000Z",
+   "modified": "2026-10-01T00:00:00.000Z",
+   "name": "Google Cloud / GTIG – ARTEX and Friends: Enter Agentic Offensive Frameworks",
+   "published": "2026-10-01T00:00:00.000Z",
+   "created_by_ref": "identity--d632509b-e5cd-5c0d-8c6a-dcc315806504",
+   "object_refs": [
+    "attack-pattern--413bb104-c72c-5925-8949-c3d4c3ff7dcd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--71e08a57-0dbb-54d4-853a-732ace34f9ac",
+    "attack-pattern--7826257e-0341-59f8-a43a-f8c98b211599",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--a001756b-2de1-5584-b1ff-9af0e567b175",
+    "attack-pattern--b0caf548-cb26-573e-97e7-5855a65e445b",
+    "attack-pattern--e46da37f-02fe-5b8e-89ac-5148270bdb49",
+    "attack-pattern--ea4009b1-dbb7-53b7-a536-fe2659f0d473",
+    "intrusion-set--2d4be0d9-839c-5a6f-b2ae-79241d0bf34d",
+    "intrusion-set--3915b68d-b837-5903-96b7-a1fdaf219560"
+   ],
+   "external_references": [
+    {
+     "source_name": "Google Threat Intelligence Group",
+     "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
    "id": "report--a18f0c14-b2c4-5d67-a086-ec4bba25339f",
    "created": "2026-08-01T00:00:00.000Z",
    "modified": "2026-08-01T00:00:00.000Z",
@@ -25440,6 +26046,42 @@
     {
      "source_name": "Microsoft",
      "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/"
+    }
+   ]
+  },
+  {
+   "type": "report",
+   "spec_version": "2.1",
+   "id": "report--af371d5f-471f-5186-af87-a24ed39bac03",
+   "created": "2026-03-01T00:00:00.000Z",
+   "modified": "2026-03-01T00:00:00.000Z",
+   "name": "Microsoft – Tracking AI adoption in North Korean threat actor tradecraft",
+   "published": "2026-03-01T00:00:00.000Z",
+   "created_by_ref": "identity--394cf9c7-680f-58c0-a5d6-126c4c89ac74",
+   "object_refs": [
+    "attack-pattern--0f78fc83-9b4a-59df-9a92-f2db1ca0c222",
+    "attack-pattern--344ad743-6f27-5505-9008-5887891f2a8b",
+    "attack-pattern--390c55e0-084f-5cb6-be7b-e30539db73dd",
+    "attack-pattern--4902ab05-3a65-5a4c-b13c-b4dc7e68ae07",
+    "attack-pattern--51e7ae75-a0e3-5a0d-a031-2b25e2fc568a",
+    "attack-pattern--834c8c58-7552-57fe-a2c2-a08c9a686021",
+    "attack-pattern--8dbc0572-5bce-5be0-b904-f364fbcf1bcf",
+    "attack-pattern--9e978e75-6573-5868-b63e-90a9922b58c5",
+    "attack-pattern--a2e50fce-c8f4-58ba-8e76-ddb9d31632c4",
+    "attack-pattern--d7f5ec6e-0492-55ec-a0dc-6d481a68b603",
+    "attack-pattern--ddbe5437-5957-5a36-aa4a-0ee725e05160",
+    "attack-pattern--e593b544-e68f-5823-8dac-01fca2ecf7a3",
+    "attack-pattern--ebcd2210-aac9-5413-9ee5-8f1ce9e9660f",
+    "intrusion-set--04798cb3-0253-5d85-9a2b-3af92d285eb9",
+    "intrusion-set--1c4bc30b-87cd-5138-afde-25c2e64442a8",
+    "intrusion-set--318004c2-f3b1-575f-b9d7-158ae3299c11",
+    "intrusion-set--65631023-fcc4-5fe3-96c7-ae7c8e9694d7",
+    "intrusion-set--928ca34e-3249-552c-a46a-9d8973ce0843"
+   ],
+   "external_references": [
+    {
+     "source_name": "Microsoft",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/"
     }
    ]
   },

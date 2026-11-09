@@ -1,6 +1,6 @@
 {
  "generated_from": "README.MD",
- "count": 152,
+ "count": 158,
  "entries": [
   {
    "table": "main",
@@ -465,7 +465,7 @@
    "table": "main",
    "name": "Coral Sleet",
    "akas": "Storm-1877 (DPRK)",
-   "brief": "Microsoft observed rapid capability growth via AI-assisted iterative development — using AI coding tools to generate, refine and reimplement malware components, agentic AI for an end-to-end lure-development workflow, and jailbroken LLM software to generate malicious code. Microsoft",
+   "brief": "Microsoft observed rapid capability growth via AI-assisted iterative development — using AI coding tools to generate, refine and reimplement malware components, agentic AI for an end-to-end lure-development workflow, and jailbroken LLM software to generate malicious code. Microsoft *Update (Microsoft, Oct 2026):* since April 2026 Coral Sleet used an AI-enabled development platform to build a workflow that trojanizes private GitHub repositories and feeds them into its existing malware chain. Microsoft",
    "ttp_md": "**LLM-aided development** T1587.001 - Develop Capabilities: Malware<br><br>**LLM-supported social engineering** T1566 - Phishing (agentic lure development)",
    "reported": "Mar 2026",
    "activity": "Unknown"
@@ -474,7 +474,7 @@
    "table": "main",
    "name": "Sapphire Sleet",
    "akas": "DPRK (crypto-theft / fake-recruiter cluster)",
-   "brief": "Develops fake digital personas using AI to support social-engineering campaigns targeting employment/recruitment opportunities. Microsoft",
+   "brief": "Develops fake digital personas using AI to support social-engineering campaigns targeting employment/recruitment opportunities. Microsoft *Update (Microsoft, Oct 2026):* an Aug 2026 Rust software compromise was likely AI-assisted development; the malware used dynamic .NET compilation post-exploitation, probably for evasion. Microsoft",
    "ttp_md": "**LLM-supported social engineering** T1585 - Establish Accounts (AI personas)<br><br>T1566.003 - Spearphishing via Service",
    "reported": "Mar 2026",
    "activity": "Unknown"
@@ -519,7 +519,7 @@
    "table": "main",
    "name": "APT45",
    "akas": "DPRK state-sponsored (GTIG/Mandiant)",
-   "brief": "GTIG observed APT45 sending thousands of repetitive prompts that recursively analyze different CVEs and validate PoC exploits — scaled, automated AI-assisted vulnerability research — and experimenting with agentic tooling. GTIG",
+   "brief": "GTIG observed APT45 sending thousands of repetitive prompts that recursively analyze different CVEs and validate PoC exploits — scaled, automated AI-assisted vulnerability research — and experimenting with agentic tooling. GTIG *Update (Microsoft, Oct 2026), tracked by Microsoft as Onyx Sleet:* made 100+ target-specific PDF lures in rapid bursts (Aug–Sep 2026), likely with an AI platform, to phish South Korean users, and has used the agentic pentest framework ARTEX since late Oct 2026. Microsoft",
    "ttp_md": "**LLM-assisted vulnerability research** T1588.006 - Obtain Capabilities: Vulnerabilities<br><br>T1587.004 - Develop Capabilities: Exploits",
    "reported": "May 2026",
    "activity": "Unknown"
@@ -1157,7 +1157,7 @@
   {
    "table": "main",
    "name": "Storm-0940",
-   "akas": "China-state aligned (Microsoft); no known industry aliases",
+   "akas": "China-state aligned (Microsoft); UNC7228 (GTIG's identifier for the same activity)",
    "brief": "Microsoft Threat Intelligence reports a China-state-aligned actor using ARTEX, an open-source multi-agent penetration-testing framework that can drive any AI model, to automate reconnaissance, password spraying and OAuth-app abuse at machine speed: a spray against 327 accounts at 8 organizations (10–14 Oct 2026), then compromise of a ConnectWise multi-tenant app (Cloud Backup) followed by ARTEX-driven sign-in attempts against 2,250+ tenants, with privileged cloud access in under three hours in some intrusions. Hundreds of organizations across aerospace/defense, automotive, chemicals, energy, financial services and government were targeted. *Analyst note: same tool as the CrowdStrike/Recorded Future ARTEX row but a distinct campaign (different victims, vector and attribution). Microsoft names no underlying model; attribution is Microsoft's own. Vendor source.* Microsoft",
    "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1595 - Active Scanning<br><br>T1078.004 - Valid Accounts: Cloud Accounts<br><br>T1195 - Supply Chain Compromise<br><br>T1199 - Trusted Relationship<br><br>T1528 - Steal Application Access Token<br><br>T1098.003 - Account Manipulation: Additional Cloud Roles",
    "reported": "Oct 2026",
@@ -1216,6 +1216,60 @@
    "ttp_md": "**LLM-enhanced scripting techniques** T1059 - Command and Scripting Interpreter<br><br>T1595.002 - Active Scanning: Vulnerability Scanning<br><br>T1110 - Brute Force<br><br>T1190 - Exploit Public-Facing Application",
    "reported": "Oct 2026",
    "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "VAPOR PANDA",
+   "akas": "China-nexus (CrowdStrike); not equated with Microsoft's Storm-0940",
+   "brief": "CrowdStrike reports a China-nexus espionage actor running ARTEX, a multi-agent framework (main agent coordinating planner and worker agents over a shared graph of facts, findings and goals), driven primarily by DeepSeek plus a second commercial LLM CrowdStrike could not confirm. Starting 17 Oct 2026 the campaign hit 200+ organizations in 14+ countries over an 11-day window (post-exploitation confirmed at 9, password spraying/credential scanning against 12+ more), targeting foreign ministries, government, pharma, semiconductor, defense, nuclear, financial, telecom and think-tank organizations. One intrusion's planning agents consumed roughly 1.4 billion input tokens while a human operator steered in Chinese at decision points. Tooling included the BLOODALCHEMY backdoor, web shells and Chisel/SoftEther tunnels. *Analyst note: ATT&CK IDs below are a subset of those CrowdStrike lists; the second model is unconfirmed. Vendor source.* CrowdStrike",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1190 - Exploit Public-Facing Application<br><br>T1078 - Valid Accounts<br><br>T1110.003 - Password Spraying<br><br>T1505.003 - Web Shell<br><br>T1572 - Protocol Tunneling",
+   "reported": "Oct 2026",
+   "activity": "Oct 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "CRAFTY FALCON",
+   "akas": "Designation by CERT-In / CSIRT-Fin; no other vendor aliases found",
+   "brief": "India's CERT-In (with CSIRT-Fin) issued advisory CIAD-2026-0058 (Critical) on an ongoing financial-crime actor targeting NBFCs, digital lenders, fintechs, payment aggregators/PSPs and crypto exchanges, assessed to be using AI-driven offensive tooling. The actor abuses victims' payment and disbursement APIs, uses AWS SSM/Lambda abuse, exposed UAT/staging environments to pivot to production, PHP/Node.js web shells via file-upload and deserialization flaws, crypto-wallet key theft and Rs.1 micro-test transactions, with infrastructure rotating within hours to days. *Analyst note: AI use is inferred by CERT-In from tooling and script-variant tempo (\"consistent with AI-generated code\"); the advisory names public agentic tools (ARTEX, PentAGI, Cairn, CyberStrikeAI) without saying which was used; IOCs are TLP-restricted, so TTP IDs are analyst-mapped. Government source.* CERT-In",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1190 - Exploit Public-Facing Application<br><br>T1505.003 - Web Shell<br><br>T1657 - Financial Theft",
+   "reported": "Nov 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "Jade Sleet",
+   "akas": "DPRK (Microsoft)",
+   "brief": "Microsoft observed Jade Sleet running job-themed targeting through three front companies in June 2026, posing as recruiters for a spoofed AI blockchain-intelligence firm, using generative AI for reconnaissance, persona development and outreach. *Analyst note: Microsoft's AI-use description is brief. Vendor source.* Microsoft",
+   "ttp_md": "**LLM-supported social engineering** T1585 - Establish Accounts (AI personas)<br><br>T1566 - Phishing<br><br>**LLM-informed reconnaissance** T1593 - Search Open Websites/Domains",
+   "reported": "Oct 2026",
+   "activity": "Jun 2026 – Jun 2026"
+  },
+  {
+   "table": "main",
+   "name": "Pearl Sleet",
+   "akas": "DPRK (Microsoft)",
+   "brief": "Microsoft reports Pearl Sleet using AI-assisted development tooling and, like Onyx Sleet, the open-source agentic pentest framework ARTEX in operations. *Analyst note: very little detail in Microsoft's post. Vendor source.* Microsoft",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>**LLM-aided development** T1587.001 - Develop Capabilities: Malware",
+   "reported": "Oct 2026",
+   "activity": "Unknown"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (ARTEX extortion and suspected PRC-nexus clusters) — GTIG",
+   "akas": "Financially motivated extortion groups and suspected PRC-nexus clusters; no GTIG UNC designation given",
+   "brief": "GTIG/Mandiant report that since late August 2026 multiple actors have operated ARTEX (autonomous multi-agent LLM pentesting/C2 platform written in Go, using frontier and open-source model APIs) in incident-response engagements: data-theft extortion groups and suspected PRC-nexus clusters hit US government, technology, chemicals/materials and manufacturing. Observed behavior included self-correcting scripts and web shells, MySQL general_log poisoning to write JSP web shells, Kerberoasting, DCSync, 27 AWS probing events in 23 seconds, 491 rotating webhook.site C2 URLs, and enumeration of 110,000+ AD objects. *Analyst note: victim counts and MITRE IDs not stated by GTIG (IDs analyst-mapped); the Asia financial-sector ARTEX case GTIG cites is the already-tracked CrowdStrike row. Vendor source.* GTIG",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1190 - Exploit Public-Facing Application<br><br>T1558.003 - Kerberoasting<br><br>T1003.006 - DCSync<br><br>T1505.003 - Web Shell<br><br>T1657 - Financial Theft",
+   "reported": "Oct 2026",
+   "activity": "Aug 2026 – Oct 2026"
+  },
+  {
+   "table": "main",
+   "name": "UnSub (PentAGI-based orchestration, Asian telecom/integrators) — GTIG",
+   "akas": "Unattributed",
+   "brief": "GTIG describes a customized PentAGI (multi-agent Kali sandbox with Metasploit, nmap, SQLmap) orchestration campaign, used between at least late August and early October 2026, systematically scanning system integrators and major telecommunications firms in Asia; most activity stayed at WHOIS asset mapping or vulnerability scanning but some operations progressed to active intrusion and persistence. A separate PentAGI chain with proxy services targeted the aerospace sector. *Analyst note: no nexus, motivation or victim counts stated. Vendor source.* GTIG",
+   "ttp_md": "**LLM-orchestrated operations** TA0002 - Execution (agentic harness across kill-chain)<br><br>T1595.002 - Active Scanning: Vulnerability Scanning<br><br>T1590 - Gather Victim Network Information",
+   "reported": "Oct 2026",
+   "activity": "Aug 2026 – Oct 2026"
   },
   {
    "table": "deepfake",
