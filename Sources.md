@@ -109,6 +109,10 @@ This is *not* for:
 |March |Tripwire | [Cybersecurity in the Age of AI: Exploring AI-Generated Cyber Attacks](https://www.tripwire.com/state-of-security/cybersecurity-age-ai-exploring-ai-generated-cyber-attacks) |
 |March | Kaspersky | [Spam and phishing in 2023](https://securelist.com/spam-phishing-report-2023/112015/) |
 |October | OpenAI | [Influence and cyber operations: an update](https://cdn.openai.com/threat-intelligence-reports/influence-and-cyber-operations-an-update_October-2024.pdf) - *Backfill added 2026-09: a genuine pre-existing gap surfaced when a secondary source misdated this report as "September 2026."* |
+|October | CrowdStrike | [VAPOR PANDA Uses AI-Driven ARTEX to Scale a Global Espionage Campaign](https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/) |
+|October | Microsoft | [Tracking AI adoption in North Korean threat actor tradecraft](https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/) |
+|October | Google GTIG | [ARTEX and Friends: Enter Agentic Offensive Frameworks](https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks) |
+|November | CERT-In | [CIAD-2026-0058: Escalation of AI-Driven Attacks on BFSI Entities by Threat Actor "CRAFTY FALCON"](https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0058) |
 
 
 ## 2023 Reports
