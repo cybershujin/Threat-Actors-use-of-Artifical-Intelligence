@@ -123,19 +123,43 @@ def reported_iso(rep):
     m = re.search(r"\b(\d{4})\b", rep)
     return f"{int(m.group(1)):04d}-01-01T00:00:00.000Z" if m else EPOCH
 
+_SEASON = {"summer": 6, "mid": 7}
+_MONTH_TOK = (r"(?:(?P<d1>\d{1,2})\s+)?(?P<mon>Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?"
+              r"(?:\s+\d{1,2}(?:\s*[–-]\s*\d{1,2})?(?=\s*(?:,|[–-]|$|;)))?(?:,?\s+(?P<yr>\d{4}))?")
+_TOK = re.compile(r"\bQ(?P<q>[1-4])\s+(?P<qy>\d{4})|\b(?P<sea>[Ss]ummer|[Mm]id)\s+(?P<sy>\d{4})|" + _MONTH_TOK + r"|\b(?P<by>\d{4})\b")
+
 def _min_ym(s):
-    """Earliest YYYYMM integer found in s (Mon YYYY or bare YYYY), or None."""
-    keys = []
-    for m in re.finditer(r"([A-Z][a-z]{2})\s+(\d{4})", s or ""):
-        keys.append(int(m.group(2)) * 100 + MON.get(m.group(1), 1))
-    for m in re.finditer(r"\b(\d{4})\b", s or ""):
-        y = int(m.group(1))
-        if not any(k // 100 == y for k in keys): keys.append(y * 100 + 1)
+    """Earliest YYYYMM integer in a date cell, or None.
+    Parenthetical notes are ignored ("Nov 2025 (updated Sep 2026)" -> Nov 2025). Understands 'Mon YYYY',
+    '31 Aug 2026', 'Jul 1-4, 2026', 'Apr 8 - May 21, 2026' (month with no year borrows the next year),
+    'Q4 2025', 'Summer/Mid YYYY', and bare YYYY (-> January)."""
+    s = re.sub(r"\([^)]*\)", "", s or "")
+    toks = []
+    for m in _TOK.finditer(s):
+        if m.group("q"): toks.append(("ym", int(m.group("qy")), 3 * (int(m.group("q")) - 1) + 1)); continue
+        if m.group("sea"): toks.append(("ym", int(m.group("sy")), _SEASON[m.group("sea").lower()])); continue
+        if m.group("by"): toks.append(("ym", int(m.group("by")), 1)); continue
+        mo = MON.get(m.group("mon"))
+        if mo: toks.append(("ym", int(m.group("yr")), mo) if m.group("yr") else ("m", None, mo))
+    keys, pending = [], []
+    for kind, y, mo in toks:
+        if kind == "m": pending.append(mo); continue
+        keys += [y * 100 + pm for pm in pending]; pending = []
+        keys.append(y * 100 + mo)
+    # a bare year directly after a month token was already consumed with it; drop Jan placeholders it shadows
+    months_with_year = {k // 100 for k in keys if k % 100 != 1}
+    keys = [k for k in keys if not (k % 100 == 1 and k // 100 in months_with_year and _only_bare(s, k // 100))]
     return min(keys) if keys else None
 
+def _only_bare(s, y):
+    """True if year y appears in s only as a bare year (never attached to a month name)."""
+    return not re.search(r"[A-Z][a-z]{2}[a-z]*\.?[^;\n]*?\b%d\b" % y, s)
+
 def date_key(v):
-    """Numeric sort key (YYYYMM) for a date/range cell; None for Unknown/empty (sorts last)."""
-    return None if (not v or v.strip().lower() == "unknown") else _min_ym(v)
+    """Numeric sort key (YYYYMM) for a date/range cell; None for Unknown/empty (sorts last).
+    A cell that starts with 'Unknown' stays Unknown even if its note mentions dates."""
+    if not v or re.match(r"\s*unknown\b", v, re.I): return None
+    return _min_ym(v)
 
 # ---------- build structured records ----------
 def build_records():
@@ -414,7 +438,7 @@ let vis={name:1,akas:1,reported:1,activity:1,brief:1,ttp:0,links:1},sortK="name"
 const hr=document.getElementById("hr"),tb=document.getElementById("tb"),cols=document.getElementById("cols");
 COLS.forEach(([k,l])=>{const cb=document.createElement("label");cb.innerHTML=`<input type=checkbox ${vis[k]?"checked":""} data-k="${k}"> ${l}`;cols.appendChild(cb);});
 cols.onchange=e=>{vis[e.target.dataset.k]=e.target.checked?1:0;render();};
-function head(){hr.innerHTML="";COLS.forEach(([k,l])=>{if(!vis[k])return;const th=document.createElement("th");th.textContent=l+(sortK===k?(sortDir>0?" ▲":" ▼"):"");th.onclick=()=>{if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=1;}render();};hr.appendChild(th);});}
+function head(){hr.innerHTML="";COLS.forEach(([k,l])=>{if(!vis[k])return;const th=document.createElement("th");th.textContent=l+(sortK===k?(sortDir>0?" ▲":" ▼"):"");th.onclick=()=>{if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=(k==="reported"||k==="activity")?-1:1;}render();};hr.appendChild(th);});}
 function dcell(v){return v&&v.toLowerCase()!=="unknown"?`<span class=date>${v}</span>`:`<span class="date unk">Unknown</span>`;}
 function render(){
  const q=document.getElementById("q").value.toLowerCase(),tf=document.getElementById("tbl").value;
@@ -423,7 +447,10 @@ function render(){
    if(sortK==="reported"||sortK==="activity"){
      const ka=sortK==="reported"?a.rsort:a.asort, kb=sortK==="reported"?b.rsort:b.asort;
      if(ka==null&&kb==null)return 0; if(ka==null)return 1; if(kb==null)return -1;  // Unknown always last
-     return (ka-kb)*sortDir;
+     if(ka!==kb)return (ka-kb)*sortDir;
+     const oa=sortK==="reported"?a.asort:a.rsort, ob=sortK==="reported"?b.asort:b.rsort;  // tie-break on the other date column
+     if(oa==null&&ob==null)return 0; if(oa==null)return 1; if(ob==null)return -1;
+     return (oa-ob)*sortDir;
    }
    return ((a[sortK]||"")+"").localeCompare((b[sortK]||"")+"")*sortDir;});
  head();tb.innerHTML="";
