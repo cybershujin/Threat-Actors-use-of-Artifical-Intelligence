@@ -80,6 +80,10 @@ This is *not* for:
 |October | Recorded Future (Insikt Group) | [TAG-217 Targets South Korean Financial Services with ARTEX](https://www.recordedfuture.com/blog/tag-217-artex-south-korean-banks) |
 |October | Zscaler ThreatLabz | [Inside a Global AI-Assisted Hacking Campaign](https://www.zscaler.com/blogs/security-research/inside-global-ai-assisted-hacking-campaign) |
 |October | Unit 42 (Palo Alto Networks) | [Next Exploit Opportunities: How a Threat Actor Used AI to Help Plan and Execute Multiple Types of Cybercrime Activities](https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/) |
+|November | Google GTIG | [GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold](https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold) |
+|November | Microsoft | [Threat actors use agentic AI tooling to find and abuse exposed secrets](https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/) |
+|November | Microsoft | [ARTEX abuse expands as cybercriminals target financial sector](https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/) |
+|November | Unit 42 (Palo Alto Networks) | [Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Organizations](https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/) |
 
 
 ## 2025 Reports
